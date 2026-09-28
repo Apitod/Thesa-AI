@@ -4,13 +4,15 @@ Dokumen ini merangkum seluruh perubahan yang telah dilakukan, status saat ini, d
 
 ---
 
-## 📍 Status Saat Ini: Fase 6 (Integrasi Frontend ↔ Backend Generation Engine — Selesai ✅)
+## 📍 Status Saat Ini: Fase 8 (Fix Deployment Configs & Auth Penuh — Selesai ✅)
 - **Fase 1 (Infrastruktur & Arsitektur):** Selesai ✅
 - **Fase 2 (Implementasi Core Python API & Strangler Fig Proxy):** Selesai ✅
 - **Fase 3 (QA, Debugging & Refactoring Engine):** Selesai ✅
 - **Fase 4 (Penghapusan Legacy Bridge & Decommissioning Backend Go):** Selesai ✅
 - **Fase 5 (Pembangunan Ulang Endpoint Missing di Python — Opsi A):** Selesai ✅
 - **Fase 6 (Koneksi Frontend Thesa ke Backend Generation Engine via SSE):** Selesai ✅
+- **Fase 7 (Integrasi Autentikasi Penuh ke Frontend):** Selesai ✅
+- **Fase 8 (Fix Deployment Configs & Verifikasi Production-Ready):** Selesai ✅
 
 ---
 
@@ -116,16 +118,71 @@ Pengujian otomatis dijalankan menggunakan suite `Backend/python_api/tests/test_a
   5. AI Supervisor & Examiner (Socratic Questions, Personas, Macro Review, Readiness): PASS ✅
   6. Admin Telemetry & Audit Logs (Dashboard Stats, User List, Order List): PASS ✅
 
+### 7. Integrasi Autentikasi Penuh ke Frontend (Fase 7) ✅ **BARU**
+- **`auth.html` — Password Field & Validasi:**
+  - Tambah input `passwordInput` (min. 6 karakter) dengan show/hide toggle di Step 3.
+  - `checkStep3()` sekarang validasi **nama DAN password** — tombol Lanjut disabled jika salah satu kosong.
+- **`finishRegistration()` — Backend-Driven Registration:**
+  - Menggunakan password asli yang diisi user (bukan hardcoded `thesa2026_default_password`).
+  - Merge data real dari backend response (`name`, `email`, `tier`, `trustScore`, `backendUserId`) ke profil lokal.
+  - Smart fallback: jika email sudah terdaftar (HTTP 400), otomatis mencoba login langsung.
+- **`quickLogin()` — Merge Backend Data:**
+  - Jika backend online: merge `user` dari response ke `demoProfile` sebelum simpan ke storage.
+  - Jika backend offline: gunakan demoProfile lokal (graceful fallback tetap bekerja).
+- **Login Modal Penuh (`loginWithCredentials()`):**
+  - Modal login proper dengan email + password field + show/hide toggle.
+  - `openLoginModal()` / `closeLoginModal()` — bisa ditutup dengan ESC.
+  - Error message inline (tanpa redirect / alert) untuk UX yang baik.
+  - Tombol "Masuk sebagai Demo" tetap tersedia di dalam modal.
+  - Link "Sudah punya akun?" di Step 1 sekarang membuka modal (bukan `quickLogin()` langsung).
+- **`refreshSessionFromBackend()` di `app.js`:**
+  - Dipanggil otomatis saat halaman `/app` dimuat.
+  - Memanggil `GET /api/v1/auth/me` dengan token tersimpan.
+  - Merge data user terbaru dari backend → update localStorage/sessionStorage → re-render tier badge.
+  - Token expired (HTTP 401) otomatis dibersihkan dari storage.
+  - Backend offline → profil lokal tetap valid, tidak error ke user.
+
+### 8. Fix Deployment Configs Production-Ready (Fase 8) ✅ **BARU**
+- **`koyeb.yaml`:**
+  - Fix port: `8080` → `8000` (sesuai `CMD uvicorn :8000` di Dockerfile).
+  - Fix dockerfile path: `Dockerfile` → `python_api/Dockerfile`.
+  - Hapus `ADMIN_SECRET_KEY` hardcoded dari config file.
+  - Tambah komentar daftar semua secret vars yang harus diset via Koyeb dashboard.
+  - Tambah: `REDIS_URL`, `MIDTRANS_SERVER_KEY`, `MIDTRANS_CLIENT_KEY`, `CLOUDMERSIVE_API_KEY`.
+- **`render.yaml`:**
+  - Fix port: `8080` → `8000`.
+  - Fix dockerfile path: `Dockerfile` → `python_api/Dockerfile`.
+  - Tambah semua secret vars dengan `sync: false`: `MIDTRANS_SERVER_KEY`, `MIDTRANS_CLIENT_KEY`, `REDIS_URL`, `CLOUDMERSIVE_API_KEY`.
+  - `ADMIN_SECRET_KEY` tetap `generateValue: true` (auto-generated oleh Render).
+
+---
+
+## 🧪 Hasil Verifikasi & Pengujian QA (`agent-qa-debug-fix`)
+
+Pengujian otomatis dijalankan menggunakan suite `Backend/python_api/tests/test_all_migrated_endpoints.py`:
+- **Total Pengujian:** 22 skenario
+- **Hasil:** 22/22 Lulus (Tingkat Keberhasilan 100.0%)
+- **Cakupan Pengujian:**
+  1. Health check diagnostic (`/health`, `/api/v1/health`): PASS ✅
+  2. Static UI Web Serving (`/app`, `/auth`, `/admin`): PASS ✅
+  3. Authentication Flow (Register, Login, Session Me): PASS ✅
+  4. Payment & Settlement (Create Order, Status Check, Simulate): PASS ✅
+  5. AI Supervisor & Examiner (Socratic Questions, Personas, Macro Review, Readiness): PASS ✅
+  6. Admin Telemetry & Audit Logs (Dashboard Stats, User List, Order List): PASS ✅
+
 ---
 
 ## 🚀 Langkah Selanjutnya (Next Actions)
 
-1. **End-to-End Test Generation dengan Docker Stack:**
+1. **End-to-End Test Generation dengan Docker Stack (Prioritas Tinggi):**
    - Jalankan `docker-compose up -d` di `Backend/`.
-   - Buka `/app` → selesaikan flow makalah → tekan "Generate & Unduh DOCX via Backend".
-   - Verifikasi SSE progress real-time muncul di chat, dan file DOCX berhasil diunduh dari server.
-2. **Deployment ke Production (Koyeb / Render / VPS):**
-   - File konfigurasi `Backend/koyeb.yaml` dan `Backend/render.yaml` sudah tersedia di `Frontend/`.
-   - Set environment variables: `GEMINI_API_KEY`, `DEEPSEEK_API_KEY`, `MIDTRANS_SERVER_KEY`, `REDIS_URL`.
-3. **Integrasi Autentikasi ke Frontend:**
-   - Hubungkan `auth.html` login flow agar menyimpan `thesa_token` dan profil pengguna ke localStorage/sessionStorage, sehingga `_buildGenerationPayload()` dapat membaca nama/NIM asli pengguna.
+   - Buka `/auth` → daftar akun baru → login dengan email+password.
+   - Selesaikan flow makalah di `/app` → tekan "Generate & Unduh DOCX via Backend".
+   - Verifikasi: token tersimpan, profil disinkronkan dari `/api/v1/auth/me`, SSE progress real-time tampil, file DOCX terunduh dari server.
+2. **Deployment ke Production:**
+   - Set semua secret env vars via Koyeb/Render dashboard.
+   - Deploy menggunakan `Backend/` sebagai docker context.
+   - Pastikan managed Redis tersedia (Upstash / Render Redis / Koyeb Redis).
+3. **Uji Beban & Monitoring (Opsional):**
+   - Konfigurasi Sentry / Datadog untuk error tracking.
+   - Load test endpoint `/api/v1/generations/` dengan k6 atau Locust.
