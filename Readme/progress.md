@@ -4,12 +4,13 @@ Dokumen ini merangkum seluruh perubahan yang telah dilakukan, status saat ini, d
 
 ---
 
-## 📍 Status Saat Ini: Fase 5 (Migrasi Lengkap Endpoint & UI Hosting — Opsi A Selesai ✅)
+## 📍 Status Saat Ini: Fase 6 (Integrasi Frontend ↔ Backend Generation Engine — Selesai ✅)
 - **Fase 1 (Infrastruktur & Arsitektur):** Selesai ✅
 - **Fase 2 (Implementasi Core Python API & Strangler Fig Proxy):** Selesai ✅
 - **Fase 3 (QA, Debugging & Refactoring Engine):** Selesai ✅
 - **Fase 4 (Penghapusan Legacy Bridge & Decommissioning Backend Go):** Selesai ✅
 - **Fase 5 (Pembangunan Ulang Endpoint Missing di Python — Opsi A):** Selesai ✅
+- **Fase 6 (Koneksi Frontend Thesa ke Backend Generation Engine via SSE):** Selesai ✅
 
 ---
 
@@ -78,6 +79,28 @@ Dokumen ini merangkum seluruh perubahan yang telah dilakukan, status saat ini, d
   - FastAPI langsung melayani halaman statis Thesa: `/app` & `/workspace` (`app.html`), `/auth` (`auth.html`), `/admin` (`admin.html`), serta `/` (`landing.html`).
   - Menyajikan seluruh aset CSS/JS (`style.css`, `app.js`, `export_service.js`) tanpa perlu server static terpisah.
 
+### 6. Integrasi Frontend Thesa ↔ Backend Generation Engine (Fase 6) ✅ **BARU**
+- **`startBackendGeneration()` di `Frontend/web/app.js`:**
+  - Dipanggil saat user menekan "Generate & Unduh DOCX via Backend" di akhir flow makalah.
+  - Mengumpulkan payload dari `researchContext` (judul, mata kuliah, dosen, penulis, institusi, template).
+  - `POST /api/v1/generations/` → mendapatkan `job_id` dari server.
+  - Graceful fallback ke export DOC lokal jika Redis/Celery tidak berjalan.
+- **`subscribeGenerationEvents(jobId)` — SSE Real-time Listener:**
+  - Membuka `EventSource` ke `/api/v1/generations/{job_id}/events`.
+  - Setiap event backend (stage + progress nyata) langsung memperbarui `updateProgress()` dan menampilkan status toast di chat stream.
+  - Saat `status === 'completed'`: otomatis menampilkan tombol download DOCX dari server.
+  - Saat `status === 'failed'`: menampilkan pesan error UX-friendly tanpa traceback internal.
+  - Reconnect-safe: menutup koneksi SSE lama sebelum membuka yang baru.
+- **`downloadPaperDocument()` — Smart Download:**
+  - Jika `window._thesaGenerationJobId` ada & status `completed` → download dari `/api/v1/generations/{id}/result` (file DOCX real dari server).
+  - Fallback otomatis ke export HTML `.doc` lokal jika tidak ada job backend.
+- **`_buildGenerationPayload()`:**
+  - Mengumpulkan data dari `researchContext`, `getUserProfile()`, dan `activeCampus` untuk membangun payload `GenerationRequest`.
+- **Container Orchestration Production (`Backend/docker-compose.yml`):**
+  - Terverifikasi lengkap: Redis 7, FastAPI `thesa-api` (port 8000), Celery Worker dengan shared volumes.
+  - Health check dikonfigurasi untuk semua service.
+  - Network terisolasi `thesa-python-network`.
+
 ---
 
 ## 🧪 Hasil Verifikasi & Pengujian QA (`agent-qa-debug-fix`)
@@ -97,7 +120,12 @@ Pengujian otomatis dijalankan menggunakan suite `Backend/python_api/tests/test_a
 
 ## 🚀 Langkah Selanjutnya (Next Actions)
 
-1. **Penyatuan Form Pembuatan Makalah di Frontend Thesa (`Frontend/web/app.js`):**
-   - Menghubungkan tombol "Generate Makalah" di `app.js` agar memanggil `POST /api/v1/generations/` dan mendengarkan progress real-time lewat SSE `/api/v1/generations/{job_id}/events`.
-2. **Container Orchestration Production (`docker-compose.yml`):**
-   - Menyiapkan satu `docker-compose.yml` terpadu yang menjalankan Redis, FastAPI Python (`python_api`), dan Celery Worker.
+1. **End-to-End Test Generation dengan Docker Stack:**
+   - Jalankan `docker-compose up -d` di `Backend/`.
+   - Buka `/app` → selesaikan flow makalah → tekan "Generate & Unduh DOCX via Backend".
+   - Verifikasi SSE progress real-time muncul di chat, dan file DOCX berhasil diunduh dari server.
+2. **Deployment ke Production (Koyeb / Render / VPS):**
+   - File konfigurasi `Backend/koyeb.yaml` dan `Backend/render.yaml` sudah tersedia di `Frontend/`.
+   - Set environment variables: `GEMINI_API_KEY`, `DEEPSEEK_API_KEY`, `MIDTRANS_SERVER_KEY`, `REDIS_URL`.
+3. **Integrasi Autentikasi ke Frontend:**
+   - Hubungkan `auth.html` login flow agar menyimpan `thesa_token` dan profil pengguna ke localStorage/sessionStorage, sehingga `_buildGenerationPayload()` dapat membaca nama/NIM asli pengguna.
