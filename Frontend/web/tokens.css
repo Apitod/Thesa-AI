@@ -1,0 +1,42 @@
+/* ===================================================================
+   THESA AI — Shared Design Tokens ("Kertas & Tinta")
+   Single source of truth for color + typography across all pages.
+   See revision_design.md §4A.
+   =================================================================== */
+:root {
+  /* ── Core palette ── */
+  --color-bg-base:       #F9F7F7;  /* paper */
+  --color-surface:       #DBE2EF;  /* soft blue-grey surface / borders */
+  --color-surface-soft:  #EEF2F8;  /* lighter tint of surface */
+  --color-card:          #FFFFFF;
+  --color-primary:       #3F72AF;  /* actions, active links */
+  --color-primary-hover: #2A517E;
+  --color-primary-soft:  #E4ECF6;
+  --color-ink-main:      #112D4E;  /* headings, dark buttons */
+  --color-ink-body:      #2B3E56;
+  --color-ink-muted:     #4A5568;  /* paragraph text */
+  --color-ink-faint:     #8A97A8;
+  --color-line:          #DDE3EC;  /* hairline borders */
+  --color-line-strong:   #C5CFDF;
+  --color-accent-warm:   #D9A441;  /* ochre — use sparingly */
+  --color-accent-warm-soft: #F7EDD6;
+  --color-danger:        #E53E3E;
+  --color-success:       #38A169;
+  --color-success-soft:  #E6F4EC;
+
+  /* ── Typography ── */
+  --font-serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-sans:  'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, monospace;
+
+  /* ── Motion ── */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 200ms;
+
+  /* ── Elevation (ink-tinted, never pure black) ── */
+  --shadow-ink-sm: 0 1px 2px rgba(17, 45, 78, 0.06);
+  --shadow-ink-md: 0 6px 18px -6px rgba(17, 45, 78, 0.14);
+  --shadow-ink-lg: 0 24px 48px -20px rgba(17, 45, 78, 0.22);
+}
+
+::selection { background: var(--color-surface); color: var(--color-ink-main); }

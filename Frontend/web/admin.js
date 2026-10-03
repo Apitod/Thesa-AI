@@ -168,16 +168,16 @@ function renderOrdersTable(orders) {
     <tr>
       <td><span class="code-tag">${escapeHTML(o.order_id)}</span></td>
       <td>
-        <strong style="color:#fff;">${escapeHTML(o.user_email)}</strong>
+        <strong style="color:var(--text-main);">${escapeHTML(o.user_email)}</strong>
       </td>
       <td>${escapeHTML(o.package_name)}</td>
       <td>
-        <strong style="color:${o.status === 'settled' ? 'var(--success)' : '#f59e0b'}; font-size:13px;">
+        <strong style="color:${o.status === 'settled' ? 'var(--success)' : 'var(--warning)'}; font-size:13px;">
           ${formatIDR(o.amount)}
         </strong>
       </td>
       <td>
-        <span class="code-tag" style="text-transform:uppercase; color:#c7d2fe;">${escapeHTML(o.payment_type || 'QRIS')}</span>
+        <span class="code-tag" style="text-transform:uppercase; color:var(--brand-hover);">${escapeHTML(o.payment_type || 'QRIS')}</span>
       </td>
       <td>
         <span class="status-tag ${o.status === 'settled' ? 'settled' : (o.status === 'pending' ? 'pending' : 'failed')}">
@@ -234,7 +234,7 @@ function renderOverviewOrdersFeed() {
           <span class="material-symbols-rounded" style="font-size:18px;">${o.status === 'settled' ? 'payments' : 'hourglass_top'}</span>
         </div>
         <div>
-          <div style="font-size:12.5px; font-weight:700; color:#fff;">${escapeHTML(o.user_email)}</div>
+          <div style="font-size:12.5px; font-weight:700; color:var(--text-main);">${escapeHTML(o.user_email)}</div>
           <div style="font-size:11px; color:var(--text-muted);">${escapeHTML(o.package_name)} • ${formatIDR(o.amount)}</div>
         </div>
       </div>
@@ -286,18 +286,18 @@ function renderUsersTable(users) {
     <tr>
       <td><span class="code-tag">#${u.id}</span></td>
       <td>
-        <strong style="color:#fff;">${escapeHTML(u.name)}</strong>
+        <strong style="color:var(--text-main);">${escapeHTML(u.name)}</strong>
       </td>
       <td><span style="color:var(--text-muted);">${escapeHTML(u.email)}</span></td>
       <td>
-        <span style="font-weight:600; color:#e2e8f0;">${escapeHTML(u.institution || '-')}</span>
+        <span style="font-weight:600; color:var(--text-body);">${escapeHTML(u.institution || '-')}</span>
       </td>
       <td>
-        <span class="code-tag" style="color:#93c5fd;">${escapeHTML(u.level || 'S1')}</span>
+        <span class="code-tag" style="color:var(--brand-hover);">${escapeHTML(u.level || 'S1')}</span>
         <span style="font-size:11.5px; color:var(--text-muted); margin-left:4px;">${escapeHTML(u.prodi || '-')}</span>
       </td>
       <td>
-        <span class="status-tag" style="background:rgba(99,102,241,0.15); color:#a5b4fc; text-transform:uppercase;">
+        <span class="status-tag" style="background:var(--brand-soft); color:var(--brand-hover); text-transform:uppercase;">
           ${escapeHTML(u.tier || 'gold')}
         </span>
       </td>
@@ -355,16 +355,16 @@ async function fetchLLMTelemetry() {
   tbody.innerHTML = logs.map(l => `
     <tr>
       <td>
-        <strong style="color:${l.provider === 'deepseek' ? '#818cf8' : '#fde047'}; text-transform:uppercase;">
+        <strong style="color:${l.provider === 'deepseek' ? 'var(--brand)' : 'var(--warning)'}; text-transform:uppercase;">
           ${escapeHTML(l.provider)}
         </strong>
       </td>
       <td><span class="code-tag">${escapeHTML(l.model)}</span></td>
-      <td><span style="color:#e2e8f0;">${escapeHTML(l.task_type)}</span></td>
+      <td><span style="color:var(--text-body);">${escapeHTML(l.task_type)}</span></td>
       <td style="font-size:11.5px; color:var(--text-muted);">${l.prompt_tokens} in / ${l.completion_tokens} out</td>
-      <td><strong style="color:#fff;">${l.total_tokens}</strong></td>
+      <td><strong style="color:var(--text-main);">${l.total_tokens}</strong></td>
       <td><span style="color:var(--info); font-weight:700;">${l.latency_ms} ms</span></td>
-      <td><span style="color:#fde047; font-weight:800;">${formatIDR(l.cost_idr)}</span></td>
+      <td><span style="color:var(--warning); font-weight:800;">${formatIDR(l.cost_idr)}</span></td>
       <td>
         <span class="status-tag success">✓ ${escapeHTML(l.status)}</span>
       </td>
@@ -395,10 +395,10 @@ async function fetchAuditLogs() {
   tbody.innerHTML = logs.map(a => `
     <tr>
       <td style="font-size:11.5px; color:var(--text-muted);">${formatDate(a.created_at)}</td>
-      <td><span class="code-tag" style="color:#93c5fd;">${escapeHTML(a.action)}</span></td>
-      <td><strong style="color:#fff;">${escapeHTML(a.user_email || 'System')}</strong></td>
+      <td><span class="code-tag" style="color:var(--brand-hover);">${escapeHTML(a.action)}</span></td>
+      <td><strong style="color:var(--text-main);">${escapeHTML(a.user_email || 'System')}</strong></td>
       <td><span class="code-tag">${escapeHTML(a.ip_address || '127.0.0.1')}</span></td>
-      <td style="color:#e2e8f0;">${escapeHTML(a.details)}</td>
+      <td style="color:var(--text-body);">${escapeHTML(a.details)}</td>
       <td><span class="status-tag success">✓ ${escapeHTML(a.status)}</span></td>
     </tr>
   `).join('');

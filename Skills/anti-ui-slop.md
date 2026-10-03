@@ -1,4 +1,4 @@
----
+b6,m---
 name: anti-ui-slop
 description: "Stop coding agents from shipping generic UI. Extend the product's design system, use UIZZE evidence only when useful, cover required states, and inspect the rendered result."
 category: frontend

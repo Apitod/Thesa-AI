@@ -35,9 +35,9 @@ async function thesaApiFetch(endpoint, data = {}, options = {}) {
 // ============================================================
 
 const TIER_CONFIG = {
-  silver:   { label: 'Silver',   emoji: '🥈', color: '#64748b', bg: '#f1f5f9', modules: ['makalah'], deposit: 15000, perSessionCost: 12000 },
-  gold:     { label: 'Gold',     emoji: '🥇', color: '#d97706', bg: '#fef3c7', modules: ['makalah','proposal','skripsi','tesis','disertasi','jurnal','laporan'], weeklyTokens: 250000 },
-  platinum: { label: 'Platinum', emoji: '💎', color: '#7c3aed', bg: '#ede9fe', modules: ['makalah','proposal','skripsi','tesis','disertasi','jurnal','laporan','pustaka'], monthlyTokens: 1500000 }
+  silver:   { label: 'Silver',   emoji: '🥈', color: '#5B6B80', bg: '#EEF1F6', modules: ['makalah'], deposit: 15000, perSessionCost: 12000 },
+  gold:     { label: 'Gold',     emoji: '🥇', color: '#B8862F', bg: '#F7EDD6', modules: ['makalah','proposal','skripsi','tesis','disertasi','jurnal','laporan'], weeklyTokens: 250000 },
+  platinum: { label: 'Platinum', emoji: '💎', color: '#3F72AF', bg: '#E4ECF6', modules: ['makalah','proposal','skripsi','tesis','disertasi','jurnal','laporan','pustaka'], monthlyTokens: 1500000 }
 };
 
 function getUserTier() {
@@ -116,7 +116,7 @@ function initTierBadge() {
       if (!lock) {
         lock = document.createElement('span');
         lock.className = 'material-symbols-rounded nav-lock';
-        lock.style.cssText = 'font-size:14px;color:#94a3b8;margin-left:auto;';
+        lock.style.cssText = 'font-size:14px;color:#8A97A8;margin-left:auto;';
         lock.textContent = 'lock';
         pustakaItem.appendChild(lock);
       }
@@ -369,18 +369,18 @@ function renderBillingStatusCard() {
   if (tier === 'silver') {
     const bal = profile.silverBalance !== undefined ? profile.silverBalance : 15000;
     container.innerHTML = `
-      <div style="background:linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border:1.5px solid #cbd5e1; border-radius:16px; padding:18px 20px;">
+      <div style="background:linear-gradient(135deg, #F9F7F7 0%, #EEF1F6 100%); border:1.5px solid #C5CFDF; border-radius:16px; padding:18px 20px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
           <div>
-            <span style="font-size:11px; font-weight:800; color:#475569; text-transform:uppercase;">Paket Aktif</span>
-            <h4 style="font-size:18px; font-weight:800; color:#1e293b; margin:1px 0;">🥈 Silver (Pay-per-Makalah)</h4>
+            <span style="font-size:11px; font-weight:800; color:#4A5568; text-transform:uppercase;">Paket Aktif</span>
+            <h4 style="font-size:18px; font-weight:800; color:#1A3556; margin:1px 0;">🥈 Silver (Pay-per-Makalah)</h4>
           </div>
           <div style="text-align:right;">
-            <span style="font-size:22px; font-weight:800; color:#0f172a;">Rp ${bal.toLocaleString('id-ID')}</span>
-            <span style="font-size:11.5px; color:#64748b; display:block;">Saldo Deposit</span>
+            <span style="font-size:22px; font-weight:800; color:#112D4E;">Rp ${bal.toLocaleString('id-ID')}</span>
+            <span style="font-size:11.5px; color:#5B6B80; display:block;">Saldo Deposit</span>
           </div>
         </div>
-        <div style="font-size:12px; color:#475569; line-height:1.5; background:#fff; padding:10px 14px; border-radius:10px; border:1px solid #e2e8f0;">
+        <div style="font-size:12px; color:#4A5568; line-height:1.5; background:#fff; padding:10px 14px; border-radius:10px; border:1px solid #DDE3EC;">
           💡 Biaya pembuatan 1 makalah adalah <strong>Rp 12.000</strong>. Saat pembuatan dimulai, saldo akan dipotong dan sisa saldo tetap tersimpan di akunmu.
         </div>
       </div>`;
@@ -389,21 +389,21 @@ function renderBillingStatusCard() {
     const maxTok = 250000;
     const pct = Math.round((tok / maxTok) * 100);
     container.innerHTML = `
-      <div style="background:linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border:1.5px solid #fde68a; border-radius:16px; padding:18px 20px;">
+      <div style="background:linear-gradient(135deg, #F7EDD6 0%, #FBF6EA 100%); border:1.5px solid #EED9A6; border-radius:16px; padding:18px 20px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
           <div>
-            <span style="font-size:11px; font-weight:800; color:#92400e; text-transform:uppercase;">Paket Berlangganan</span>
-            <h4 style="font-size:18px; font-weight:800; color:#78350f; margin:1px 0;">🥇 Gold (Kuota Token Mingguan)</h4>
+            <span style="font-size:11px; font-weight:800; color:#7A5A1E; text-transform:uppercase;">Paket Berlangganan</span>
+            <h4 style="font-size:18px; font-weight:800; color:#5E4516; margin:1px 0;">🥇 Gold (Kuota Token Mingguan)</h4>
           </div>
           <div style="text-align:right;">
-            <span style="font-size:20px; font-weight:800; color:#d97706;">${tok.toLocaleString('id-ID')} / ${maxTok.toLocaleString('id-ID')}</span>
-            <span style="font-size:11.5px; color:#b45309; display:block;">Token AI Minggu Ini</span>
+            <span style="font-size:20px; font-weight:800; color:#B8862F;">${tok.toLocaleString('id-ID')} / ${maxTok.toLocaleString('id-ID')}</span>
+            <span style="font-size:11.5px; color:#8A6420; display:block;">Token AI Minggu Ini</span>
           </div>
         </div>
-        <div style="width:100%; height:8px; background:#fde68a; border-radius:999px; overflow:hidden; margin-bottom:10px;">
-          <div style="width:${pct}%; height:100%; background:#d97706; border-radius:999px;"></div>
+        <div style="width:100%; height:8px; background:#EED9A6; border-radius:999px; overflow:hidden; margin-bottom:10px;">
+          <div style="width:${pct}%; height:100%; background:#B8862F; border-radius:999px;"></div>
         </div>
-        <div style="font-size:11.5px; color:#92400e;">
+        <div style="font-size:11.5px; color:#7A5A1E;">
           Reset kuota mingguan berikutnya: <strong>Setiap Senin 00:00 WIB</strong>. Jika kuota habis di tengah riset, kamu bisa melakukan isi ulang instan.
         </div>
       </div>`;
@@ -411,35 +411,35 @@ function renderBillingStatusCard() {
     // Platinum
     if (profile.isTrial) {
       container.innerHTML = `
-        <div style="background:linear-gradient(135deg, #ede9fe 0%, #f5f3ff 100%); border:1.5px solid #c4b5fd; border-radius:16px; padding:18px 20px;">
+        <div style="background:linear-gradient(135deg, #E4ECF6 0%, #EEF2F8 100%); border:1.5px solid #B6C6E0; border-radius:16px; padding:18px 20px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
             <div>
-              <span style="font-size:10.5px; font-weight:800; background:#7c3aed; color:#fff; padding:2px 8px; border-radius:999px; text-transform:uppercase;">Uji Coba 3 Hari Aktif</span>
-              <h4 style="font-size:18px; font-weight:800; color:#4c1d95; margin:4px 0 1px;">💎 Platinum Trial</h4>
+              <span style="font-size:10.5px; font-weight:800; background:#3F72AF; color:#fff; padding:2px 8px; border-radius:999px; text-transform:uppercase;">Uji Coba 3 Hari Aktif</span>
+              <h4 style="font-size:18px; font-weight:800; color:#112D4E; margin:4px 0 1px;">💎 Platinum Trial</h4>
             </div>
             <div style="text-align:right;">
-              <span style="font-size:22px; font-weight:800; color:#6d28d9;">${profile.trialSessionsRemaining || 3} Sesi</span>
-              <span style="font-size:11.5px; color:#7c3aed; display:block;">Sisa Kuota Makalah Trial</span>
+              <span style="font-size:22px; font-weight:800; color:#2A517E;">${profile.trialSessionsRemaining || 3} Sesi</span>
+              <span style="font-size:11.5px; color:#3F72AF; display:block;">Sisa Kuota Makalah Trial</span>
             </div>
           </div>
-          <div style="font-size:12px; color:#5b21b6; background:#fff; padding:10px 14px; border-radius:10px; border:1px solid #ddd6fe; line-height:1.5;">
+          <div style="font-size:12px; color:#2A517E; background:#fff; padding:10px 14px; border-radius:10px; border:1px solid #DBE2EF; line-height:1.5;">
             ⚠️ <strong>Ketentuan Masa Trial:</strong> Fitur ekspor/cetak naskah (PDF/Word) terkunci selama masa trial. Upgrade ke langganan penuh untuk mengunduh naskah lengkap dan membuka kuota prioritas.
           </div>
         </div>`;
     } else {
       container.innerHTML = `
-        <div style="background:linear-gradient(135deg, #ede9fe 0%, #f5f3ff 100%); border:1.5px solid #c4b5fd; border-radius:16px; padding:18px 20px;">
+        <div style="background:linear-gradient(135deg, #E4ECF6 0%, #EEF2F8 100%); border:1.5px solid #B6C6E0; border-radius:16px; padding:18px 20px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
             <div>
-              <span style="font-size:11px; font-weight:800; color:#6d28d9; text-transform:uppercase;">Paket Power Scholar</span>
-              <h4 style="font-size:18px; font-weight:800; color:#4c1d95; margin:1px 0;">💎 Platinum Langganan Penuh</h4>
+              <span style="font-size:11px; font-weight:800; color:#2A517E; text-transform:uppercase;">Paket Power Scholar</span>
+              <h4 style="font-size:18px; font-weight:800; color:#112D4E; margin:1px 0;">💎 Platinum Langganan Penuh</h4>
             </div>
             <div style="text-align:right;">
-              <span style="font-size:20px; font-weight:800; color:#7c3aed;">1.500.000</span>
-              <span style="font-size:11.5px; color:#6d28d9; display:block;">Kuota Token Prioritas</span>
+              <span style="font-size:20px; font-weight:800; color:#3F72AF;">1.500.000</span>
+              <span style="font-size:11.5px; color:#2A517E; display:block;">Kuota Token Prioritas</span>
             </div>
           </div>
-          <p style="font-size:12px; color:#5b21b6;">Semua modul KTI aktif, akses Pustaka Riset & Peta Tematik penuh, serta ekspor naskah tanpa batas.</p>
+          <p style="font-size:12px; color:#2A517E;">Semua modul KTI aktif, akses Pustaka Riset & Peta Tematik penuh, serta ekspor naskah tanpa batas.</p>
         </div>`;
     }
   }
@@ -457,7 +457,7 @@ function openPustakaRisetModal() {
     const srcBadges = srcList.map(s => {
       const names = { scholar:'Google Scholar', pubmed:'PubMed', ieee:'IEEE/ACM', semantic:'Semantic Scholar', sinta:'SINTA/Garuda', scopus:'Scopus', doaj:'DOAJ', ssrn:'SSRN' };
       const icons = { scholar:'🌐', pubmed:'🧬', ieee:'⚡', semantic:'📑', sinta:'🇮🇩', scopus:'🌍', doaj:'📖', ssrn:'🏛️' };
-      return `<span style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; background:#fff; border:1px solid #cbd5e1; padding:3px 8px; border-radius:999px; color:#334155;">
+      return `<span style="display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; background:#fff; border:1px solid #C5CFDF; padding:3px 8px; border-radius:999px; color:#2B3E56;">
         <span>${icons[s]||'📚'}</span> ${names[s]||s}
       </span>`;
     }).join(' ');
@@ -465,10 +465,10 @@ function openPustakaRisetModal() {
     // Show Full Pustaka Content
     container.innerHTML = `
       <!-- Live Gateway Status Bar -->
-      <div style="background:#f8fafc; border:1px solid var(--border); border-radius:12px; padding:10px 14px; margin-bottom:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+      <div style="background:#F9F7F7; border:1px solid var(--border); border-radius:12px; padding:10px 14px; margin-bottom:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-          <span style="font-size:11.5px; font-weight:800; color:#1e293b; display:flex; align-items:center; gap:4px;">
-            <span style="width:7px; height:7px; border-radius:50%; background:#22c55e;"></span>
+          <span style="font-size:11.5px; font-weight:800; color:#1A3556; display:flex; align-items:center; gap:4px;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#38A169;"></span>
             Pintu Akses Terhubung:
           </span>
           ${srcBadges}
@@ -482,7 +482,7 @@ function openPustakaRisetModal() {
       <div style="display:grid; grid-template-columns:280px 1fr; gap:20px;">
         
         <!-- Left: Collection & Topics -->
-        <div style="background:#f8fafc; border:1px solid var(--border); border-radius:14px; padding:16px;">
+        <div style="background:#F9F7F7; border:1px solid var(--border); border-radius:14px; padding:16px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
             <strong style="font-size:13px; color:var(--text);">Koleksi Referensi (14)</strong>
             <button class="btn-primary" style="padding:4px 8px; font-size:11px;" onclick="alert('Fitur input DOI Crossref otomatis aktif.')">+ Tambah</button>
@@ -505,20 +505,20 @@ function openPustakaRisetModal() {
 
         <!-- Right: Topic Cluster & Knowledge Graph -->
         <div>
-          <div style="background:#eff6ff; border:1.5px solid #bfdbfe; border-radius:14px; padding:16px; margin-bottom:16px;">
+          <div style="background:#EEF2F8; border:1.5px solid #B6C6E0; border-radius:14px; padding:16px; margin-bottom:16px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
               <strong style="font-size:13px; color:#1e3a8a; display:flex; align-items:center; gap:6px;">
                 <span class="material-symbols-rounded" style="font-size:18px;">hub</span>
                 Peta Tematik &amp; Kluster Riset
               </strong>
-              <span style="font-size:11px; font-weight:800; background:#dbeafe; color:#1d4ed8; padding:2px 8px; border-radius:999px;">3 Kluster Aktif</span>
+              <span style="font-size:11px; font-weight:800; background:#DBE2EF; color:#2A517E; padding:2px 8px; border-radius:999px;">3 Kluster Aktif</span>
             </div>
             <p style="font-size:12px; color:#1e40af; line-height:1.4;">
               Visualisasi koneksi antar-literatur yang telah kamu kaji. Semua kutipan terhubung dengan kompas arah risetmu.
             </p>
           </div>
 
-          <div style="background:#f8fafc; border:1.5px dashed #cbd5e1; border-radius:14px; height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:20px;">
+          <div style="background:#F9F7F7; border:1.5px dashed #C5CFDF; border-radius:14px; height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:20px;">
             <span style="font-size:36px; margin-bottom:8px;">🕸️</span>
             <strong style="font-size:13px; color:var(--text);">Graf Jaringan Topik: AI Coherence ↔ Academic Integrity</strong>
             <span style="font-size:11.5px; color:var(--text-secondary); margin-top:4px;">14 nodes terhubung dengan 6 sub-argumen di Bab II &amp; Bab IV naskahmu.</span>
@@ -652,10 +652,10 @@ function showUpgradeModal(requiredTier, featureName) {
         <h3 id="upgModalTitle" style="font-size:19px;font-weight:800;margin-bottom:8px;"></h3>
         <p id="upgModalSub" style="font-size:13px;color:var(--text-secondary);line-height:1.6;max-width:360px;margin:0 auto 20px;"></p>
         
-        <div id="upgModalTrialOption" style="display:none; margin-bottom:20px; padding:12px; background:#f5f3ff; border:1px dashed #7c3aed; border-radius:12px; text-align:left;">
-          <strong style="color:#6d28d9; font-size:12.5px; display:block;">Coba Gratis 3 Hari (Platinum Trial)</strong>
-          <span style="font-size:11px; color:#7c3aed;">Maksimal 3 sesi makalah (Fitur cetak naskah terkunci).</span>
-          <button class="btn-primary" style="width:100%; margin-top:8px; background:#7c3aed;" onclick="activateTrialFromModal()">Aktifkan Trial 3 Hari Sekarang</button>
+        <div id="upgModalTrialOption" style="display:none; margin-bottom:20px; padding:12px; background:#EEF2F8; border:1px dashed #3F72AF; border-radius:12px; text-align:left;">
+          <strong style="color:#2A517E; font-size:12.5px; display:block;">Coba Gratis 3 Hari (Platinum Trial)</strong>
+          <span style="font-size:11px; color:#3F72AF;">Maksimal 3 sesi makalah (Fitur cetak naskah terkunci).</span>
+          <button class="btn-primary" style="width:100%; margin-top:8px; background:#3F72AF;" onclick="activateTrialFromModal()">Aktifkan Trial 3 Hari Sekarang</button>
         </div>
 
         <div style="display:flex;gap:10px;justify-content:center;">
@@ -1731,9 +1731,9 @@ function filterObCampus() {
     `;
   } else {
     resultsContainer.innerHTML = matched.map(c => `
-      <div onclick="applyDynamicCampusChoice('${c.id}', '${escapeHTML(c.name)}', '${c.style}')" style="padding:9px 14px; border-bottom:1px solid var(--border); cursor:pointer; display:flex; justify-content:space-between; align-items:center; font-size:12.5px;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+      <div onclick="applyDynamicCampusChoice('${c.id}', '${escapeHTML(c.name)}', '${c.style}')" style="padding:9px 14px; border-bottom:1px solid var(--border); cursor:pointer; display:flex; justify-content:space-between; align-items:center; font-size:12.5px;" onmouseover="this.style.background='#F9F7F7'" onmouseout="this.style.background='transparent'">
         <strong>${escapeHTML(c.name)}</strong>
-        <span style="font-size:11px; color:var(--brand); background:#ede9fe; padding:2px 6px; border-radius:4px;">${c.style}</span>
+        <span style="font-size:11px; color:var(--brand); background:#E4ECF6; padding:2px 6px; border-radius:4px;">${c.style}</span>
       </div>
     `).join('');
   }
@@ -1811,8 +1811,8 @@ function insertContextHelper(targetInputId, text) {
     
     const pill = document.getElementById('pillReqKonteks');
     if (pill) {
-      pill.style.background = '#dcfce7';
-      pill.style.color = '#15803d';
+      pill.style.background = '#E6F4EC';
+      pill.style.color = '#2F7D52';
       pill.innerText = '✓ Terisi';
     }
   }
@@ -1848,7 +1848,7 @@ function validateIntakeQ1() {
     }
     if (hint) {
       hint.style.display = 'inline-flex';
-      hint.innerHTML = '<span class="material-symbols-rounded" style="font-size:15px; color:#10b981;">check_circle</span> <span style="color:#065f46; font-weight:700;">Topik Terisi</span>';
+      hint.innerHTML = '<span class="material-symbols-rounded" style="font-size:15px; color:#38A169;">check_circle</span> <span style="color:#065f46; font-weight:700;">Topik Terisi</span>';
     }
   } else {
     if (btn) {
@@ -1926,7 +1926,7 @@ function startThesaMain() {
     const q1Input = document.getElementById('obQ1Input');
     if (q1Input) {
       q1Input.focus();
-      q1Input.style.borderColor = '#ef4444';
+      q1Input.style.borderColor = '#E53E3E';
       setTimeout(() => { q1Input.style.borderColor = ''; }, 1500);
     }
     showNotification('⚠️ Silakan ketik topik atau ide risetmu terlebih dahulu.');
@@ -2021,7 +2021,7 @@ function renderRoadmap(kti, campus) {
   // If Proposal, show Handover Banner at the top of roadmap
   if (kti.isProposal) {
     html += `
-      <div style="background: linear-gradient(135deg, #ede9fe, #f5f3ff); border: 1.5px solid var(--brand); border-radius: var(--r-xl); padding: 12px 14px; margin-bottom: 14px; display: flex; flex-direction: column; gap: 8px;">
+      <div style="background: linear-gradient(135deg, #E4ECF6, #EEF2F8); border: 1.5px solid var(--brand); border-radius: var(--r-xl); padding: 12px 14px; margin-bottom: 14px; display: flex; flex-direction: column; gap: 8px;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
           <div style="display:flex; align-items:center; gap:6px; font-size:12px; font-weight:800; color:var(--brand);">
             <span class="material-symbols-rounded" style="font-size:17px;">move_up</span>
@@ -2046,20 +2046,20 @@ function renderRoadmap(kti, campus) {
 
     if (isDataHub) {
       html += `
-        <div class="unit-block" id="unit-data-hub" style="border: 2px dashed #6366f1; background: #faf5ff;" onclick="toggleDataHubModal(true)">
+        <div class="unit-block" id="unit-data-hub" style="border: 2px dashed #3F72AF; background: #faf5ff;" onclick="toggleDataHubModal(true)">
           <div class="unit-header-card" style="background: transparent; cursor:pointer;">
             <div class="unit-info">
-              <span class="unit-num" style="background:#818cf8; color:#fff;">${unit.num}</span>
-              <h3 style="color:#4338ca;">${escapeHTML(unit.title)}</h3>
+              <span class="unit-num" style="background:#7C9CC8; color:#fff;">${unit.num}</span>
+              <h3 style="color:#2A517E;">${escapeHTML(unit.title)}</h3>
               <p>${escapeHTML(unit.subtitle)}</p>
             </div>
-            <span class="unit-badge-status" style="background:#e0e7ff; color:#4338ca; border-color:#818cf8;">
+            <span class="unit-badge-status" style="background:#DBE2EF; color:#2A517E; border-color:#7C9CC8;">
               <span class="material-symbols-rounded">dataset</span> Buka Hub
             </span>
           </div>
           <div class="step-nodes" style="padding-bottom:10px;">
-            <button class="path-node" onclick="toggleDataHubModal(true); return false;" style="background:#fff; border:1px solid #c7d2fe;">
-              <div class="node-circle" style="background:#e0e7ff; color:#4338ca;">
+            <button class="path-node" onclick="toggleDataHubModal(true); return false;" style="background:#fff; border:1px solid #B6C6E0;">
+              <div class="node-circle" style="background:#DBE2EF; color:#2A517E;">
                 <span class="material-symbols-rounded">analytics</span>
               </div>
               <div class="node-label">
@@ -2156,7 +2156,7 @@ function renderPaperDraftSections(kti, campus) {
     <div class="paper-author-mock" id="paperAuthorSubtitle">Draf ${escapeHTML(kti.label)} — ${escapeHTML(campus.subtitle)}</div>
 
     ${sections.map((sec, idx) => `
-      <div class="paper-section" id="${sec.id}" style="${idx > 0 && sec.id.startsWith('section') && !sec.id.startsWith('section1') ? 'border-top:2px dashed #e2e8f0; margin-top:20px; padding-top:16px;' : ''}${sec.id === 'sectionDaftarPustaka' ? 'border-top:2px solid #cbd5e1; margin-top:24px; padding-top:16px;' : ''}">
+      <div class="paper-section" id="${sec.id}" style="${idx > 0 && sec.id.startsWith('section') && !sec.id.startsWith('section1') ? 'border-top:2px dashed #DDE3EC; margin-top:20px; padding-top:16px;' : ''}${sec.id === 'sectionDaftarPustaka' ? 'border-top:2px solid #C5CFDF; margin-top:24px; padding-top:16px;' : ''}">
         <div class="section-title-row">
           <h2 class="section-heading" id="${sec.headingId || `secHeading${idx}`}">${escapeHTML(sec.title)}</h2>
           <span class="section-certainty-badge pending" id="${sec.badgeId || `badge_${sec.id}`}">${idx === 0 ? 'Belum Dimulai' : 'Menunggu Langkah Selesai'}</span>
@@ -2229,7 +2229,7 @@ function initSocraticIntroChat(kti, campus, context) {
     title: `Mari mulai ${kti.label}mu! ✨`,
     body: `
       <p>Hai! Aku sudah membaca fokus naskahmu mengenai <strong>"${escapeHTML(topicClean)}"</strong>.</p>
-      ${hasImportance ? `<p style="margin-top:5px; font-size:10.5px; color:#475569; background:#f8fafc; padding:5px 9px; border-radius:6px; border-left:2px solid #6366f1; line-height:1.4;">🎯 <strong>Keresahan Utama:</strong> "${escapeHTML(context.importance)}"</p>` : ''}
+      ${hasImportance ? `<p style="margin-top:5px; font-size:10.5px; color:#4A5568; background:#F9F7F7; padding:5px 9px; border-radius:6px; border-left:2px solid #3F72AF; line-height:1.4;">🎯 <strong>Keresahan Utama:</strong> "${escapeHTML(context.importance)}"</p>` : ''}
     `,
   });
 
@@ -2241,8 +2241,8 @@ function initSocraticIntroChat(kti, campus, context) {
       tagType: 'tag-socratic',
       title: probe.title,
       body: `
-        <p style="font-size:11.5px; font-weight:600; color:#1e293b; margin-bottom:3px; line-height:1.45;">${probe.question}</p>
-        <p style="font-size:10.5px; color:#64748b; margin:0;">Pilih salah satu sudut pandang di bawah ini untuk memulai draf pembuka:</p>
+        <p style="font-size:11.5px; font-weight:600; color:#1A3556; margin-bottom:3px; line-height:1.45;">${probe.question}</p>
+        <p style="font-size:10.5px; color:#5B6B80; margin:0;">Pilih salah satu sudut pandang di bawah ini untuk memulai draf pembuka:</p>
       `,
       chips: probe.chips,
     });
@@ -2381,7 +2381,7 @@ function handleSocraticSelect(key, title, detail) {
               <span class="material-symbols-rounded" style="color:var(--brand);">edit_document</span>
               <span>Draf Paragraf Latar Belakang (Bisa Kamu Edit):</span>
             </div>
-            <span class="hitl-badge-required" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;">✓ Siap Disetujui</span>
+            <span class="hitl-badge-required" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;">✓ Siap Disetujui</span>
           </div>
           
           <div class="hitl-diff-box" style="margin-top:8px;">
@@ -2389,10 +2389,10 @@ function handleSocraticSelect(key, title, detail) {
           </div>
 
           <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px; flex-wrap:wrap; gap:8px;">
-            <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#eef2ff; color:var(--brand); border-color:#c7d2fe;">
+            <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#EEF2F8; color:var(--brand); border-color:#B6C6E0;">
               <span class="material-symbols-rounded" style="font-size:14px;">menu_book</span> Sisipkan Sitasi Literatur
             </button>
-            <span style="font-size:11px; color:#64748b;">Klik tombol di bawah jika kamu sudah cocok:</span>
+            <span style="font-size:11px; color:#5B6B80;">Klik tombol di bawah jika kamu sudah cocok:</span>
           </div>
 
           <div class="hitl-actions-row" style="margin-top:12px;">
@@ -2441,7 +2441,7 @@ function approveHITLDraft(argumentTitle) {
   const box = document.getElementById('boxLatarBelakang');
   if (box) {
     box.innerHTML = `<p class="draft-paragraph completed" id="para-1">
-      <span class="para-author-badge human" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;margin-bottom:6px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
+      <span class="para-author-badge human" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;margin-bottom:6px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
         ✓ Draf Terverifikasi (Klik untuk Mengedit Langsung)
       </span><br>
       ${escapeHTML(finalizedText)}
@@ -2453,8 +2453,8 @@ function approveHITLDraft(argumentTitle) {
     const b11 = document.getElementById('badgeSection11');
     if (b11) {
       b11.className = 'section-certainty-badge';
-      b11.style.background = '#ecfdf5';
-      b11.style.color = '#059669';
+      b11.style.background = '#F0F8F3';
+      b11.style.color = '#2F7D52';
       b11.innerText = '✓ Selesai';
     }
 
@@ -2527,7 +2527,7 @@ function proceedToRumusanMasalah() {
             <span class="material-symbols-rounded" style="color:var(--brand);">edit_note</span>
             <span>Draf Pertanyaan & Tujuan (Bisa Kamu Edit):</span>
           </div>
-          <span class="hitl-badge-required" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;">✓ Siap Dikunci</span>
+          <span class="hitl-badge-required" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;">✓ Siap Dikunci</span>
         </div>
 
         <!-- 1.2 Rumusan Masalah -->
@@ -2541,7 +2541,7 @@ function proceedToRumusanMasalah() {
 
         <!-- 1.3 Tujuan Penulisan -->
         <div style="margin-top:10px;">
-          <label style="font-size:11px;font-weight:800;color:#16a34a;display:flex;align-items:center;gap:4px;margin-bottom:4px;">
+          <label style="font-size:11px;font-weight:800;color:#38A169;display:flex;align-items:center;gap:4px;margin-bottom:4px;">
             <span class="material-symbols-rounded" style="font-size:14px;">flag</span>
             1.3 TUJUAN PENULISAN (Sasaran Makalah):
           </label>
@@ -2581,7 +2581,7 @@ function handlePaperInputEvent(e) {
   const syncBadge = document.getElementById('docSyncBadge');
   if (syncBadge) {
     syncBadge.innerHTML = '✏️ Menyimpan Koreksi Naskah...';
-    syncBadge.style.color = '#6366f1';
+    syncBadge.style.color = '#3F72AF';
   }
 
   paperSyncDebounceTimer = setTimeout(() => {
@@ -2637,10 +2637,10 @@ function syncPaperToResearchContext() {
   const syncBadge = document.getElementById('docSyncBadge');
   if (syncBadge) {
     syncBadge.innerHTML = '⚡ Konteks AI Tersinkron (0 Token)';
-    syncBadge.style.color = '#059669';
+    syncBadge.style.color = '#2F7D52';
     setTimeout(() => {
       syncBadge.innerHTML = '✓ Tersimpan Otomatis';
-      syncBadge.style.color = '#64748b';
+      syncBadge.style.color = '#5B6B80';
     }, 2000);
   }
 
@@ -2652,8 +2652,8 @@ function syncPaperToResearchContext() {
       let subIndex = 1;
       let bab2HTML = `
         <div class="bab2-skeleton">
-          <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 6px;">2.${subIndex++} Tinjauan Teori & Kerangka Konseptual Dasar</h3>
-          <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;margin-bottom:8px;">
+          <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 6px;">2.${subIndex++} Tinjauan Teori & Kerangka Konseptual Dasar</h3>
+          <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;margin-bottom:8px;">
             Penulisan makalah mengenai <strong>${escapeHTML(topicSnippet)}</strong> ini berlandaskan pada kerangka konseptual yang menghubungkan dinamika fenomena mendasar dengan landasan teori pendukung.
           </p>
       `;
@@ -2661,16 +2661,16 @@ function syncPaperToResearchContext() {
       researchContext.problems.forEach((prob, idx) => {
         const titleText = prob.length > 65 ? prob.slice(0, 65) + '...' : prob;
         bab2HTML += `
-          <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 4px;">2.${subIndex++} Analisis Pembahasan: ${escapeHTML(titleText)}</h3>
-          <p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+          <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 4px;">2.${subIndex++} Analisis Pembahasan: ${escapeHTML(titleText)}</h3>
+          <p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
             Menjawab rumusan masalah ${idx + 1}: <em>"${escapeHTML(prob)}"</em> melalui analisis data dan sintesis konseptual.
           </p>
         `;
       });
 
       bab2HTML += `
-          <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 4px;">2.${subIndex++} Sintesis Solusi, Implikasi & Rekomendasi Penulis</h3>
-          <p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+          <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 4px;">2.${subIndex++} Sintesis Solusi, Implikasi & Rekomendasi Penulis</h3>
+          <p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
             Solusi terarah yang diusulkan menekankan pada pendekatan kolaboratif dan evaluasi berkala.
           </p>
         </div>
@@ -2685,7 +2685,7 @@ function formatList(text) {
   if (!text) return '';
   const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   if (lines.length === 0) return '';
-  return `<ol style="margin:4px 0 0 18px; padding:0; font-size:11.5px; line-height:1.6; color:#334155;">
+  return `<ol style="margin:4px 0 0 18px; padding:0; font-size:11.5px; line-height:1.6; color:#2B3E56;">
     ${lines.map(line => `<li>${escapeHTML(line.replace(/^\d+[\.\)]\s*/, ''))}</li>`).join('')}
   </ol>`;
 }
@@ -2700,9 +2700,9 @@ function confirmRumusanMasalah() {
   const approveBtns = document.querySelectorAll('.hitl-gate-card .btn-hitl-approve');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
-    btn.style.borderColor = '#a7f3d0';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
+    btn.style.borderColor = '#C6E6D3';
     btn.style.cursor = 'default';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Bab I Telah Disetujui & Terkunci di Naskah</span>';
   });
@@ -2720,9 +2720,9 @@ function confirmRumusanMasalah() {
       // Proposal / Skripsi / Tesis / Disertasi combined format
       box12.innerHTML = `
         <div class="draft-paragraph completed" style="background:#ffffff; padding:2px 0;">
-          <strong style="font-size:11.5px; color:#1e293b; display:block; margin-bottom:2px;">A. Rumusan Masalah (Pertanyaan Riset):</strong>
+          <strong style="font-size:11.5px; color:#1A3556; display:block; margin-bottom:2px;">A. Rumusan Masalah (Pertanyaan Riset):</strong>
           ${formatList(finalizedQ)}
-          <strong style="font-size:11.5px; color:#1e293b; display:block; margin:8px 0 2px;">B. Tujuan Penulisan & Sasaran Riset:</strong>
+          <strong style="font-size:11.5px; color:#1A3556; display:block; margin:8px 0 2px;">B. Tujuan Penulisan & Sasaran Riset:</strong>
           ${formatList(finalizedT)}
         </div>
       `;
@@ -2738,8 +2738,8 @@ function confirmRumusanMasalah() {
     const b12 = document.getElementById('badgeSection12') || document.getElementById('badge_section12');
     if (b12) {
       b12.className = 'section-certainty-badge verified';
-      b12.style.background = '#ecfdf5';
-      b12.style.color = '#059669';
+      b12.style.background = '#F0F8F3';
+      b12.style.color = '#2F7D52';
       b12.innerText = '✓ Selesai';
     }
   }
@@ -2752,8 +2752,8 @@ function confirmRumusanMasalah() {
     const b13 = document.getElementById('badgeSection13') || document.getElementById('badge_section13');
     if (b13) {
       b13.className = 'section-certainty-badge verified';
-      b13.style.background = '#ecfdf5';
-      b13.style.color = '#059669';
+      b13.style.background = '#F0F8F3';
+      b13.style.color = '#2F7D52';
       b13.innerText = '✓ Selesai';
     }
   }
@@ -2826,11 +2826,11 @@ function proceedToBab2() {
   let subIndex = 1;
   let bab2HTML = `
     <div class="bab2-skeleton">
-      <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 6px;">2.${subIndex++} Tinjauan Teori & Kerangka Konseptual Dasar</h3>
-      <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;margin-bottom:8px;">
+      <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 6px;">2.${subIndex++} Tinjauan Teori & Kerangka Konseptual Dasar</h3>
+      <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;margin-bottom:8px;">
         Penulisan makalah mengenai <strong>${escapeHTML(topicSnippet)}</strong> ini berlandaskan pada kerangka konseptual yang menghubungkan dinamika fenomena mendasar dengan landasan teori pendukung. Dalam perspektif akademik, fenomena ini tidak dapat dilepaskan dari pengaruh perkembangan teknologi dan interaksi sosial yang kompleks, di mana fleksibilitas operasional harus diseimbangkan dengan kepatuhan terhadap regulasi yang berlaku (Santoso & Pratama, 2024).
       </p>
-      <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+      <p class="academic-paragraph" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
         Kajian literatur sebelumnya menegaskan pentingnya pemetaan variabel kunci guna memahami akar permasalahan secara holistik. Berbagai studi nasional dan internasional menunjukkan bahwa efektivitas tata kelola sangat bergantung pada integrasi analitika data, transparansi proses, serta kesiapan sumber daya manusia dalam mengadaptasi perubahan ekosistem (Firmansyah & Wulandari, 2023).
       </p>
   `;
@@ -2838,16 +2838,16 @@ function proceedToBab2() {
   problems.forEach((prob, idx) => {
     const titleText = prob.length > 65 ? prob.slice(0, 65) + '...' : prob;
     bab2HTML += `
-      <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 4px;">2.${subIndex++} Analisis Pembahasan: ${escapeHTML(titleText)}</h3>
-      <p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+      <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 4px;">2.${subIndex++} Analisis Pembahasan: ${escapeHTML(titleText)}</h3>
+      <p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
         Berdasarkan analisis situasi pada poin rumusan masalah ${idx + 1}, temuan menunjukkan bahwa faktor kunci berakar pada kesenjangan antara konsep ideal dengan kondisi riil di lapangan.
       </p>
     `;
   });
 
   bab2HTML += `
-      <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 4px;">2.${subIndex++} Sintesis Solusi, Implikasi & Rekomendasi Penulis</h3>
-      <p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+      <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:14px 0 4px;">2.${subIndex++} Sintesis Solusi, Implikasi & Rekomendasi Penulis</h3>
+      <p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
         Solusi terarah yang diusulkan menekankan pada pendekatan kolaboratif, regulasi adaptif, serta evaluasi berkala untuk memastikan keberlanjutan dampak.
       </p>
     </div>
@@ -2862,8 +2862,8 @@ function proceedToBab2() {
     const b2 = document.getElementById('badgeSection2') || document.getElementById('badge_section2');
     if (b2) {
       b2.className = 'section-certainty-badge';
-      b2.style.background = '#ede9fe';
-      b2.style.color = '#6366f1';
+      b2.style.background = '#E4ECF6';
+      b2.style.color = '#3F72AF';
       b2.innerText = 'Sedang Dielaborasi';
     }
 
@@ -2967,12 +2967,12 @@ function updateBab2PaperDisplay(isFinal = false) {
         const lines = subTrimmed.split('\n');
         const heading = lines[0];
         const rest = lines.slice(1).join('<br>');
-        return `<h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:12px 0 4px;">${escapeHTML(heading)}</h3>
-                <p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+        return `<h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:12px 0 4px;">${escapeHTML(heading)}</h3>
+                <p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
                   ${escapeHTML(rest)}
                 </p>`;
       }
-      return `<p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;margin-bottom:8px;">${escapeHTML(subTrimmed)}</p>`;
+      return `<p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;margin-bottom:8px;">${escapeHTML(subTrimmed)}</p>`;
     }).join('');
   }).join('');
 
@@ -2983,8 +2983,8 @@ function updateBab2PaperDisplay(isFinal = false) {
       problems.forEach((prob, idx) => {
         const titleText = prob.length > 65 ? prob.slice(0, 65) + '...' : prob;
         skeletonHtml += `
-          <h3 style="font-size:12px;font-weight:800;color:#94a3b8;margin:14px 0 4px;">2.${idx + 2} Analisis Pembahasan: ${escapeHTML(titleText)} (Menunggu Langkah 2.2)</h3>
-          <p class="draft-paragraph" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px dashed #cbd5e1;font-size:11.5px;line-height:1.6;color:#94a3b8;">
+          <h3 style="font-size:12px;font-weight:800;color:#8A97A8;margin:14px 0 4px;">2.${idx + 2} Analisis Pembahasan: ${escapeHTML(titleText)} (Menunggu Langkah 2.2)</h3>
+          <p class="draft-paragraph" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px dashed #C5CFDF;font-size:11.5px;line-height:1.6;color:#8A97A8;">
             Menunggu draf analisis masalah...
           </p>
         `;
@@ -2993,8 +2993,8 @@ function updateBab2PaperDisplay(isFinal = false) {
     if (!researchContext.bab2_3) {
       const nextNum = problems.length + 2;
       skeletonHtml += `
-        <h3 style="font-size:12px;font-weight:800;color:#94a3b8;margin:14px 0 4px;">2.${nextNum} Sintesis Solusi & Gagasan Penulis (Menunggu Langkah 2.3)</h3>
-        <p class="draft-paragraph" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px dashed #cbd5e1;font-size:11.5px;line-height:1.6;color:#94a3b8;">
+        <h3 style="font-size:12px;font-weight:800;color:#8A97A8;margin:14px 0 4px;">2.${nextNum} Sintesis Solusi & Gagasan Penulis (Menunggu Langkah 2.3)</h3>
+        <p class="draft-paragraph" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px dashed #C5CFDF;font-size:11.5px;line-height:1.6;color:#8A97A8;">
           Menunggu draf sintesis solusi...
         </p>
       `;
@@ -3004,7 +3004,7 @@ function updateBab2PaperDisplay(isFinal = false) {
   box2.innerHTML = `
     <div class="bab2-final">
       ${isFinal ? `
-        <span class="para-author-badge human" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;margin-bottom:8px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
+        <span class="para-author-badge human" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;margin-bottom:8px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
           ✓ Pembahasan Terverifikasi (Klik untuk Mengedit Langsung)
         </span>
       ` : ''}
@@ -3021,8 +3021,8 @@ function updateBab2PaperDisplay(isFinal = false) {
     const b2 = document.getElementById('badgeSection2') || document.getElementById('badge_section2');
     if (b2) {
       b2.className = 'section-certainty-badge';
-      b2.style.background = '#ecfdf5';
-      b2.style.color = '#059669';
+      b2.style.background = '#F0F8F3';
+      b2.style.color = '#2F7D52';
       b2.innerText = '✓ Selesai';
     }
 
@@ -3078,7 +3078,7 @@ function handleBab2Select(key, title, detail) {
               <span class="material-symbols-rounded" style="color:var(--brand);">edit_document</span>
               <span>Draf 2.1: Tinjauan Teori (Bisa Kamu Sesuaikan):</span>
             </div>
-            <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 2.1</span>
+            <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 2.1</span>
           </div>
           
           <div class="hitl-diff-box" style="margin-top:8px;">
@@ -3086,10 +3086,10 @@ function handleBab2Select(key, title, detail) {
           </div>
 
           <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px; flex-wrap:wrap; gap:8px;">
-            <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#eef2ff; color:var(--brand); border-color:#c7d2fe;">
+            <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#EEF2F8; color:var(--brand); border-color:#B6C6E0;">
               <span class="material-symbols-rounded" style="font-size:14px;">menu_book</span> Sisipkan Sitasi Literatur
             </button>
-            <span style="font-size:11px; color:#64748b;">Klik tombol di bawah jika kamu sudah setuju:</span>
+            <span style="font-size:11px; color:#5B6B80;">Klik tombol di bawah jika kamu sudah setuju:</span>
           </div>
 
           <div class="hitl-actions-row" style="margin-top:12px;">
@@ -3119,8 +3119,8 @@ function approveStep21(angleTitle) {
   const approveBtns = document.querySelectorAll('button[onclick^="approveStep21"]');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Langkah 2.1 Terkunci</span>';
   });
 
@@ -3179,7 +3179,7 @@ function approveStep21(angleTitle) {
               <span class="material-symbols-rounded" style="color:var(--brand);">analytics</span>
               <span>Draf 2.2: Analisis Pembahasan (Bisa Kamu Sesuaikan):</span>
             </div>
-            <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 2.2</span>
+            <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 2.2</span>
           </div>
           
           <div class="hitl-diff-box" style="margin-top:8px;">
@@ -3212,8 +3212,8 @@ function approveStep22(angleTitle) {
   const approveBtns = document.querySelectorAll('button[onclick^="approveStep22"]');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Langkah 2.2 Terkunci</span>';
   });
 
@@ -3265,7 +3265,7 @@ function approveStep22(angleTitle) {
               <span class="material-symbols-rounded" style="color:var(--brand);">lightbulb</span>
               <span>Draf 2.3: Sintesis Solusi (Bisa Kamu Sesuaikan):</span>
             </div>
-            <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 2.3</span>
+            <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 2.3</span>
           </div>
           
           <div class="hitl-diff-box" style="margin-top:8px;">
@@ -3298,8 +3298,8 @@ function approveStep23(angleTitle) {
   const approveBtns = document.querySelectorAll('button[onclick^="approveStep23"]');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Bab II Telah Lengkap & Terkunci</span>';
   });
 
@@ -3320,8 +3320,8 @@ function approveStep23(angleTitle) {
     const statusTag = u2.querySelector('.unit-badge-status');
     if (statusTag) {
       statusTag.className = 'unit-badge-status done';
-      statusTag.style.background = '#ecfdf5';
-      statusTag.style.color = '#059669';
+      statusTag.style.background = '#F0F8F3';
+      statusTag.style.color = '#2F7D52';
       statusTag.innerText = '✓ Selesai';
     }
   }
@@ -3350,7 +3350,7 @@ function approveStep23(angleTitle) {
       <p>Sekarang langkah terakhir untuk merampungkan seluruh makalah: <strong>BAB III: PENUTUP (KESIMPULAN & SARAN)</strong>.</p>
       
       <div style="margin-top:14px;">
-        <button class="btn-primary" style="width:100%;justify-content:center;padding:13px;font-size:14px;font-weight:800;box-shadow:0 4px 14px rgba(79,70,229,0.3);" onclick="proceedToBab3()">
+        <button class="btn-primary" style="width:100%;justify-content:center;padding:13px;font-size:14px;font-weight:800;box-shadow:0 4px 14px rgba(63, 114, 175,0.3);" onclick="proceedToBab3()">
           <span class="material-symbols-rounded">fact_check</span>
           <span>Lanjut Susun BAB III: Kesimpulan & Saran ➔</span>
         </button>
@@ -3377,12 +3377,12 @@ function updateBab3PaperDisplay(isFinal = false) {
         const lines = subTrimmed.split('\n');
         const heading = lines[0];
         const rest = lines.slice(1).join('<br>');
-        return `<h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:12px 0 4px;">${escapeHTML(heading)}</h3>
-                <p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+        return `<h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:12px 0 4px;">${escapeHTML(heading)}</h3>
+                <p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
                   ${escapeHTML(rest)}
                 </p>`;
       }
-      return `<p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;margin-bottom:8px;">${escapeHTML(subTrimmed)}</p>`;
+      return `<p class="draft-paragraph completed" style="background:#ffffff;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;margin-bottom:8px;">${escapeHTML(subTrimmed)}</p>`;
     }).join('');
   }).join('');
 
@@ -3390,8 +3390,8 @@ function updateBab3PaperDisplay(isFinal = false) {
   if (!isFinal) {
     if (!researchContext.bab3_2) {
       skeletonHtml += `
-        <h3 style="font-size:12px;font-weight:800;color:#94a3b8;margin:14px 0 4px;">3.2 Saran & Rekomendasi (Menunggu Langkah 3.2)</h3>
-        <p class="draft-paragraph" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px dashed #cbd5e1;font-size:11.5px;line-height:1.6;color:#94a3b8;">
+        <h3 style="font-size:12px;font-weight:800;color:#8A97A8;margin:14px 0 4px;">3.2 Saran & Rekomendasi (Menunggu Langkah 3.2)</h3>
+        <p class="draft-paragraph" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px dashed #C5CFDF;font-size:11.5px;line-height:1.6;color:#8A97A8;">
           Menunggu draf saran dan rekomendasi...
         </p>
       `;
@@ -3401,7 +3401,7 @@ function updateBab3PaperDisplay(isFinal = false) {
   box3.innerHTML = `
     <div class="bab3-final">
       ${isFinal ? `
-        <span class="para-author-badge human" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;margin-bottom:8px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
+        <span class="para-author-badge human" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;margin-bottom:8px;display:inline-block;padding:2px 8px;border-radius:4px;font-size:10.5px;font-weight:700;">
           ✓ Kesimpulan & Saran Terverifikasi (Klik untuk Mengedit Langsung)
         </span>
       ` : ''}
@@ -3418,8 +3418,8 @@ function updateBab3PaperDisplay(isFinal = false) {
     const b3 = document.getElementById('badgeSection3');
     if (b3) {
       b3.className = 'section-certainty-badge';
-      b3.style.background = '#ecfdf5';
-      b3.style.color = '#059669';
+      b3.style.background = '#F0F8F3';
+      b3.style.color = '#2F7D52';
       b3.innerText = '✓ Selesai';
     }
 
@@ -3455,13 +3455,13 @@ function proceedToBab3() {
   if (box3) {
     box3.innerHTML = `
       <div class="bab3-skeleton">
-        <h3 style="font-size:12px;font-weight:800;color:#0f172a;margin:12px 0 4px;">3.1 Kesimpulan (Sedang Disusun)</h3>
-        <p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">
+        <h3 style="font-size:12px;font-weight:800;color:#112D4E;margin:12px 0 4px;">3.1 Kesimpulan (Sedang Disusun)</h3>
+        <p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">
           Menjawab rumusan masalah yang diajukan pada Bab I secara padat dan terukur.
         </p>
 
-        <h3 style="font-size:12px;font-weight:800;color:#94a3b8;margin:14px 0 4px;">3.2 Saran & Rekomendasi (Menunggu Langkah 3.2)</h3>
-        <p class="draft-paragraph" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px dashed #cbd5e1;font-size:11.5px;line-height:1.6;color:#94a3b8;">
+        <h3 style="font-size:12px;font-weight:800;color:#8A97A8;margin:14px 0 4px;">3.2 Saran & Rekomendasi (Menunggu Langkah 3.2)</h3>
+        <p class="draft-paragraph" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px dashed #C5CFDF;font-size:11.5px;line-height:1.6;color:#8A97A8;">
           Rekomendasi praktis untuk pemangku kepentingan dan saran penelitian lanjutan.
         </p>
       </div>
@@ -3471,8 +3471,8 @@ function proceedToBab3() {
     const b3 = document.getElementById('badgeSection3');
     if (b3) {
       b3.className = 'section-certainty-badge';
-      b3.style.background = '#eef2ff';
-      b3.style.color = '#4f46e5';
+      b3.style.background = '#EEF2F8';
+      b3.style.color = '#3F72AF';
       b3.innerText = 'Sedang Disusun';
     }
 
@@ -3514,7 +3514,7 @@ function proceedToBab3() {
             <span class="material-symbols-rounded" style="color:var(--brand);">task_alt</span>
             <span>Draf 3.1: Kesimpulan (Bisa Diedit):</span>
           </div>
-          <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 3.1</span>
+          <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 3.1</span>
         </div>
         
         <div class="hitl-diff-box" style="margin-top:8px;">
@@ -3547,8 +3547,8 @@ function approveStep31() {
   const approveBtns = document.querySelectorAll('button[onclick^="approveStep31"]');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Langkah 3.1 Terkunci</span>';
   });
 
@@ -3599,7 +3599,7 @@ function approveStep31() {
               <span class="material-symbols-rounded" style="color:var(--brand);">recommend</span>
               <span>Draf 3.2: Saran & Rekomendasi (Bisa Diedit):</span>
             </div>
-            <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 3.2</span>
+            <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 3.2</span>
           </div>
           
           <div class="hitl-diff-box" style="margin-top:8px;">
@@ -3632,8 +3632,8 @@ function approveStep32() {
   const approveBtns = document.querySelectorAll('button[onclick^="approveStep32"]');
   approveBtns.forEach(btn => {
     btn.disabled = true;
-    btn.style.background = '#ecfdf5';
-    btn.style.color = '#059669';
+    btn.style.background = '#F0F8F3';
+    btn.style.color = '#2F7D52';
     btn.innerHTML = '<span class="material-symbols-rounded">check_circle</span> <span>✓ Seluruh Naskah Makalah Selesai</span>';
   });
 
@@ -3654,8 +3654,8 @@ function approveStep32() {
     const statusTag = u3.querySelector('.unit-badge-status');
     if (statusTag) {
       statusTag.className = 'unit-badge-status done';
-      statusTag.style.background = '#ecfdf5';
-      statusTag.style.color = '#059669';
+      statusTag.style.background = '#F0F8F3';
+      statusTag.style.color = '#2F7D52';
       statusTag.innerText = '✓ Selesai';
     }
   }
@@ -3678,9 +3678,9 @@ function approveStep32() {
     body: `
       <p>Seluruh bagian makalahmu dari <strong>BAB I (Pendahuluan)</strong>, <strong>BAB II (Pembahasan & Analisis)</strong>, <strong>BAB III (Penutup)</strong>, hingga <strong>DAFTAR PUSTAKA</strong> kini telah lengkap dan terverifikasi.</p>
       
-      <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:14px;margin:12px 0;">
-        <div style="font-size:12.5px;font-weight:800;color:#166534;margin-bottom:6px;">📊 Ringkasan Capaian Penulisan:</div>
-        <ul style="padding-left:18px;margin:0;font-size:12px;color:#15803d;line-height:1.6;">
+      <div style="background:#F0F8F3;border:1.5px solid #9FD4B5;border-radius:12px;padding:14px;margin:12px 0;">
+        <div style="font-size:12.5px;font-weight:800;color:#276749;margin-bottom:6px;">📊 Ringkasan Capaian Penulisan:</div>
+        <ul style="padding-left:18px;margin:0;font-size:12px;color:#2F7D52;line-height:1.6;">
           <li>✓ <strong>Bab I Pendahuluan:</strong> Latar Belakang, Rumusan Masalah, & Tujuan.</li>
           <li>✓ <strong>Bab II Pembahasan:</strong> Tinjauan Teori, Analisis Masalah, & Solusi Terarah.</li>
           <li>✓ <strong>Bab III Penutup:</strong> Kesimpulan Padat & Rekomendasi Praktis.</li>
@@ -3797,8 +3797,8 @@ function _buildGenerationPayload() {
 function _showGenerationStatusBubble(stream, message, type = 'info') {
   if (!stream) return;
   const iconMap = { info: '⚙️', success: '✅', error: '❌', warning: '⚠️' };
-  const colorMap = { info: '#eef2ff', success: '#f0fdf4', error: '#fef2f2', warning: '#fefce8' };
-  const borderMap = { info: '#c7d2fe', success: '#86efac', error: '#fecaca', warning: '#fde68a' };
+  const colorMap = { info: '#EEF2F8', success: '#F0F8F3', error: '#fef2f2', warning: '#fefce8' };
+  const borderMap = { info: '#B6C6E0', success: '#9FD4B5', error: '#fecaca', warning: '#EED9A6' };
 
   const div = document.createElement('div');
   div.className = 'generation-status-toast';
@@ -3808,7 +3808,7 @@ function _showGenerationStatusBubble(stream, message, type = 'info') {
     border-radius: 10px;
     padding: 10px 14px;
     font-size: 12px;
-    color: #1e293b;
+    color: #1A3556;
     margin: 6px 0;
     display: flex;
     align-items: center;
@@ -4586,7 +4586,7 @@ function renderNextSocraticQuestion() {
         <span class="scope-tag">${escapeHTML(qObj.related_section || getScopeLabel(currentDefenseScope))}</span>
       </div>
     </div>
-    <p style="font-size:13.5px; line-height:1.65; color:#1e293b; font-weight:500;">"${escapeHTML(qObj.question)}"</p>
+    <p style="font-size:13.5px; line-height:1.65; color:#1A3556; font-weight:500;">"${escapeHTML(qObj.question)}"</p>
   `;
   stream.appendChild(bubble);
   stream.scrollTop = stream.scrollHeight;
@@ -4617,10 +4617,10 @@ async function submitDefenseAnswer() {
   cand.innerHTML = `
     <div class="arena-bubble-head">
       <strong>
-        <span class="material-symbols-rounded" style="font-size:16px; color:#16a34a;">person</span>
+        <span class="material-symbols-rounded" style="font-size:16px; color:#38A169;">person</span>
         Jawaban Peneliti:
       </strong>
-      <span class="scope-tag" style="background:#dcfce7; color:#15803d;">Pembelaan Ilmiah</span>
+      <span class="scope-tag" style="background:#E6F4EC; color:#2F7D52;">Pembelaan Ilmiah</span>
     </div>
     <p>${escapeHTML(answer)}</p>
   `;
@@ -4660,18 +4660,18 @@ async function submitDefenseAnswer() {
   evalBubble.innerHTML = `
     <div class="arena-bubble-head">
       <strong>
-        <span class="material-symbols-rounded" style="font-size:16px; color:#d97706;">fact_check</span>
+        <span class="material-symbols-rounded" style="font-size:16px; color:#B8862F;">fact_check</span>
         Evaluasi Dewan Penguji (${DEFENSE_EXAMINERS[examinerIdx].name}):
       </strong>
       <span class="bubble-eval-chip ${scoreClass}">Nilai Rubrik: ${evaluation.score} / 100 (${evaluation.grade || 'A-'})</span>
     </div>
     <p>${escapeHTML(evaluation.feedback)}</p>
-    ${evaluation.critique ? `<p style="font-style:italic; font-size:11.5px; color:#92400e; margin-top:6px;"><strong>Catatan Penguji:</strong> "${escapeHTML(evaluation.critique)}"</p>` : ''}
+    ${evaluation.critique ? `<p style="font-style:italic; font-size:11.5px; color:#7A5A1E; margin-top:6px;"><strong>Catatan Penguji:</strong> "${escapeHTML(evaluation.critique)}"</p>` : ''}
     <div class="bubble-eval-details" style="margin-top:8px;">
-      <span style="font-size:11px; color:#92400e;">
+      <span style="font-size:11px; color:#7A5A1E;">
         <strong>Status:</strong> ${evaluation.understood ? '✓ Argumen Diterima dengan Baik' : '⚠️ Perlu Penguatan Rujukan Teoretis'}
       </span>
-      <span style="font-size:10.5px; color:#b45309;">
+      <span style="font-size:10.5px; color:#8A6420;">
         ${defenseDifficulty === 'killer' ? '⚖️ Standar Penguji Killer' : defenseDifficulty === 'coaching' ? '⚖️ Mode Coaching' : '⚖️ Standar Akademik Nasional'}
       </span>
     </div>
@@ -4785,16 +4785,16 @@ function renderCompletionBanner() {
   if (stream) {
     const banner = document.createElement('div');
     banner.className = 'arena-bubble examiner';
-    banner.style.borderColor = '#86efac';
-    banner.style.background = '#f0fdf4';
-    banner.style.borderLeftColor = '#16a34a';
+    banner.style.borderColor = '#9FD4B5';
+    banner.style.background = '#F0F8F3';
+    banner.style.borderLeftColor = '#38A169';
     banner.innerHTML = `
       <div class="arena-bubble-head">
-        <strong style="color:#15803d;">
+        <strong style="color:#2F7D52;">
           <span class="material-symbols-rounded">verified</span>
           Keputusan Dewan Penguji AI:
         </strong>
-        <span class="scope-tag" style="background:#dcfce7; color:#15803d;">Sidang Selesai</span>
+        <span class="scope-tag" style="background:#E6F4EC; color:#2F7D52;">Sidang Selesai</span>
       </div>
       <p style="color:#14532d;">
         Selamat! Seluruh putaran simulasi ujian sidang telah selesai dengan <strong>Skor Kesiapan Akhir ${defenseScore}/100</strong>. Anda dapat langsung menerbitkan dan mencetak <strong>Berita Acara Resmi</strong> untuk melihat rubrik lengkap serta catatan perbaikan.
@@ -4865,7 +4865,7 @@ function finishDefenseAndGenerateReport() {
     if (vBadge) {
       vBadge.className = 'verdict-badge';
       vBadge.style.background = '#fee2e2';
-      vBadge.style.color = '#b91c1c';
+      vBadge.style.color = '#9B2C2C';
       vBadge.innerText = '⚠️ PERLU PENDALAMAN ARGUMEN & SIMULASI ULANG';
     }
     if (vDesc) {
@@ -4997,7 +4997,7 @@ function renderDossier() {
         <span class="item-badge approved">✓ Gate ${item.step} (${item.name})</span>
         <span class="item-time">${item.timestamp}</span>
       </div>
-      <p style="font-size:11px;color:#1e293b;margin-top:4px;"><strong>Naskah Diverifikasi:</strong> "${escapeHTML(item.aiDraft.slice(0, 120))}..."</p>
+      <p style="font-size:11px;color:#1A3556;margin-top:4px;"><strong>Naskah Diverifikasi:</strong> "${escapeHTML(item.aiDraft.slice(0, 120))}..."</p>
       <div class="item-justification">
         <strong>Justifikasi Orisinalitas:</strong> ${escapeHTML(item.humanRationale)}
         (Tingkat Kepastian: ${item.epistemic === 'green' ? '🟢 Teruji Mandiri' : item.epistemic === 'yellow' ? '🟡 Asumsi Rasional' : '🔴 Perlu Klarifikasi Pembimbing'})
@@ -5141,7 +5141,7 @@ function executeHandover() {
       title: `Proposalmu resmi di-Handover ke fase ${newKti.label}! ✨`,
       body: `
         <p>Seluruh fondasi Bab I, II, dan III yang telah teruji dalam proposalmu telah dipindahkan ke lembar <strong>${newKti.label}</strong>.</p>
-        <div style="background:#f0fdf4; border-left:3px solid #16a34a; padding:10px 14px; border-radius:6px; margin:10px 0; font-size:12.5px; color:#166534; line-height:1.45;">
+        <div style="background:#F0F8F3; border-left:3px solid #38A169; padding:10px 14px; border-radius:6px; margin:10px 0; font-size:12.5px; color:#276749; line-height:1.45;">
           <strong>🎯 Langkah Selanjutnya:</strong> Kamu kini memasuki <strong>Fase Pengumpulan Data &amp; Eksperimen Lapangan</strong>. Buka modul <em>Data Hub</em> di sisi kiri untuk memantau progres survei / uji lab sebelum kita menyusun Bab IV (Hasil &amp; Pembahasan).
         </div>
       `,
@@ -5173,7 +5173,7 @@ function saveAndProceedToResults() {
       title: 'Data Lapangan Disinkronkan — Siap untuk Bab IV! 🚀',
       body: `
         <p>Rangkuman temuan lapangan (${dataCollectionState.collectedCount} responden/data) berhasil dicatat.</p>
-        <blockquote style="border-left: 3px solid var(--brand-indigo); padding: 8px 12px; margin: 8px 0; background: #f5f3ff; border-radius: 6px; font-size: 12.5px;">
+        <blockquote style="border-left: 3px solid var(--brand-indigo); padding: 8px 12px; margin: 8px 0; background: #EEF2F8; border-radius: 6px; font-size: 12.5px;">
           "${escapeHTML(dataCollectionState.rawNotes || 'Data survei dan log eksperimen telah siap diinterpretasikan.')}"
         </blockquote>
         <p style="font-size:12.5px;">Mari kita mulai dialog Sokratik untuk menyusun <strong>BAB IV: HASIL PENELITIAN &amp; PEMBAHASAN</strong>!</p>
@@ -5289,7 +5289,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">edit_document</span>
                 <span>Draf Paragraf Latar Belakang (Telah Disesuaikan):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#ecfdf5;color:#059669;border-color:#a7f3d0;">✓ Siap Disetujui</span>
+              <span class="hitl-badge-required" style="background:#F0F8F3;color:#2F7D52;border-color:#C6E6D3;">✓ Siap Disetujui</span>
             </div>
             
             <div class="hitl-diff-box" style="margin-top:8px;">
@@ -5297,10 +5297,10 @@ function handleUserManualChat(userText) {
             </div>
 
             <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px; flex-wrap:wrap; gap:8px;">
-              <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#eef2ff; color:var(--brand); border-color:#c7d2fe;">
+              <button type="button" class="btn-quick-chip" onclick="toggleLiteratureModal(true)" style="background:#EEF2F8; color:var(--brand); border-color:#B6C6E0;">
                 <span class="material-symbols-rounded" style="font-size:14px;">menu_book</span> Sisipkan Sitasi Literatur
               </button>
-              <span style="font-size:11px; color:#64748b;">Klik tombol di bawah jika kamu sudah cocok:</span>
+              <span style="font-size:11px; color:#5B6B80;">Klik tombol di bawah jika kamu sudah cocok:</span>
             </div>
 
             <div class="hitl-actions-row" style="margin-top:12px;">
@@ -5325,9 +5325,9 @@ function handleUserManualChat(userText) {
       const approveBtn = card.querySelector('.btn-hitl-approve');
       if (approveBtn && !approveBtn.disabled) {
         approveBtn.disabled = true;
-        approveBtn.style.background = '#f1f5f9';
-        approveBtn.style.color = '#94a3b8';
-        approveBtn.style.borderColor = '#e2e8f0';
+        approveBtn.style.background = '#EEF1F6';
+        approveBtn.style.color = '#8A97A8';
+        approveBtn.style.borderColor = '#DDE3EC';
         approveBtn.style.cursor = 'not-allowed';
         approveBtn.innerHTML = '<span class="material-symbols-rounded">block</span> <span>Digantikan oleh rumusan masalah di bawah ↓</span>';
       }
@@ -5335,13 +5335,13 @@ function handleUserManualChat(userText) {
       card.querySelectorAll('textarea').forEach(ta => {
         ta.disabled = true;
         ta.style.opacity = '0.5';
-        ta.style.background = '#f8fafc';
+        ta.style.background = '#F9F7F7';
       });
       // Add visual overlay indicator
       if (!card.querySelector('.hitl-superseded-badge')) {
         const badge = document.createElement('div');
         badge.className = 'hitl-superseded-badge';
-        badge.style.cssText = 'background:#fef3c7;color:#92400e;padding:6px 10px;border-radius:6px;font-size:10.5px;font-weight:700;margin-top:8px;text-align:center;border:1px solid #fde68a;';
+        badge.style.cssText = 'background:#F7EDD6;color:#7A5A1E;padding:6px 10px;border-radius:6px;font-size:10.5px;font-weight:700;margin-top:8px;text-align:center;border:1px solid #EED9A6;';
         badge.innerHTML = '⚠️ Rekomendasi ini telah digantikan — lihat versi terbaru di bawah ↓';
         card.appendChild(badge);
       }
@@ -5401,7 +5401,7 @@ function handleUserManualChat(userText) {
         tagType: 'tag-socratic',
         title: 'Rumusan Masalah & Tujuan Disesuaikan dari Pemikiranmu! ✨',
         body: `
-          <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:11px;color:#1e40af;display:flex;align-items:center;gap:6px;">
+          <div style="background:#EEF2F8;border:1px solid #B6C6E0;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:11px;color:#1e40af;display:flex;align-items:center;gap:6px;">
             <span class="material-symbols-rounded" style="font-size:16px;">person_edit</span>
             <span>Rekomendasi di bawah ini <strong>sudah disesuaikan</strong> berdasarkan rumusan masalah yang kamu tulis sendiri di atas.</span>
           </div>
@@ -5413,7 +5413,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">rule</span>
                 <span>Draf Pertanyaan & Tujuan (Hasil Penyelarasan dari Tulisanmu):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#dbeafe;color:#1d4ed8;border-color:#93c5fd;">🧑 Dari Tulisanmu</span>
+              <span class="hitl-badge-required" style="background:#DBE2EF;color:#2A517E;border-color:#93c5fd;">🧑 Dari Tulisanmu</span>
             </div>
 
             <!-- 1.2 Rumusan Masalah -->
@@ -5427,7 +5427,7 @@ function handleUserManualChat(userText) {
 
             <!-- 1.3 Tujuan Penulisan -->
             <div style="margin-top:10px;">
-              <label style="font-size:11px;font-weight:800;color:#16a34a;display:flex;align-items:center;gap:4px;margin-bottom:4px;">
+              <label style="font-size:11px;font-weight:800;color:#38A169;display:flex;align-items:center;gap:4px;margin-bottom:4px;">
                 <span class="material-symbols-rounded" style="font-size:14px;">flag</span>
                 1.3 TUJUAN PENULISAN (Otomatis Selaras dengan Rumusan):
               </label>
@@ -5486,7 +5486,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">edit_document</span>
                 <span>Draf 2.2: Analisis Pembahasan (Telah Disesuaikan):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 2.2</span>
+              <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 2.2</span>
             </div>
             
             <div class="hitl-diff-box" style="margin-top:8px;">
@@ -5539,7 +5539,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">edit_document</span>
                 <span>Draf 2.3: Sintesis Solusi (Telah Disesuaikan):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 2.3</span>
+              <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 2.3</span>
             </div>
             
             <div class="hitl-diff-box" style="margin-top:8px;">
@@ -5591,7 +5591,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">verified_user</span>
                 <span>Draf 3.1: Kesimpulan (Telah Disesuaikan):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 3.1</span>
+              <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 3.1</span>
             </div>
             
             <div class="hitl-diff-box" style="margin-top:8px;">
@@ -5642,7 +5642,7 @@ function handleUserManualChat(userText) {
                 <span class="material-symbols-rounded" style="color:var(--brand);">recommend</span>
                 <span>Draf 3.2: Saran & Rekomendasi (Telah Disesuaikan):</span>
               </div>
-              <span class="hitl-badge-required" style="background:#fef3c7;color:#d97706;border-color:#fde68a;">Langkah 3.2</span>
+              <span class="hitl-badge-required" style="background:#F7EDD6;color:#B8862F;border-color:#EED9A6;">Langkah 3.2</span>
             </div>
             
             <div class="hitl-diff-box" style="margin-top:8px;">
@@ -5683,7 +5683,7 @@ function handleUserManualChat(userText) {
       title: 'Tanggapan Thesa AI',
       body: `
         <p>Terkait pemikiranmu mengenai <strong>"${escapeHTML(userText)}"</strong> — ini sejalan dengan fokus riset <em>"${escapeHTML(topicText)}"</em>.</p>
-        <p style="font-size:11px;color:#475569;">Kamu bisa terus mengetik ide langsung di sini, atau melanjutkan langkah aktif pada panduan naskah.</p>
+        <p style="font-size:11px;color:#4A5568;">Kamu bisa terus mengetik ide langsung di sini, atau melanjutkan langkah aktif pada panduan naskah.</p>
       `
     });
   }, 400);
@@ -5968,7 +5968,7 @@ async function initiateRealOrder(pkgKey, price) {
 
   const notice = document.getElementById('qrisStatusNotice');
   if (notice) {
-    notice.style.background = '#fef3c7';
+    notice.style.background = '#F7EDD6';
     notice.style.borderColor = '#fde047';
     notice.style.color = '#854d0e';
     notice.innerHTML = `
@@ -6042,15 +6042,15 @@ function selectQRISPackage(pkgKey, price, label) {
   const radioSemester = document.getElementById('radioSemester');
 
   if (pkgKey === 'single') {
-    if (cardSingle) { cardSingle.style.border = '2px solid #4f46e5'; cardSingle.style.background = '#f5f3ff'; }
-    if (cardSemester) { cardSemester.style.border = '1.5px solid #cbd5e1'; cardSemester.style.background = '#ffffff'; }
-    if (radioSingle) { radioSingle.style.background = '#4f46e5'; radioSingle.style.borderColor = '#4f46e5'; }
-    if (radioSemester) { radioSemester.style.background = '#ffffff'; radioSemester.style.borderColor = '#cbd5e1'; }
+    if (cardSingle) { cardSingle.style.border = '2px solid #3F72AF'; cardSingle.style.background = '#EEF2F8'; }
+    if (cardSemester) { cardSemester.style.border = '1.5px solid #C5CFDF'; cardSemester.style.background = '#ffffff'; }
+    if (radioSingle) { radioSingle.style.background = '#3F72AF'; radioSingle.style.borderColor = '#3F72AF'; }
+    if (radioSemester) { radioSemester.style.background = '#ffffff'; radioSemester.style.borderColor = '#C5CFDF'; }
   } else {
-    if (cardSingle) { cardSingle.style.border = '1.5px solid #cbd5e1'; cardSingle.style.background = '#ffffff'; }
-    if (cardSemester) { cardSemester.style.border = '2px solid #16a34a'; cardSemester.style.background = '#f0fdf4'; }
-    if (radioSingle) { radioSingle.style.background = '#ffffff'; radioSingle.style.borderColor = '#cbd5e1'; }
-    if (radioSemester) { radioSemester.style.background = '#16a34a'; radioSemester.style.borderColor = '#16a34a'; }
+    if (cardSingle) { cardSingle.style.border = '1.5px solid #C5CFDF'; cardSingle.style.background = '#ffffff'; }
+    if (cardSemester) { cardSemester.style.border = '2px solid #38A169'; cardSemester.style.background = '#F0F8F3'; }
+    if (radioSingle) { radioSingle.style.background = '#ffffff'; radioSingle.style.borderColor = '#C5CFDF'; }
+    if (radioSemester) { radioSemester.style.background = '#38A169'; radioSemester.style.borderColor = '#38A169'; }
   }
 
   const amountText = document.getElementById('qrisAmountText');
@@ -6069,9 +6069,9 @@ function handlePaymentSuccess(addedQuota, amount) {
 
   const notice = document.getElementById('qrisStatusNotice');
   if (notice) {
-    notice.style.background = '#dcfce7';
-    notice.style.borderColor = '#86efac';
-    notice.style.color = '#166534';
+    notice.style.background = '#E6F4EC';
+    notice.style.borderColor = '#9FD4B5';
+    notice.style.color = '#276749';
     notice.innerHTML = `
       <span class="material-symbols-rounded" style="font-size:16px;">verified</span>
       <span>✓ Pembayaran Midtrans QRIS Berhasil! +${addedQuota} Kuota Makalah Aktif</span>
@@ -6124,15 +6124,15 @@ function selectBoosterPackage(pkgKey, price, tokens) {
   ['boosterPkg50', 'boosterPkg150', 'boosterPkg500'].forEach(id => {
     const card = document.getElementById(id);
     if (card) {
-      card.style.border = '1.5px solid #cbd5e1';
+      card.style.border = '1.5px solid #C5CFDF';
       card.style.background = '#ffffff';
     }
   });
 
   const activeCard = document.getElementById(pkgKey === '50k' ? 'boosterPkg50' : (pkgKey === '150k' ? 'boosterPkg150' : 'boosterPkg500'));
   if (activeCard) {
-    activeCard.style.border = '2px solid #4f46e5';
-    activeCard.style.background = '#f5f3ff';
+    activeCard.style.border = '2px solid #3F72AF';
+    activeCard.style.background = '#EEF2F8';
   }
 
   const amtEl = document.getElementById('boosterAmountText');
@@ -6378,8 +6378,8 @@ function handleKTIClick(ktiType) {
 const moduleSurveyConfigs = {
   proposal: {
     icon: 'note_add',
-    color: '#16a34a',
-    bg: '#dcfce7',
+    color: '#38A169',
+    bg: '#E6F4EC',
     name: 'Proposal Penelitian (Bab I–III)',
     title: 'Co-Design Modul: Proposal Riset (Bab I–III)',
     sub: 'Bantu kami merancang modul Proposal agar kamu bisa lolos Seminar Proposal (Sempro) dengan draf yang kokoh.',
@@ -6400,8 +6400,8 @@ const moduleSurveyConfigs = {
   },
   skripsi: {
     icon: 'school',
-    color: '#d97706',
-    bg: '#fef3c7',
+    color: '#B8862F',
+    bg: '#F7EDD6',
     name: 'Skripsi Sarjana (S1)',
     title: 'Co-Design Modul: Skripsi Sarjana (S1)',
     sub: 'Bantu kami merancang alur pendampingan Skripsi S1 yang komprehensif dari Bab I sampai Sidang Meja Hijau.',
@@ -6422,8 +6422,8 @@ const moduleSurveyConfigs = {
   },
   tesis: {
     icon: 'psychology',
-    color: '#7c3aed',
-    bg: '#ede9fe',
+    color: '#3F72AF',
+    bg: '#E4ECF6',
     name: 'Tesis Magister (S2)',
     title: 'Co-Design Modul: Tesis Magister (S2)',
     sub: 'Bantu kami merancang modul Tesis S2 dengan kedalaman analisis teoritis & novelty level pascasarjana.',
@@ -6735,8 +6735,8 @@ function renderLiteratureCards(papers) {
 
   if (!papers || papers.length === 0) {
     container.innerHTML = `
-      <div style="text-align:center; padding:30px; color:#64748b;">
-        <span class="material-symbols-rounded" style="font-size:36px; color:#cbd5e1; display:block; margin-bottom:8px;">search_off</span>
+      <div style="text-align:center; padding:30px; color:#5B6B80;">
+        <span class="material-symbols-rounded" style="font-size:36px; color:#C5CFDF; display:block; margin-bottom:8px;">search_off</span>
         <p style="font-size:13px; font-weight:600;">Tidak ditemukan paper yang sesuai dengan kata kunci.</p>
         <button class="btn-quick-chip" onclick="resetLiteratureFilter()" style="margin-top:10px;">Tampilkan Semua Paper</button>
       </div>
@@ -6813,7 +6813,7 @@ function showToast(message, type = 'success') {
       bottom: 24px;
       right: 24px;
       z-index: 9999;
-      background: #0f172a;
+      background: #112D4E;
       color: #ffffff;
       padding: 12px 20px;
       border-radius: 12px;
@@ -6898,11 +6898,11 @@ function injectCitationToDraft(paperId) {
     const targetBox = (box2 && !box2.innerText.includes('Terbuka setelah')) ? box2 : box11;
     if (targetBox) {
       if (targetBox.innerText.includes('Akan terisi') || targetBox.innerText.includes('Terbuka setelah')) {
-        targetBox.innerHTML = `<p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;">Kajian pendukung oleh ${escapeHTML(paper.authors)} (${paper.year}) menegaskan bahwa ${escapeHTML(paper.abstract.slice(0, 120))}... ${citationStr}</p>`;
+        targetBox.innerHTML = `<p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;">Kajian pendukung oleh ${escapeHTML(paper.authors)} (${paper.year}) menegaskan bahwa ${escapeHTML(paper.abstract.slice(0, 120))}... ${citationStr}</p>`;
       } else {
         const existingHTML = targetBox.innerHTML;
         if (!existingHTML.includes(citationStr)) {
-          targetBox.innerHTML = existingHTML + `<p class="draft-paragraph completed" style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0;font-size:11.5px;line-height:1.6;color:#334155;margin-top:8px;">Kajian pendukung oleh ${escapeHTML(paper.authors)} (${paper.year}) menegaskan bahwa ${escapeHTML(paper.abstract.slice(0, 120))}... ${citationStr}</p>`;
+          targetBox.innerHTML = existingHTML + `<p class="draft-paragraph completed" style="background:#F9F7F7;padding:10px;border-radius:8px;border:1px solid #DDE3EC;font-size:11.5px;line-height:1.6;color:#2B3E56;margin-top:8px;">Kajian pendukung oleh ${escapeHTML(paper.authors)} (${paper.year}) menegaskan bahwa ${escapeHTML(paper.abstract.slice(0, 120))}... ${citationStr}</p>`;
         }
       }
     }
@@ -6917,7 +6917,7 @@ function injectCitationToDraft(paperId) {
       title: `Sitasi ${escapeHTML(citationStr)} Berhasil Disisipkan! ✨`,
       body: `
         <p>Sitasi <strong>${escapeHTML(citationStr)}</strong> telah dimasukkan ke dalam draf naskah dan referensi lengkap otomatis disusun di <strong>DAFTAR PUSTAKA</strong> gaya APA 7th.</p>
-        <p style="font-size:11.5px;color:#475569;background:#f8fafc;padding:8px 12px;border-radius:8px;border:1px solid #e2e8f0;margin-top:6px;">
+        <p style="font-size:11.5px;color:#4A5568;background:#F9F7F7;padding:8px 12px;border-radius:8px;border:1px solid #DDE3EC;margin-top:6px;">
           ${paper.bib}
         </p>
       `
@@ -6936,14 +6936,14 @@ function updateBibliographySection() {
 
   if (countBadge) {
     countBadge.innerText = `${injectedReferences.length} Referensi (${styleLabel})`;
-    countBadge.style.background = '#ede9fe';
-    countBadge.style.color = '#4f46e5';
+    countBadge.style.background = '#E4ECF6';
+    countBadge.style.color = '#3F72AF';
   }
 
   if (!box) return;
 
   if (injectedReferences.length === 0) {
-    box.innerHTML = `<p style="font-size:11.5px; color:#64748b; margin:0;"><em>Gunakan tombol "Cari Literatur" di atas untuk menyisipkan referensi ilmiah ke naskah ini. Daftar Pustaka otomatis disusun sesuai gaya ${styleLabel}.</em></p>`;
+    box.innerHTML = `<p style="font-size:11.5px; color:#5B6B80; margin:0;"><em>Gunakan tombol "Cari Literatur" di atas untuk menyisipkan referensi ilmiah ke naskah ini. Daftar Pustaka otomatis disusun sesuai gaya ${styleLabel}.</em></p>`;
     return;
   }
 
@@ -6959,10 +6959,10 @@ function updateBibliographySection() {
 
   if (activeCitationStyle === 'ieee') {
     box.innerHTML = `
-      <div style="display:flex; flex-direction:column; gap:8px; font-size:11.5px; line-height:1.6; color:#334155;">
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:11.5px; line-height:1.6; color:#2B3E56;">
         ${sortedRefs.map((r, idx) => `
           <div style="display:flex; gap:8px;">
-            <span style="font-weight:700; color:#4f46e5; flex-shrink:0;">[${idx + 1}]</span>
+            <span style="font-weight:700; color:#3F72AF; flex-shrink:0;">[${idx + 1}]</span>
             <div>${r.bib}</div>
           </div>
         `).join('')}
@@ -6971,7 +6971,7 @@ function updateBibliographySection() {
   } else {
     // APA 7th / Harvard / MLA with standard 0.5 in / 1.27 cm Hanging Indent
     box.innerHTML = `
-      <div style="display:flex; flex-direction:column; gap:10px; font-size:11.5px; line-height:1.6; color:#334155;">
+      <div style="display:flex; flex-direction:column; gap:10px; font-size:11.5px; line-height:1.6; color:#2B3E56;">
         ${sortedRefs.map(r => `
           <div style="padding-left:1.27cm; text-indent:-1.27cm; margin-bottom:2px;">
             ${r.bib}
@@ -7107,7 +7107,7 @@ document.addEventListener('input', function(e) {
   if (e.target && (e.target.closest('#paperSheet') || e.target.classList.contains('paper-box-target') || e.target.id === 'draftPaperTitle')) {
     const badge = document.getElementById('docSyncBadge');
     if (badge) {
-      badge.innerHTML = '<span style="color:#059669; font-weight:700;">✓ Perubahan Tersimpan Langsung</span>';
+      badge.innerHTML = '<span style="color:#2F7D52; font-weight:700;">✓ Perubahan Tersimpan Langsung</span>';
     }
   }
 });
@@ -7191,7 +7191,7 @@ function startConfetti() {
   canvas.height = window.innerHeight;
 
   const particles = [];
-  const colors = ['#22c55e', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6'];
+  const colors = ['#38A169', '#3F72AF', '#D9A441', '#3F72AF', '#ec4899', '#14b8a6'];
 
   for (let i = 0; i < 90; i++) {
     particles.push({
@@ -7267,7 +7267,7 @@ function initKeyboardShortcuts() {
       e.preventDefault();
       const badge = document.getElementById('docSyncBadge');
       if (badge) {
-        badge.innerHTML = '<span style="color:#059669; font-weight:700;">✓ Perubahan Tersimpan & Sinkron (Manual)</span>';
+        badge.innerHTML = '<span style="color:#2F7D52; font-weight:700;">✓ Perubahan Tersimpan & Sinkron (Manual)</span>';
       }
       showThesaToast('✓ Naskah berhasil disimpan & disinkronisasi!', 'success', 'save');
     }

@@ -11,13 +11,14 @@
   <meta property="og:title" content="Thesa AI — Thesis & Research Co-Pilot">
   <meta property="og:description" content="Platform pembimbing riset dan penulisan karya tulis ilmiah berbasis dialog sokratik interaktif.">
   <meta property="og:site_name" content="Thesa AI">
-  <meta name="theme-color" content="#4f46e5">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <meta name="theme-color" content="#F9F7F7">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23112D4E'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='40' font-style='italic' fill='%23F9F7F7'>T</text></svg>">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="duo-theme">
@@ -104,7 +105,7 @@
             <span>💎</span>
             <strong>1,240 XP</strong>
           </div>
-          <a href="/admin.html" class="hp-stat-pill" style="text-decoration:none; background:#1e1b4b; color:#a5b4fc; border:1px solid #4338ca; cursor:pointer;" title="Buka Dashboard Controlling & Monitoring">
+          <a href="/admin.html" class="hp-stat-pill" style="text-decoration:none; background:#112D4E; color:#9DB3D6; border:1px solid #2A517E; cursor:pointer;" title="Buka Dashboard Controlling & Monitoring">
             <span>🛡️</span>
             <strong>Admin Center</strong>
           </a>
@@ -149,7 +150,7 @@
               <div class="hp-kti-status-badge live">
                 <span class="live-pulse"></span> Siap Pakai
               </div>
-              <div class="hp-kti-icon" style="background:#e0e7ff; color:var(--brand);">
+              <div class="hp-kti-icon" style="background:#DBE2EF; color:var(--brand);">
                 <span class="material-symbols-rounded">article</span>
               </div>
               <span class="hp-kti-name">Makalah</span>
@@ -158,7 +159,7 @@
 
             <button class="hp-kti-btn co-design" data-kti="proposal" onclick="handleKTIClick('proposal')">
               <div class="hp-kti-status-badge co-design">💡 Sampaikan Needs</div>
-              <div class="hp-kti-icon" style="background:#dcfce7; color:#16a34a;">
+              <div class="hp-kti-icon" style="background:#E6F4EC; color:#38A169;">
                 <span class="material-symbols-rounded">note_add</span>
               </div>
               <span class="hp-kti-name">Proposal</span>
@@ -167,7 +168,7 @@
 
             <button class="hp-kti-btn co-design" data-kti="skripsi" onclick="handleKTIClick('skripsi')">
               <div class="hp-kti-status-badge co-design">💡 Sampaikan Needs</div>
-              <div class="hp-kti-icon" style="background:#fef3c7; color:#d97706;">
+              <div class="hp-kti-icon" style="background:#F7EDD6; color:#B8862F;">
                 <span class="material-symbols-rounded">school</span>
               </div>
               <span class="hp-kti-name">Skripsi (S1)</span>
@@ -176,7 +177,7 @@
 
             <button class="hp-kti-btn co-design" data-kti="tesis" onclick="handleKTIClick('tesis')">
               <div class="hp-kti-status-badge co-design">💡 Sampaikan Needs</div>
-              <div class="hp-kti-icon" style="background:#ede9fe; color:#7c3aed;">
+              <div class="hp-kti-icon" style="background:#E4ECF6; color:#3F72AF;">
                 <span class="material-symbols-rounded">psychology</span>
               </div>
               <span class="hp-kti-name">Tesis (S2)</span>
@@ -268,7 +269,7 @@
               <div class="hp-empty-features-grid">
                 
                 <div class="hp-empty-feat-card" onclick="handleKTIClick('makalah')">
-                  <div class="hp-feat-icon" style="background:#ede9fe; color:var(--brand);">
+                  <div class="hp-feat-icon" style="background:#E4ECF6; color:var(--brand);">
                     <span class="material-symbols-rounded">psychology_alt</span>
                   </div>
                   <div class="hp-feat-info">
@@ -278,7 +279,7 @@
                 </div>
 
                 <div class="hp-empty-feat-card" onclick="handleKTIClick('makalah')">
-                  <div class="hp-feat-icon" style="background:#dcfce7; color:#16a34a;">
+                  <div class="hp-feat-icon" style="background:#E6F4EC; color:#38A169;">
                     <span class="material-symbols-rounded">verified_user</span>
                   </div>
                   <div class="hp-feat-info">
@@ -288,7 +289,7 @@
                 </div>
 
                 <div class="hp-empty-feat-card" onclick="handleKTIClick('makalah')">
-                  <div class="hp-feat-icon" style="background:#fef3c7; color:#d97706;">
+                  <div class="hp-feat-icon" style="background:#F7EDD6; color:#B8862F;">
                     <span class="material-symbols-rounded">sports_martial_arts</span>
                   </div>
                   <div class="hp-feat-info">
@@ -322,7 +323,7 @@
                 </div>
                 <div class="hp-proj-progress-area">
                   <div class="hp-proj-progress-bar">
-                    <div class="hp-proj-fill" style="width: 65%; background: linear-gradient(90deg, #7c3aed, #8b5cf6);"></div>
+                    <div class="hp-proj-fill" style="width: 65%; background: linear-gradient(90deg, #3F72AF, #3F72AF);"></div>
                   </div>
                   <span class="hp-proj-pct">65%</span>
                 </div>
@@ -356,7 +357,7 @@
                 </div>
                 <div class="hp-proj-progress-area">
                   <div class="hp-proj-progress-bar">
-                    <div class="hp-proj-fill" style="width: 30%; background: linear-gradient(90deg, #d97706, #f59e0b);"></div>
+                    <div class="hp-proj-fill" style="width: 30%; background: linear-gradient(90deg, #B8862F, #D9A441);"></div>
                   </div>
                   <span class="hp-proj-pct">30%</span>
                 </div>
@@ -390,7 +391,7 @@
                 </div>
                 <div class="hp-proj-progress-area">
                   <div class="hp-proj-progress-bar">
-                    <div class="hp-proj-fill" style="width: 100%; background: linear-gradient(90deg, #059669, #10b981);"></div>
+                    <div class="hp-proj-fill" style="width: 100%; background: linear-gradient(90deg, #2F7D52, #38A169);"></div>
                   </div>
                   <span class="hp-proj-pct" style="color:var(--duo-green-dark);">100% ✓</span>
                 </div>
@@ -427,11 +428,11 @@
               </div>
               <div class="hp-stats-grid">
                 <div class="hp-stat-item">
-                  <div class="hp-stat-num" style="color:#7c3aed;">1,240</div>
+                  <div class="hp-stat-num" style="color:#3F72AF;">1,240</div>
                   <div class="hp-stat-lbl">Total XP</div>
                 </div>
                 <div class="hp-stat-item">
-                  <div class="hp-stat-num" style="color:#d97706;">7</div>
+                  <div class="hp-stat-num" style="color:#B8862F;">7</div>
                   <div class="hp-stat-lbl">Hari Streak</div>
                 </div>
                 <div class="hp-stat-item">
@@ -439,7 +440,7 @@
                   <div class="hp-stat-lbl">Validasi Draf</div>
                 </div>
                 <div class="hp-stat-item">
-                  <div class="hp-stat-num" style="color:#059669;">1</div>
+                  <div class="hp-stat-num" style="color:#2F7D52;">1</div>
                   <div class="hp-stat-lbl">Selesai</div>
                 </div>
               </div>
@@ -447,11 +448,11 @@
               <!-- Achievement Badges -->
               <div class="hp-achievements-row">
                 <div class="hp-achievement" title="Pejuang Literatur">
-                  <div class="hp-ach-icon" style="background:#fef3c7;">📚</div>
+                  <div class="hp-ach-icon" style="background:#F7EDD6;">📚</div>
                   <span>Pejuang Literatur</span>
                 </div>
                 <div class="hp-achievement" title="First Gate Passed">
-                  <div class="hp-ach-icon" style="background:#ede9fe;">🛡️</div>
+                  <div class="hp-ach-icon" style="background:#E4ECF6;">🛡️</div>
                   <span>Gate Keeper</span>
                 </div>
                 <div class="hp-achievement" title="Streak 7 hari">
@@ -459,7 +460,7 @@
                   <span>7-Day Streak</span>
                 </div>
                 <div class="hp-achievement locked" title="Belum Terbuka">
-                  <div class="hp-ach-icon" style="background:#f8fafc; filter:grayscale(1);">🏆</div>
+                  <div class="hp-ach-icon" style="background:#F9F7F7; filter:grayscale(1);">🏆</div>
                   <span>Champion</span>
                 </div>
               </div>
@@ -473,7 +474,7 @@
               </div>
               <div class="hp-library-list">
                 <div class="hp-library-item" onclick="startNewProjectFromHome('tesis')">
-                  <div class="hp-lib-icon" style="background:#ede9fe; color:#7c3aed;">
+                  <div class="hp-lib-icon" style="background:#E4ECF6; color:#3F72AF;">
                     <span class="material-symbols-rounded">psychology</span>
                   </div>
                   <div class="hp-lib-meta">
@@ -493,7 +494,7 @@
                   <span class="material-symbols-rounded hp-lib-arrow">chevron_right</span>
                 </div>
                 <div class="hp-library-item" onclick="startNewProjectFromHome('skripsi')">
-                  <div class="hp-lib-icon" style="background:#fef9c3; color:#d97706;">
+                  <div class="hp-lib-icon" style="background:#fef9c3; color:#B8862F;">
                     <span class="material-symbols-rounded">school</span>
                   </div>
                   <div class="hp-lib-meta">
@@ -678,7 +679,7 @@
         <button type="button" class="ob-tab-btn" id="tabBtnKonteks" onclick="switchIntakeTab('konteks')">
           <span class="material-symbols-rounded tab-icon">psychology</span>
           <span class="tab-label">2. Konteks Riset</span>
-          <span class="tab-pill-req ready" id="pillReqKonteks" style="background:#e0e7ff; color:#4338ca; font-weight:800;">Disarankan</span>
+          <span class="tab-pill-req ready" id="pillReqKonteks" style="background:#DBE2EF; color:#2A517E; font-weight:800;">Disarankan</span>
         </button>
         <button type="button" class="ob-tab-btn" id="tabBtnCover" onclick="switchIntakeTab('cover')">
           <span class="material-symbols-rounded tab-icon">badge</span>
@@ -716,7 +717,7 @@
             <!-- Playful Quick Starter Chips -->
             <div class="ob-quick-starter-box">
               <div class="quick-starter-header">
-                <span class="material-symbols-rounded" style="font-size:16px; color:#f59e0b;">bolt</span>
+                <span class="material-symbols-rounded" style="font-size:16px; color:#D9A441;">bolt</span>
                 <span>Inspirasi Topik Populer (Klik untuk isi cepat):</span>
               </div>
               <div class="quick-starter-chips" id="quickTopicStarters">
@@ -737,7 +738,7 @@
 
             <!-- Nudge CTA to Step 2 -->
             <div style="margin-top:14px; text-align:right;">
-              <button type="button" class="btn-quick-chip" onclick="switchIntakeTab('konteks')" style="background:#eef2ff; color:#4338ca; border-color:#c7d2fe; font-weight:700; padding:8px 16px;">
+              <button type="button" class="btn-quick-chip" onclick="switchIntakeTab('konteks')" style="background:#EEF2F8; color:#2A517E; border-color:#B6C6E0; font-weight:700; padding:8px 16px;">
                 <span>Lanjut Ceritakan Konteks Riset (+50 XP)</span>
                 <span class="material-symbols-rounded" style="font-size:16px;">arrow_forward</span>
               </button>
@@ -749,7 +750,7 @@
         <div class="ob-tab-pane" id="paneIntakeKonteks" style="display:none;">
           
           <!-- Value Nudge Callout -->
-          <div style="background:linear-gradient(135deg, #f0fdf4 0%, #e0e7ff 100%); border:1.5px solid #a7f3d0; border-radius:var(--r-lg); padding:12px 16px; margin-bottom:14px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+          <div style="background:linear-gradient(135deg, #F0F8F3 0%, #DBE2EF 100%); border:1.5px solid #C6E6D3; border-radius:var(--r-lg); padding:12px 16px; margin-bottom:14px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
             <div style="display:flex; align-items:center; gap:10px;">
               <span style="font-size:22px;">🎯</span>
               <div>
@@ -757,20 +758,20 @@
                 <span style="font-size:11.5px; color:#047857;">Makin jelas ceritamu, bimbingan AI semakin tajam, nyambung dengan masalah lapangan, dan naskah tidak generik.</span>
               </div>
             </div>
-            <span style="font-size:11px; font-weight:800; background:#dcfce7; color:#15803d; padding:4px 10px; border-radius:999px; white-space:nowrap;">⭐ +50 XP Bonus</span>
+            <span style="font-size:11px; font-weight:800; background:#E6F4EC; color:#2F7D52; padding:4px 10px; border-radius:999px; white-space:nowrap;">⭐ +50 XP Bonus</span>
           </div>
 
           <div class="ob-stacked-cards">
             <!-- Q2: Urgensi -->
-            <div class="ob-question-card" id="obQ2Card" style="border-color:#cbd5e1;">
+            <div class="ob-question-card" id="obQ2Card" style="border-color:#C5CFDF;">
               <div class="ob-q-head" style="margin-bottom:8px;">
-                <div class="ob-q-num required" style="background:#e0e7ff; color:#4338ca;">
+                <div class="ob-q-num required" style="background:#DBE2EF; color:#2A517E;">
                   <span class="material-symbols-rounded" style="font-size:16px;">help_center</span>
                 </div>
                 <div style="flex:1;">
                   <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <strong style="font-size:14px; color:#0f172a;">Kenapa topik ini penting bagimu?</strong>
-                    <span style="font-size:10.5px; font-weight:800; color:#4338ca; background:#ede9fe; padding:2px 8px; border-radius:999px;">Sangat Disarankan</span>
+                    <strong style="font-size:14px; color:#112D4E;">Kenapa topik ini penting bagimu?</strong>
+                    <span style="font-size:10.5px; font-weight:800; color:#2A517E; background:#E4ECF6; padding:2px 8px; border-radius:999px;">Sangat Disarankan</span>
                   </div>
                   <span class="ob-q-hint">Urgensi masalah, keresahan, atau fenomena nyata yang mendorong riset ini.</span>
                 </div>
@@ -793,15 +794,15 @@
             </div>
 
             <!-- Q3: Harapan Hasil -->
-            <div class="ob-question-card" id="obQ3Card" style="border-color:#cbd5e1;">
+            <div class="ob-question-card" id="obQ3Card" style="border-color:#C5CFDF;">
               <div class="ob-q-head" style="margin-bottom:8px;">
-                <div class="ob-q-num required" style="background:#e0e7ff; color:#4338ca;">
+                <div class="ob-q-num required" style="background:#DBE2EF; color:#2A517E;">
                   <span class="material-symbols-rounded" style="font-size:16px;">flag</span>
                 </div>
                 <div style="flex:1;">
                   <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <strong style="font-size:14px; color:#0f172a;">Apa yang ingin kamu hasilkan dari karya ini?</strong>
-                    <span style="font-size:10.5px; font-weight:800; color:#4338ca; background:#ede9fe; padding:2px 8px; border-radius:999px;">Sangat Disarankan</span>
+                    <strong style="font-size:14px; color:#112D4E;">Apa yang ingin kamu hasilkan dari karya ini?</strong>
+                    <span style="font-size:10.5px; font-weight:800; color:#2A517E; background:#E4ECF6; padding:2px 8px; border-radius:999px;">Sangat Disarankan</span>
                   </div>
                   <span class="ob-q-hint">Target luaran, rekomendasi solusi praktis, atau model analisis yang diharapkan.</span>
                 </div>
@@ -828,7 +829,7 @@
                 </div>
                 <div style="flex:1;">
                   <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <strong style="font-size:14px; color:#0f172a;">Kata kunci risetmu</strong>
+                    <strong style="font-size:14px; color:#112D4E;">Kata kunci risetmu</strong>
                     <span class="ob-q-optional-tag">Opsional</span>
                   </div>
                   <span class="ob-q-hint">Konsep kunci yang sering muncul pada naskahmu.</span>
@@ -851,13 +852,13 @@
         <div class="ob-tab-pane" id="paneIntakeCover" style="display:none;">
           <div class="ob-question-card" id="obAssignmentCard">
             <div class="ob-q-head" style="margin-bottom:12px;">
-              <div class="ob-q-num optional" style="background:#f1f5f9; color:#64748b;">
+              <div class="ob-q-num optional" style="background:#EEF1F6; color:#5B6B80;">
                 <span class="material-symbols-rounded" style="font-size:18px;">badge</span>
               </div>
               <div style="flex:1;">
                 <div style="display:flex; justify-content:space-between; align-items:center;">
-                  <strong style="color:#0f172a; font-size:14.5px;">Detail Halaman Judul & Cover</strong>
-                  <span class="ob-q-optional-tag" style="background:#f1f5f9; color:#64748b;">Bisa Diisi Nanti</span>
+                  <strong style="color:#112D4E; font-size:14.5px;">Detail Halaman Judul & Cover</strong>
+                  <span class="ob-q-optional-tag" style="background:#EEF1F6; color:#5B6B80;">Bisa Diisi Nanti</span>
                 </div>
                 <span class="ob-q-hint">Boleh dilewati sekarang. Data ini bisa dilengkapi menjelang unduh naskah ke Word/PDF.</span>
               </div>
@@ -1036,7 +1037,7 @@
 
           <!-- Token Economy & Margin Guard Capsule -->
           <div class="stat-pill token-pill" id="topbarTokenPill" onclick="toggleTokenBoosterModal(true)" title="Sisa Kuota Token AI (Klik untuk Isi Ulang Booster Instan)" style="cursor:pointer;">
-            <span class="stat-icon" style="color:#fbbf24;">⚡</span>
+            <span class="stat-icon" style="color:#D9A441;">⚡</span>
             <span class="stat-value" id="topbarTokenBalance">215k Token</span>
             <span style="font-size:10px; font-weight:800; background:rgba(255,255,255,0.2); padding:1px 6px; border-radius:999px; color:#fff; margin-left:2px;">+Topup</span>
           </div>
@@ -1294,7 +1295,7 @@
             </div>
 
             <!-- BAB II: Pembahasan & Analisis -->
-            <div class="paper-section" id="section2" style="border-top:2px dashed #e2e8f0; margin-top:20px; padding-top:16px;">
+            <div class="paper-section" id="section2" style="border-top:2px dashed #DDE3EC; margin-top:20px; padding-top:16px;">
               <div class="section-title-row">
                 <h2 class="section-heading" id="heading2">BAB II: PEMBAHASAN & ANALISIS</h2>
                 <span class="section-certainty-badge pending" id="badgeSection2">Menunggu Unit 2</span>
@@ -1305,7 +1306,7 @@
             </div>
 
             <!-- BAB III: Penutup -->
-            <div class="paper-section" id="section3" style="border-top:2px dashed #e2e8f0; margin-top:20px; padding-top:16px;">
+            <div class="paper-section" id="section3" style="border-top:2px dashed #DDE3EC; margin-top:20px; padding-top:16px;">
               <div class="section-title-row">
                 <h2 class="section-heading" id="heading3">BAB III: PENUTUP (Kesimpulan & Saran)</h2>
                 <span class="section-certainty-badge pending" id="badgeSection3">Menunggu Unit 3</span>
@@ -1316,12 +1317,12 @@
             </div>
 
             <!-- Daftar Pustaka / Referensi -->
-            <div class="paper-section" id="sectionDaftarPustaka" style="border-top:2px solid #cbd5e1; margin-top:24px; padding-top:16px;">
+            <div class="paper-section" id="sectionDaftarPustaka" style="border-top:2px solid #C5CFDF; margin-top:24px; padding-top:16px;">
               <div class="section-title-row">
                 <h2 class="section-heading" id="headingDaftarPustaka">DAFTAR PUSTAKA</h2>
-                <span class="section-certainty-badge" style="background:#f1f5f9; color:#64748b;" id="refCountBadge">0 Referensi</span>
+                <span class="section-certainty-badge" style="background:#EEF1F6; color:#5B6B80;" id="refCountBadge">0 Referensi</span>
               </div>
-              <div class="paper-box-target" id="boxDaftarPustaka" style="font-size:11px; line-height:1.6; color:#475569;">
+              <div class="paper-box-target" id="boxDaftarPustaka" style="font-size:11px; line-height:1.6; color:#4A5568;">
                 <p><em>Gunakan tombol "Cari Literatur" untuk menyisipkan referensi ilmiah ke naskah ini.</em></p>
               </div>
             </div>
@@ -1341,7 +1342,7 @@
     <div class="modal-container literature-modal-box">
       <div class="modal-header">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded icon-modal" style="background:#eef2ff;color:#4f46e5;">menu_book</span>
+          <span class="material-symbols-rounded icon-modal" style="background:#EEF2F8;color:#3F72AF;">menu_book</span>
           <div>
             <h3>Cari & Sisipkan Literatur / Referensi</h3>
             <p>Pilih paper ilmiah terpercaya untuk memperkuat argumen dan otomatis menyusun daftar pustaka.</p>
@@ -1884,7 +1885,7 @@
        =================================================================== -->
   <div class="modal-backdrop" id="handoverModal" style="display: none;">
     <div class="modal-container" style="width: 680px; max-height: 88vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b, #312e81); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 22px 26px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E, #112D4E); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 22px 26px;">
         <div class="modal-title-wrap">
           <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#fff;">move_up</span>
           <div>
@@ -1920,14 +1921,14 @@
           </label>
           <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
             <button class="ob-campus-card selected" id="handoverTargetSkripsi" onclick="selectHandoverTarget('skripsi', this)">
-              <div class="campus-icon-badge" style="background:#fef3c7; color:#d97706;">S1</div>
+              <div class="campus-icon-badge" style="background:#F7EDD6; color:#B8862F;">S1</div>
               <div class="ob-campus-info">
                 <strong>Skripsi (S1)</strong>
                 <span>Bab IV &amp; V Empiris</span>
               </div>
             </button>
             <button class="ob-campus-card" id="handoverTargetTesis" onclick="selectHandoverTarget('tesis', this)">
-              <div class="campus-icon-badge" style="background:#ede9fe; color:#7c3aed;">S2</div>
+              <div class="campus-icon-badge" style="background:#E4ECF6; color:#3F72AF;">S2</div>
               <div class="ob-campus-info">
                 <strong>Tesis (S2)</strong>
                 <span>Novelty &amp; Diskusi Global</span>
@@ -1944,9 +1945,9 @@
         </div>
 
         <!-- Lifecycle Bridge Notice -->
-        <div style="background:#f0fdf4; border:1.5px solid #86efac; border-radius:var(--r-xl); padding:14px 16px; display:flex; gap:12px; align-items:flex-start;">
-          <span class="material-symbols-rounded" style="color:#16a34a; font-size:22px;">data_exploration</span>
-          <div style="font-size:12.5px; color:#166534; line-height:1.45;">
+        <div style="background:#F0F8F3; border:1.5px solid #9FD4B5; border-radius:var(--r-xl); padding:14px 16px; display:flex; gap:12px; align-items:flex-start;">
+          <span class="material-symbols-rounded" style="color:#38A169; font-size:22px;">data_exploration</span>
+          <div style="font-size:12.5px; color:#276749; line-height:1.45;">
             <strong>Otomatis Membuka Fase Pengumpulan Data:</strong><br>
             Setelah handover, Thesa akan menyisipkan <em>Fase Lapangan &amp; Pengumpulan Data</em> sebagai jembatan sebelum menyusun Bab IV (Hasil &amp; Pembahasan).
           </div>
@@ -1984,13 +1985,13 @@
       <div style="padding: 20px 24px; overflow-y:auto; max-height: calc(88vh - 180px); display:flex; flex-direction:column; gap:16px;">
         
         <!-- Live Fieldwork Progress Card -->
-        <div class="integrity-profile-card" style="background:#f8fafc; border:1.5px solid var(--border);">
+        <div class="integrity-profile-card" style="background:#F9F7F7; border:1.5px solid var(--border);">
           <div style="flex:1;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
               <strong style="font-size:13.5px;">📈 Status Responden / Sampel Lapangan:</strong>
               <span class="prof-tag verified" id="dataProgressPercent">80% Terkumpul</span>
             </div>
-            <div style="width:100%; height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden; margin-bottom:8px;">
+            <div style="width:100%; height:8px; background:#DDE3EC; border-radius:4px; overflow:hidden; margin-bottom:8px;">
               <div id="dataProgressBarFill" style="width:80%; height:100%; background:var(--brand); transition:width 0.3s;"></div>
             </div>
             <div style="display:flex; gap:12px; font-size:12px; color:var(--text-secondary);">
@@ -2175,9 +2176,9 @@
        =================================================================== -->
   <div id="dossierModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) toggleDossierModal(false)">
     <div class="modal-container" style="width: 760px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:#fff; border-bottom:none;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #112D4E 100%); color:#fff; border-bottom:none;">
         <div class="modal-title-wrap">
-          <div style="width:44px; height:44px; border-radius:50%; border:2px solid rgba(255,255,255,0.3); overflow:hidden; background:#e0e7ff; display:flex; align-items:center; justify-content:center;">
+          <div style="width:44px; height:44px; border-radius:50%; border:2px solid rgba(255,255,255,0.3); overflow:hidden; background:#DBE2EF; display:flex; align-items:center; justify-content:center;">
             <img id="dossierAvatar" src="https://api.dicebear.com/7.x/initials/svg?seed=AA&backgroundColor=e0e7ff&textColor=4f46e5" alt="Avatar" style="width:100%; height:100%;">
           </div>
           <div>
@@ -2192,7 +2193,7 @@
       </div>
 
       <!-- Dossier Tabs -->
-      <div style="display:flex; border-bottom:1px solid var(--border); background:#f8fafc; padding:0 20px;">
+      <div style="display:flex; border-bottom:1px solid var(--border); background:#F9F7F7; padding:0 20px;">
         <button class="dossier-tab active" id="tabBtnCompass" onclick="switchDossierTab('compass')">
           <span class="material-symbols-rounded" style="font-size:17px;">explore</span>
           Arah Riset Personal
@@ -2299,7 +2300,7 @@
             <div class="rigor-cards-grid">
               <div class="rigor-card active" id="rigorCardSocratic" onclick="selectCoachingRigor('socratic')">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                  <span class="material-symbols-rounded" style="color:#4f46e5; font-size:20px;">psychology</span>
+                  <span class="material-symbols-rounded" style="color:#3F72AF; font-size:20px;">psychology</span>
                   <strong>Socratic Mentor (Rekomendasi)</strong>
                 </div>
                 <p>AI selalu menantang logika dan menguji asumsimu melalui pertanyaan sokratik agar kemampuan berpikir kritis terasah mandiri.</p>
@@ -2307,7 +2308,7 @@
 
               <div class="rigor-card" id="rigorCardScopus" onclick="selectCoachingRigor('scopus')">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                  <span class="material-symbols-rounded" style="color:#059669; font-size:20px;">verified</span>
+                  <span class="material-symbols-rounded" style="color:#2F7D52; font-size:20px;">verified</span>
                   <strong>Scopus Peer Reviewer</strong>
                 </div>
                 <p>Keketatan akademik tinggi: mengaudit bias sampel, validitas konstruk, replikasi data, dan kesenjangan literatur global.</p>
@@ -2315,7 +2316,7 @@
 
               <div class="rigor-card" id="rigorCardFast" onclick="selectCoachingRigor('accelerator')">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                  <span class="material-symbols-rounded" style="color:#f59e0b; font-size:20px;">bolt</span>
+                  <span class="material-symbols-rounded" style="color:#D9A441; font-size:20px;">bolt</span>
                   <strong>Structured Accelerator</strong>
                 </div>
                 <p>Fokus efisiensi penulisan cepat, sistematika bab baku, dan pencapaian tenggat waktu tugas kuliah/proposal.</p>
@@ -2378,7 +2379,7 @@
               </div>
               
               <!-- Auto vs Manual Toggle -->
-              <div style="display:flex; align-items:center; gap:6px; background:#f1f5f9; padding:3px 6px; border-radius:999px;">
+              <div style="display:flex; align-items:center; gap:6px; background:#EEF1F6; padding:3px 6px; border-radius:999px;">
                 <button type="button" class="source-mode-btn active" id="srcModeAuto" onclick="setSourceMode('auto')">
                   🤖 Rekomendasi Otomatis
                 </button>
@@ -2388,7 +2389,7 @@
               </div>
             </div>
 
-            <div id="sourceAutoNotice" style="font-size:11.5px; color:#1d4ed8; background:#eff6ff; padding:8px 12px; border-radius:8px; margin-bottom:12px; border:1px solid #bfdbfe;">
+            <div id="sourceAutoNotice" style="font-size:11.5px; color:#2A517E; background:#EEF2F8; padding:8px 12px; border-radius:8px; margin-bottom:12px; border:1px solid #B6C6E0;">
               ✨ <strong>Mode Cerdas Aktif:</strong> Sistem otomatis memprioritaskan database literatur paling relevan berdasarkan bidang <em><span id="autoDisciplineLabel">Informatika &amp; AI</span></em>.
             </div>
 
@@ -2487,16 +2488,16 @@
           </div>
 
           <!-- Consistency Visual Metric -->
-          <div style="background:#f8fafc; border:1.5px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:16px;">
+          <div style="background:#F9F7F7; border:1.5px solid var(--border); border-radius:14px; padding:16px 18px; margin-bottom:16px;">
             <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
               <strong style="font-size:13px; color:var(--text); display:flex; align-items:center; gap:6px;">
-                <span class="material-symbols-rounded" style="color:#16a34a; font-size:18px;">verified</span>
+                <span class="material-symbols-rounded" style="color:#38A169; font-size:18px;">verified</span>
                 Skor Konsistensi Riset Akumulatif
               </strong>
-              <span style="font-size:13px; font-weight:800; color:#16a34a; background:#dcfce7; padding:2px 8px; border-radius:999px;">88% Sangat Selaras</span>
+              <span style="font-size:13px; font-weight:800; color:#38A169; background:#E6F4EC; padding:2px 8px; border-radius:999px;">88% Sangat Selaras</span>
             </div>
-            <div style="width:100%; height:8px; background:#e2e8f0; border-radius:999px; overflow:hidden; margin-bottom:8px;">
-              <div style="width:88%; height:100%; background:linear-gradient(90deg, #22c55e, #16a34a); border-radius:999px;"></div>
+            <div style="width:100%; height:8px; background:#DDE3EC; border-radius:999px; overflow:hidden; margin-bottom:8px;">
+              <div style="width:88%; height:100%; background:linear-gradient(90deg, #38A169, #38A169); border-radius:999px;"></div>
             </div>
             <p style="font-size:11.5px; color:var(--text-secondary); line-height:1.4;">
               3 naskah tersimpan (2 Makalah, 1 Draf Tesis) memiliki korelasi tematik kuat pada domain <em>Kecerdasan Buatan &amp; NLP</em>.
@@ -2575,9 +2576,9 @@
        =================================================================== -->
   <div id="pustakaRisetModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) togglePustakaRisetModal(false)">
     <div class="modal-container" style="width: 820px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%); color:#fff; border-bottom:none;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #2A517E 100%); color:#fff; border-bottom:none;">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded" style="font-size:28px; color:#ddd6fe;">menu_book</span>
+          <span class="material-symbols-rounded" style="font-size:28px; color:#DBE2EF;">menu_book</span>
           <div>
             <div style="display:flex; align-items:center; gap:8px;">
               <h3 style="color:#fff; font-size:18px;">Pustaka Riset Personal</h3>
@@ -2600,9 +2601,9 @@
        =================================================================== -->
   <div id="pencapaianModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) togglePencapaianModal(false)">
     <div class="modal-container" style="width: 720px; max-height: 88vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #78350f 0%, #d97706 100%); color:#fff; border-bottom:none;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #5E4516 0%, #B8862F 100%); color:#fff; border-bottom:none;">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded" style="font-size:28px; color:#fef3c7;">emoji_events</span>
+          <span class="material-symbols-rounded" style="font-size:28px; color:#F7EDD6;">emoji_events</span>
           <div>
             <h3 style="color:#fff; font-size:18px;">Pencapaian &amp; Scholar Rank</h3>
             <p style="color:rgba(255,255,255,0.85); font-size:12px;">Akumulasi reputasi literasi, keaktifan bimbingan, dan lencana kompetensi riset</p>
@@ -2613,20 +2614,20 @@
 
       <div style="padding:24px; max-height:calc(85vh - 160px); overflow-y:auto;">
         <!-- XP & Level Rank Card -->
-        <div style="background:linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border:1.5px solid #fde68a; border-radius:16px; padding:18px 20px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between;">
+        <div style="background:linear-gradient(135deg, #F7EDD6 0%, #FBF6EA 100%); border:1.5px solid #EED9A6; border-radius:16px; padding:18px 20px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between;">
           <div style="display:flex; align-items:center; gap:14px;">
-            <div style="width:52px; height:52px; border-radius:50%; background:#d97706; color:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:800;">
+            <div style="width:52px; height:52px; border-radius:50%; background:#B8862F; color:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:800;">
               3
             </div>
             <div>
-              <span style="font-size:11px; font-weight:800; color:#92400e; text-transform:uppercase; letter-spacing:0.04em;">Level Scholar</span>
-              <h4 style="font-size:17px; font-weight:800; color:#78350f; margin:1px 0;">Kontributor Riset</h4>
-              <p style="font-size:12px; color:#b45309;">1.240 / 1.500 XP menuju <em>Scholar Terkemuka</em></p>
+              <span style="font-size:11px; font-weight:800; color:#7A5A1E; text-transform:uppercase; letter-spacing:0.04em;">Level Scholar</span>
+              <h4 style="font-size:17px; font-weight:800; color:#5E4516; margin:1px 0;">Kontributor Riset</h4>
+              <p style="font-size:12px; color:#8A6420;">1.240 / 1.500 XP menuju <em>Scholar Terkemuka</em></p>
             </div>
           </div>
           <div style="text-align:right;">
-            <span style="font-size:24px; font-weight:800; color:#d97706;">1.240</span>
-            <span style="font-size:12px; font-weight:700; color:#92400e; display:block;">Total XP</span>
+            <span style="font-size:24px; font-weight:800; color:#B8862F;">1.240</span>
+            <span style="font-size:12px; font-weight:700; color:#7A5A1E; display:block;">Total XP</span>
           </div>
         </div>
 
@@ -2634,19 +2635,19 @@
         <h4 style="font-size:14px; font-weight:800; color:var(--text); margin-bottom:12px;">Koleksi Lencana Kompetensi</h4>
         <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-bottom:20px;">
           
-          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #bbf7d0; background:#f0fdf4; border-radius:12px; align-items:center;">
+          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #C6E6D3; background:#F0F8F3; border-radius:12px; align-items:center;">
             <span style="font-size:28px;">🏅</span>
             <div>
-              <strong style="font-size:12.5px; color:#166534; display:block;">Pionir Co-Design</strong>
-              <span style="font-size:11px; color:#15803d;">Berpartisipasi aktif merancang modul Thesa</span>
+              <strong style="font-size:12.5px; color:#276749; display:block;">Pionir Co-Design</strong>
+              <span style="font-size:11px; color:#2F7D52;">Berpartisipasi aktif merancang modul Thesa</span>
             </div>
           </div>
 
-          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #c7d2fe; background:#eef2ff; border-radius:12px; align-items:center;">
+          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #B6C6E0; background:#EEF2F8; border-radius:12px; align-items:center;">
             <span style="font-size:28px;">🧭</span>
             <div>
-              <strong style="font-size:12.5px; color:#3730a3; display:block;">Arsitek Riset</strong>
-              <span style="font-size:11px; color:#4338ca;">Menetapkan arah riset personal berkelanjutan</span>
+              <strong style="font-size:12.5px; color:#2A517E; display:block;">Arsitek Riset</strong>
+              <span style="font-size:11px; color:#2A517E;">Menetapkan arah riset personal berkelanjutan</span>
             </div>
           </div>
 
@@ -2658,7 +2659,7 @@
             </div>
           </div>
 
-          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #e2e8f0; background:#f8fafc; border-radius:12px; align-items:center; opacity:0.6;">
+          <div style="display:flex; gap:12px; padding:12px 14px; border:1.5px solid #DDE3EC; background:#F9F7F7; border-radius:12px; align-items:center; opacity:0.6;">
             <span style="font-size:28px;">📚</span>
             <div>
               <strong style="font-size:12.5px; color:var(--text); display:block;">Literasi Kuat</strong>
@@ -2678,7 +2679,7 @@
     <div class="modal-container" style="width: 520px; max-height: 88vh;">
       <div class="modal-header">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded icon-modal" style="background:#e0e7ff; color:var(--brand);">add_card</span>
+          <span class="material-symbols-rounded icon-modal" style="background:#DBE2EF; color:var(--brand);">add_card</span>
           <div>
             <h3>Top Up Saldo &amp; Kuota Token</h3>
             <p id="topupModalSubtitle">Pilih nominal isi ulang sesuai paket aktifmu</p>
@@ -2706,12 +2707,12 @@
        =================================================================== -->
   <div id="xpRewardsModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) toggleXpRewardsModal(false)">
     <div class="modal-container" style="width: 680px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #112D4E 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
         <div class="modal-title-wrap">
           <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#67e8f9;">workspace_premium</span>
           <div>
             <h3 style="color:#fff; margin:0; font-size:16px;">Pusat Penukaran XP &amp; Kesiapan Riset</h3>
-            <p style="color:#c7d2fe; margin:2px 0 0 0; font-size:11.5px;">XP membuktikan penguasaan materimu dan dapat ditukarkan dengan Token AI gratis.</p>
+            <p style="color:#B6C6E0; margin:2px 0 0 0; font-size:11.5px;">XP membuktikan penguasaan materimu dan dapat ditukarkan dengan Token AI gratis.</p>
           </div>
         </div>
         <button class="btn-modal-close" style="color:#fff;" onclick="toggleXpRewardsModal(false)"><span class="material-symbols-rounded">close</span></button>
@@ -2719,78 +2720,78 @@
 
       <div style="padding: 20px 24px; max-height: calc(85vh - 150px); overflow-y:auto;">
         <!-- Rank Progress Card -->
-        <div style="background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:var(--r-xl); padding:18px; margin-bottom:18px;">
+        <div style="background:#F9F7F7; border:1.5px solid #DDE3EC; border-radius:var(--r-xl); padding:18px; margin-bottom:18px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
             <div>
-              <span style="font-size:11px; font-weight:800; color:#6366f1; text-transform:uppercase; letter-spacing:0.5px;">Peringkat Peneliti Aktif</span>
-              <h4 id="xpRankTitle" style="font-size:18px; font-weight:800; color:#0f172a; margin:2px 0 0 0;">🎓 Scholar Candidate</h4>
+              <span style="font-size:11px; font-weight:800; color:#3F72AF; text-transform:uppercase; letter-spacing:0.5px;">Peringkat Peneliti Aktif</span>
+              <h4 id="xpRankTitle" style="font-size:18px; font-weight:800; color:#112D4E; margin:2px 0 0 0;">🎓 Scholar Candidate</h4>
             </div>
             <div style="text-align:right;">
-              <span id="xpModalBalance" style="font-size:22px; font-weight:800; color:#4f46e5;">350 XP</span>
-              <span style="font-size:11px; color:#64748b; display:block;">Total Poin Riset</span>
+              <span id="xpModalBalance" style="font-size:22px; font-weight:800; color:#3F72AF;">350 XP</span>
+              <span style="font-size:11px; color:#5B6B80; display:block;">Total Poin Riset</span>
             </div>
           </div>
 
           <!-- Readiness Bar -->
           <div style="margin-bottom:6px;">
-            <div style="display:flex; justify-content:space-between; font-size:11.5px; font-weight:700; color:#475569; margin-bottom:4px;">
+            <div style="display:flex; justify-content:space-between; font-size:11.5px; font-weight:700; color:#4A5568; margin-bottom:4px;">
               <span>Tingkat Kesiapan Sidang / Ujian:</span>
               <span id="xpReadinessPct">75% Siap</span>
             </div>
-            <div style="height:8px; background:#e2e8f0; border-radius:999px; overflow:hidden;">
-              <div id="xpReadinessBar" style="width:75%; height:100%; background:linear-gradient(90deg, #4f46e5, #06b6d4); border-radius:999px;"></div>
+            <div style="height:8px; background:#DDE3EC; border-radius:999px; overflow:hidden;">
+              <div id="xpReadinessBar" style="width:75%; height:100%; background:linear-gradient(90deg, #3F72AF, #06b6d4); border-radius:999px;"></div>
             </div>
           </div>
-          <p style="font-size:11.5px; color:#64748b; margin:6px 0 0 0;">Setiap kali kamu menjawab pertanyaan Sokratik dan memvalidasi draf, skor kesiapanmu bertambah otomatis.</p>
+          <p style="font-size:11.5px; color:#5B6B80; margin:6px 0 0 0;">Setiap kali kamu menjawab pertanyaan Sokratik dan memvalidasi draf, skor kesiapanmu bertambah otomatis.</p>
         </div>
 
         <!-- Tukar XP Jadi Token AI -->
-        <h4 style="font-size:13.5px; font-weight:800; color:#0f172a; margin:0 0 10px 0;">🎁 Tukar XP Jadi Token AI Gratis:</h4>
+        <h4 style="font-size:13.5px; font-weight:800; color:#112D4E; margin:0 0 10px 0;">🎁 Tukar XP Jadi Token AI Gratis:</h4>
         
         <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-bottom:18px;">
           <!-- Reward 1 -->
-          <div class="qris-pkg-card" onclick="redeemXPForTokens(250, 7500)" style="padding:14px 10px; border:1.5px solid #cbd5e1; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
+          <div class="qris-pkg-card" onclick="redeemXPForTokens(250, 7500)" style="padding:14px 10px; border:1.5px solid #C5CFDF; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
             <span style="font-size:18px; display:block; margin-bottom:4px;">⚡</span>
-            <strong style="font-size:13px; color:#0f172a; display:block;">+7.500 Token</strong>
-            <span style="font-size:11.5px; font-weight:800; color:#4f46e5; display:block; margin:4px 0;">250 XP</span>
+            <strong style="font-size:13px; color:#112D4E; display:block;">+7.500 Token</strong>
+            <span style="font-size:11.5px; font-weight:800; color:#3F72AF; display:block; margin:4px 0;">250 XP</span>
             <button type="button" class="btn-quick-chip" style="font-size:11px; padding:4px 8px; width:100%; justify-content:center;">Tukar Sekarang</button>
           </div>
 
           <!-- Reward 2 -->
-          <div class="qris-pkg-card" onclick="redeemXPForTokens(500, 20000)" style="padding:14px 10px; border:2px solid #4f46e5; background:#f5f3ff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
+          <div class="qris-pkg-card" onclick="redeemXPForTokens(500, 20000)" style="padding:14px 10px; border:2px solid #3F72AF; background:#EEF2F8; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
             <span style="font-size:18px; display:block; margin-bottom:4px;">🚀</span>
-            <strong style="font-size:13px; color:#0f172a; display:block;">+20.000 Token</strong>
-            <span style="font-size:11.5px; font-weight:800; color:#4f46e5; display:block; margin:4px 0;">500 XP</span>
-            <button type="button" class="btn-quick-chip" style="font-size:11px; padding:4px 8px; width:100%; justify-content:center; background:#4f46e5; color:#fff;">Tukar Sekarang</button>
+            <strong style="font-size:13px; color:#112D4E; display:block;">+20.000 Token</strong>
+            <span style="font-size:11.5px; font-weight:800; color:#3F72AF; display:block; margin:4px 0;">500 XP</span>
+            <button type="button" class="btn-quick-chip" style="font-size:11px; padding:4px 8px; width:100%; justify-content:center; background:#3F72AF; color:#fff;">Tukar Sekarang</button>
           </div>
 
           <!-- Reward 3 -->
-          <div class="qris-pkg-card" onclick="redeemXPForTokens(1000, 50000)" style="padding:14px 10px; border:1.5px solid #cbd5e1; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
+          <div class="qris-pkg-card" onclick="redeemXPForTokens(1000, 50000)" style="padding:14px 10px; border:1.5px solid #C5CFDF; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
             <span style="font-size:18px; display:block; margin-bottom:4px;">👑</span>
-            <strong style="font-size:13px; color:#0f172a; display:block;">+50.000 Token</strong>
-            <span style="font-size:11.5px; font-weight:800; color:#16a34a; display:block; margin:4px 0;">1.000 XP</span>
+            <strong style="font-size:13px; color:#112D4E; display:block;">+50.000 Token</strong>
+            <span style="font-size:11.5px; font-weight:800; color:#38A169; display:block; margin:4px 0;">1.000 XP</span>
             <button type="button" class="btn-quick-chip" style="font-size:11px; padding:4px 8px; width:100%; justify-content:center;">Tukar Sekarang</button>
           </div>
         </div>
 
         <!-- Bukti Penguasaan Mandiri -->
-        <div style="background:#fffbeb; border:1.5px solid #fde68a; border-radius:var(--r-lg); padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+        <div style="background:#FBF6EA; border:1.5px solid #EED9A6; border-radius:var(--r-lg); padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
           <div style="display:flex; align-items:center; gap:10px;">
             <span style="font-size:22px;">📜</span>
             <div>
-              <strong style="font-size:12.5px; color:#92400e; display:block;">Bukti Bimbingan Mandiri (Orisinalitas)</strong>
-              <span style="font-size:11px; color:#b45309;">XP membuktikan kamu menyusun naskah lewat dialog berpikir sendiri, bukan hasil copas.</span>
+              <strong style="font-size:12.5px; color:#7A5A1E; display:block;">Bukti Bimbingan Mandiri (Orisinalitas)</strong>
+              <span style="font-size:11px; color:#8A6420;">XP membuktikan kamu menyusun naskah lewat dialog berpikir sendiri, bukan hasil copas.</span>
             </div>
           </div>
-          <button type="button" class="btn-quick-chip" onclick="showThesaToast('✓ Ringkasan orisinalitas naskah tersertifikasi', 'success', 'verified')" style="background:#fef3c7; color:#92400e; border-color:#fcd34d; font-size:11px; font-weight:700; white-space:nowrap;">
+          <button type="button" class="btn-quick-chip" onclick="showThesaToast('✓ Ringkasan orisinalitas naskah tersertifikasi', 'success', 'verified')" style="background:#F7EDD6; color:#7A5A1E; border-color:#fcd34d; font-size:11px; font-weight:700; white-space:nowrap;">
             Cek Bukti
           </button>
         </div>
       </div>
 
-      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#f8fafc; border-top:1px solid var(--border);">
+      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#F9F7F7; border-top:1px solid var(--border);">
         <button class="btn-secondary" onclick="toggleXpRewardsModal(false)">Tutup</button>
-        <span style="font-size:11px; color:#64748b;">🎯 Tingkatkan terus XP dengan merespons pertanyaan pembimbing AI.</span>
+        <span style="font-size:11px; color:#5B6B80;">🎯 Tingkatkan terus XP dengan merespons pertanyaan pembimbing AI.</span>
       </div>
     </div>
   </div>
@@ -2802,7 +2803,7 @@
     <div class="modal-container" style="width: 680px; max-height: 88vh;">
       <div class="modal-header">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded icon-modal" style="background:#e0e7ff; color:var(--brand);">article</span>
+          <span class="material-symbols-rounded icon-modal" style="background:#DBE2EF; color:var(--brand);">article</span>
           <div>
             <h3>Contoh Naskah Makalah Terstruktur</h3>
             <p>Dihasilkan melalui proses bimbingan Sokratik Thesa (3 Bab Standar)</p>
@@ -2812,27 +2813,27 @@
       </div>
       
       <div style="padding:20px 24px; max-height: calc(85vh - 160px); overflow-y:auto; font-size:13px; line-height:1.6;">
-        <div style="padding:12px 16px; background:#f8fafc; border-radius:var(--r-md); border:1px solid var(--border); margin-bottom:16px;">
+        <div style="padding:12px 16px; background:#F9F7F7; border-radius:var(--r-md); border:1px solid var(--border); margin-bottom:16px;">
           <strong style="font-size:14px; color:var(--text);">Judul: Etika Penerapan Kecerdasan Buatan dalam Penulisan Akademik Mahasiswa</strong>
           <span style="font-size:12px; color:var(--text-secondary); display:block; margin-top:2px;">Format: Makalah Ilmiah 3 Bab · Gaya Sitasi APA 7th</span>
         </div>
 
         <div style="display:flex; flex-direction:column; gap:12px;">
-          <div style="padding:12px; border-left:3px solid var(--brand); background:#fafafa;">
+          <div style="padding:12px; border-left:3px solid var(--brand); background:#F9F7F7;">
             <strong style="color:var(--brand);">BAB I: PENDAHULUAN</strong>
             <p style="margin-top:4px; font-size:12.5px; color:var(--text-secondary);">
               Membahas disrupsi Generative AI di perguruan tinggi, dilema batas antara bantuan tata bahasa vs perjokian algoritma, dan rumusan masalah mengenai batasan etis penggunaan AI.
             </p>
           </div>
 
-          <div style="padding:12px; border-left:3px solid var(--brand); background:#fafafa;">
+          <div style="padding:12px; border-left:3px solid var(--brand); background:#F9F7F7;">
             <strong style="color:var(--brand);">BAB II: PEMBAHASAN &amp; ANALISIS KRITIS</strong>
             <p style="margin-top:4px; font-size:12.5px; color:var(--text-secondary);">
               Analisis komparasi kerangka integritas akademik UNESCO dan Kemendikbudristek. Argumen bahwa peran mahasiswa adalah sebagai konduktor pemikiran, bukan sekadar penonton hasil sintesis mesin.
             </p>
           </div>
 
-          <div style="padding:12px; border-left:3px solid var(--brand); background:#fafafa;">
+          <div style="padding:12px; border-left:3px solid var(--brand); background:#F9F7F7;">
             <strong style="color:var(--brand);">BAB III: PENUTUP &amp; REKOMENDASI</strong>
             <p style="margin-top:4px; font-size:12.5px; color:var(--text-secondary);">
               Kesimpulan sintesis bahwa transparansi proses bernalar melalui metode dialog Sokratik adalah kunci utama pencegahan krisis integritas akademik.
@@ -2856,12 +2857,12 @@
        =================================================================== -->
   <div id="tokenBoosterModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) toggleTokenBoosterModal(false)">
     <div class="modal-container" style="width: 660px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #112D4E 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
         <div class="modal-title-wrap">
-          <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#fbbf24;">bolt</span>
+          <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#D9A441;">bolt</span>
           <div>
             <h3 style="color:#fff; margin:0; font-size:16px;">Isi Ulang Token AI Instan (Booster Bimbingan)</h3>
-            <p style="color:#c7d2fe; margin:2px 0 0 0; font-size:11.5px;">Bebas bimbingan Sokratik &amp; analisis naskah tanpa gangguan kuota mingguan.</p>
+            <p style="color:#B6C6E0; margin:2px 0 0 0; font-size:11.5px;">Bebas bimbingan Sokratik &amp; analisis naskah tanpa gangguan kuota mingguan.</p>
           </div>
         </div>
         <button class="btn-modal-close" style="color:#fff;" onclick="toggleTokenBoosterModal(false)"><span class="material-symbols-rounded">close</span></button>
@@ -2869,73 +2870,73 @@
 
       <div style="padding: 20px 24px; max-height: calc(85vh - 150px); overflow-y:auto;">
         <!-- Token Balance Notice -->
-        <div style="background:#fffbeb; border:1.5px solid #fef3c7; border-radius:var(--r-lg); padding:12px 16px; margin-bottom:16px; display:flex; align-items:center; justify-content:space-between;">
+        <div style="background:#FBF6EA; border:1.5px solid #F7EDD6; border-radius:var(--r-lg); padding:12px 16px; margin-bottom:16px; display:flex; align-items:center; justify-content:space-between;">
           <div style="display:flex; align-items:center; gap:10px;">
             <span style="font-size:24px;">⚠️</span>
             <div>
-              <strong style="font-size:13px; color:#92400e; display:block;">Kuota Token AI Menipis</strong>
-              <span style="font-size:11.5px; color:#b45309;">Top-up sekarang untuk memastikan penalaran draf dan bimbingan tidak terputus di tengah jalan.</span>
+              <strong style="font-size:13px; color:#7A5A1E; display:block;">Kuota Token AI Menipis</strong>
+              <span style="font-size:11.5px; color:#8A6420;">Top-up sekarang untuk memastikan penalaran draf dan bimbingan tidak terputus di tengah jalan.</span>
             </div>
           </div>
           <div style="text-align:right;">
-            <span id="boosterCurrentTokens" style="font-size:16px; font-weight:800; color:#d97706;">24.500 Token</span>
-            <span style="font-size:10.5px; color:#92400e; display:block;">Sisa Token Aktif</span>
+            <span id="boosterCurrentTokens" style="font-size:16px; font-weight:800; color:#B8862F;">24.500 Token</span>
+            <span style="font-size:10.5px; color:#7A5A1E; display:block;">Sisa Token Aktif</span>
           </div>
         </div>
 
         <!-- Booster Package Grid -->
         <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-bottom:18px;">
           <!-- Package 1: 50k -->
-          <div class="qris-pkg-card" id="boosterPkg50" onclick="selectBoosterPackage('50k', 5000, 50000)" style="padding:14px 10px; border:1.5px solid #cbd5e1; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
-            <span style="font-size:9.5px; font-weight:800; color:#475569; background:#f1f5f9; padding:2px 6px; border-radius:6px;">HEMAT</span>
-            <h4 style="font-size:13.5px; font-weight:800; color:#0f172a; margin:6px 0 2px 0;">⚡ 50k Token</h4>
-            <div style="font-size:16px; font-weight:800; color:#4f46e5;">Rp 5.000</div>
-            <p style="font-size:10px; color:#64748b; margin:4px 0 0 0;">Cukup untuk ~2 Bab &amp; Review Draf</p>
+          <div class="qris-pkg-card" id="boosterPkg50" onclick="selectBoosterPackage('50k', 5000, 50000)" style="padding:14px 10px; border:1.5px solid #C5CFDF; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
+            <span style="font-size:9.5px; font-weight:800; color:#4A5568; background:#EEF1F6; padding:2px 6px; border-radius:6px;">HEMAT</span>
+            <h4 style="font-size:13.5px; font-weight:800; color:#112D4E; margin:6px 0 2px 0;">⚡ 50k Token</h4>
+            <div style="font-size:16px; font-weight:800; color:#3F72AF;">Rp 5.000</div>
+            <p style="font-size:10px; color:#5B6B80; margin:4px 0 0 0;">Cukup untuk ~2 Bab &amp; Review Draf</p>
           </div>
 
           <!-- Package 2: 150k -->
-          <div class="qris-pkg-card active" id="boosterPkg150" onclick="selectBoosterPackage('150k', 12000, 150000)" style="padding:14px 10px; border:2px solid #4f46e5; background:#f5f3ff; border-radius:var(--r-lg); cursor:pointer; text-align:center; position:relative;">
-            <span style="font-size:9.5px; font-weight:800; color:#4f46e5; background:#ede9fe; padding:2px 6px; border-radius:6px;">FAVORIT</span>
-            <h4 style="font-size:13.5px; font-weight:800; color:#0f172a; margin:6px 0 2px 0;">🚀 150k Token</h4>
-            <div style="font-size:16px; font-weight:800; color:#4f46e5;">Rp 12.000</div>
-            <p style="font-size:10px; color:#64748b; margin:4px 0 0 0;">Cukup untuk Naskah Skripsi Penuh</p>
+          <div class="qris-pkg-card active" id="boosterPkg150" onclick="selectBoosterPackage('150k', 12000, 150000)" style="padding:14px 10px; border:2px solid #3F72AF; background:#EEF2F8; border-radius:var(--r-lg); cursor:pointer; text-align:center; position:relative;">
+            <span style="font-size:9.5px; font-weight:800; color:#3F72AF; background:#E4ECF6; padding:2px 6px; border-radius:6px;">FAVORIT</span>
+            <h4 style="font-size:13.5px; font-weight:800; color:#112D4E; margin:6px 0 2px 0;">🚀 150k Token</h4>
+            <div style="font-size:16px; font-weight:800; color:#3F72AF;">Rp 12.000</div>
+            <p style="font-size:10px; color:#5B6B80; margin:4px 0 0 0;">Cukup untuk Naskah Skripsi Penuh</p>
           </div>
 
           <!-- Package 3: 500k -->
-          <div class="qris-pkg-card" id="boosterPkg500" onclick="selectBoosterPackage('500k', 29000, 500000)" style="padding:14px 10px; border:1.5px solid #cbd5e1; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
-            <span style="font-size:9.5px; font-weight:800; color:#16a34a; background:#dcfce7; padding:2px 6px; border-radius:6px;">HEMAT 40%</span>
-            <h4 style="font-size:13.5px; font-weight:800; color:#0f172a; margin:6px 0 2px 0;">👑 500k Token</h4>
-            <div style="font-size:16px; font-weight:800; color:#16a34a;">Rp 29.000</div>
-            <p style="font-size:10px; color:#64748b; margin:4px 0 0 0;">Untuk Riset Tesis &amp; Jurnal Scopus</p>
+          <div class="qris-pkg-card" id="boosterPkg500" onclick="selectBoosterPackage('500k', 29000, 500000)" style="padding:14px 10px; border:1.5px solid #C5CFDF; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; text-align:center;">
+            <span style="font-size:9.5px; font-weight:800; color:#38A169; background:#E6F4EC; padding:2px 6px; border-radius:6px;">HEMAT 40%</span>
+            <h4 style="font-size:13.5px; font-weight:800; color:#112D4E; margin:6px 0 2px 0;">👑 500k Token</h4>
+            <div style="font-size:16px; font-weight:800; color:#38A169;">Rp 29.000</div>
+            <p style="font-size:10px; color:#5B6B80; margin:4px 0 0 0;">Untuk Riset Tesis &amp; Jurnal Scopus</p>
           </div>
         </div>
 
         <!-- Dynamic QRIS Scan Box -->
-        <div style="background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:var(--r-xl); padding:16px; text-align:center;">
-          <div style="font-size:13px; font-weight:700; color:#0f172a; margin-bottom:10px;">
-            Total Bayar: <span id="boosterAmountText" style="color:#4f46e5; font-size:18px; font-weight:800;">Rp 12.000</span>
-            <span style="font-size:11.5px; font-weight:600; color:#64748b;">(Penambahan <span id="boosterAddedTokensText">150.000</span> Token AI)</span>
+        <div style="background:#F9F7F7; border:1.5px solid #DDE3EC; border-radius:var(--r-xl); padding:16px; text-align:center;">
+          <div style="font-size:13px; font-weight:700; color:#112D4E; margin-bottom:10px;">
+            Total Bayar: <span id="boosterAmountText" style="color:#3F72AF; font-size:18px; font-weight:800;">Rp 12.000</span>
+            <span style="font-size:11.5px; font-weight:600; color:#5B6B80;">(Penambahan <span id="boosterAddedTokensText">150.000</span> Token AI)</span>
           </div>
 
           <!-- QR Code Area -->
-          <div style="width:160px; height:160px; margin:0 auto 10px; background:#fff; padding:10px; border-radius:12px; border:2px solid #0f172a; display:flex; align-items:center; justify-content:center;">
-            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#fafafa; border:1px dashed #cbd5e1; border-radius:8px;">
-              <span class="material-symbols-rounded" style="font-size:100px; color:#1e293b;">qr_code_2</span>
+          <div style="width:160px; height:160px; margin:0 auto 10px; background:#fff; padding:10px; border-radius:12px; border:2px solid #112D4E; display:flex; align-items:center; justify-content:center;">
+            <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#F9F7F7; border:1px dashed #C5CFDF; border-radius:8px;">
+              <span class="material-symbols-rounded" style="font-size:100px; color:#1A3556;">qr_code_2</span>
             </div>
           </div>
 
-          <span style="font-size:11px; color:#64748b; display:block; margin-bottom:10px;">Scan instan via GoPay, ShopeePay, BCA Mobile, OVO, Dana, LinkAja, Mandiri Livin, dll.</span>
+          <span style="font-size:11px; color:#5B6B80; display:block; margin-bottom:10px;">Scan instan via GoPay, ShopeePay, BCA Mobile, OVO, Dana, LinkAja, Mandiri Livin, dll.</span>
 
           <!-- Instant Simulation CTA -->
-          <button type="button" class="btn-quick-chip" onclick="simulateBoosterSuccess()" style="background:#e0e7ff; color:#4338ca; border-color:#c7d2fe; font-weight:700; padding:6px 16px;">
+          <button type="button" class="btn-quick-chip" onclick="simulateBoosterSuccess()" style="background:#DBE2EF; color:#2A517E; border-color:#B6C6E0; font-weight:700; padding:6px 16px;">
             ⚡ Konfirmasi Pembayaran QRIS Booster (Otomatis Masuk)
           </button>
         </div>
       </div>
 
-      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#f8fafc; border-top:1px solid var(--border);">
+      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#F9F7F7; border-top:1px solid var(--border);">
         <button class="btn-secondary" onclick="toggleTokenBoosterModal(false)">Batal</button>
-        <span style="font-size:11px; color:#64748b;">⚡ Token langsung masuk ke akun secara instan tanpa perlu refresh halaman.</span>
+        <span style="font-size:11px; color:#5B6B80;">⚡ Token langsung masuk ke akun secara instan tanpa perlu refresh halaman.</span>
       </div>
     </div>
   </div>
@@ -2945,12 +2946,12 @@
        =================================================================== -->
   <div id="qrisCheckoutModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) toggleQRISModal(false)">
     <div class="modal-container" style="width: 660px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #1A3556 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
         <div class="modal-title-wrap">
           <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#38bdf8;">qr_code_scanner</span>
           <div>
             <h3 style="color:#fff; margin:0; font-size:16px;">Pay-per-Makalah Instant QRIS</h3>
-            <p style="color:#94a3b8; margin:2px 0 0 0; font-size:11.5px;">Bayar per tugas tanpa langganan mahal. Cetak & Unduh Word/PDF Instan.</p>
+            <p style="color:#8A97A8; margin:2px 0 0 0; font-size:11.5px;">Bayar per tugas tanpa langganan mahal. Cetak & Unduh Word/PDF Instan.</p>
           </div>
         </div>
         <button class="btn-modal-close" style="color:#fff;" onclick="toggleQRISModal(false)"><span class="material-symbols-rounded">close</span></button>
@@ -2959,65 +2960,65 @@
       <div style="padding: 20px 24px; max-height: calc(85vh - 150px); overflow-y:auto;">
         <!-- Package Option Cards -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:18px;">
-          <div class="qris-pkg-card active" id="pkgSingle" onclick="selectQRISPackage('single', 12000, '1 Naskah Makalah')" style="padding:14px; border:2px solid #4f46e5; background:#f5f3ff; border-radius:var(--r-lg); cursor:pointer; position:relative;">
+          <div class="qris-pkg-card active" id="pkgSingle" onclick="selectQRISPackage('single', 12000, '1 Naskah Makalah')" style="padding:14px; border:2px solid #3F72AF; background:#EEF2F8; border-radius:var(--r-lg); cursor:pointer; position:relative;">
             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-              <span style="font-size:10px; font-weight:800; color:#4f46e5; background:#ede9fe; padding:2px 8px; border-radius:12px;">PALING POPULER</span>
-              <span class="qris-radio-dot" id="radioSingle" style="width:16px; height:16px; border-radius:50%; border:2px solid #4f46e5; background:#4f46e5; display:inline-block;"></span>
+              <span style="font-size:10px; font-weight:800; color:#3F72AF; background:#E4ECF6; padding:2px 8px; border-radius:12px;">PALING POPULER</span>
+              <span class="qris-radio-dot" id="radioSingle" style="width:16px; height:16px; border-radius:50%; border:2px solid #3F72AF; background:#3F72AF; display:inline-block;"></span>
             </div>
-            <h4 style="font-size:14px; font-weight:800; color:#0f172a; margin:8px 0 2px 0;">1x Makalah Penuh</h4>
-            <div style="font-size:18px; font-weight:800; color:#4f46e5;">Rp 12.000 <span style="font-size:11px; font-weight:600; color:#64748b;">/naskah</span></div>
-            <p style="font-size:11px; color:#64748b; margin:4px 0 0 0;">Akses draf 3 Bab + Ekspor Word & PDF + Halaman Cover Resmi.</p>
+            <h4 style="font-size:14px; font-weight:800; color:#112D4E; margin:8px 0 2px 0;">1x Makalah Penuh</h4>
+            <div style="font-size:18px; font-weight:800; color:#3F72AF;">Rp 12.000 <span style="font-size:11px; font-weight:600; color:#5B6B80;">/naskah</span></div>
+            <p style="font-size:11px; color:#5B6B80; margin:4px 0 0 0;">Akses draf 3 Bab + Ekspor Word & PDF + Halaman Cover Resmi.</p>
           </div>
 
-          <div class="qris-pkg-card" id="pkgSemester" onclick="selectQRISPackage('semester', 39000, '4 Naskah Makalah')" style="padding:14px; border:1.5px solid #cbd5e1; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; position:relative;">
+          <div class="qris-pkg-card" id="pkgSemester" onclick="selectQRISPackage('semester', 39000, '4 Naskah Makalah')" style="padding:14px; border:1.5px solid #C5CFDF; background:#ffffff; border-radius:var(--r-lg); cursor:pointer; position:relative;">
             <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-              <span style="font-size:10px; font-weight:800; color:#16a34a; background:#dcfce7; padding:2px 8px; border-radius:12px;">HEMAT 20%</span>
-              <span class="qris-radio-dot" id="radioSemester" style="width:16px; height:16px; border-radius:50%; border:2px solid #cbd5e1; background:#fff; display:inline-block;"></span>
+              <span style="font-size:10px; font-weight:800; color:#38A169; background:#E6F4EC; padding:2px 8px; border-radius:12px;">HEMAT 20%</span>
+              <span class="qris-radio-dot" id="radioSemester" style="width:16px; height:16px; border-radius:50%; border:2px solid #C5CFDF; background:#fff; display:inline-block;"></span>
             </div>
-            <h4 style="font-size:14px; font-weight:800; color:#0f172a; margin:8px 0 2px 0;">Paket 4x Makalah</h4>
-            <div style="font-size:18px; font-weight:800; color:#16a34a;">Rp 39.000 <span style="font-size:11px; font-weight:600; color:#64748b;">(~Rp 9.750/naskah)</span></div>
-            <p style="font-size:11px; color:#64748b; margin:4px 0 0 0;">Cukup untuk 1 semester + Bonus Cek Plagiarisme & Sitasi APA 7th.</p>
+            <h4 style="font-size:14px; font-weight:800; color:#112D4E; margin:8px 0 2px 0;">Paket 4x Makalah</h4>
+            <div style="font-size:18px; font-weight:800; color:#38A169;">Rp 39.000 <span style="font-size:11px; font-weight:600; color:#5B6B80;">(~Rp 9.750/naskah)</span></div>
+            <p style="font-size:11px; color:#5B6B80; margin:4px 0 0 0;">Cukup untuk 1 semester + Bonus Cek Plagiarisme & Sitasi APA 7th.</p>
           </div>
         </div>
 
         <!-- Dynamic QRIS Payment Container -->
-        <div style="background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:var(--r-xl); padding:18px; text-align:center;">
+        <div style="background:#F9F7F7; border:1.5px solid #DDE3EC; border-radius:var(--r-xl); padding:18px; text-align:center;">
           <div style="display:flex; justify-content:center; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
-            <strong style="font-size:14px; color:#0f172a;">Scan QRIS Resmi:</strong>
-            <span style="font-size:11px; font-weight:800; color:#dc2626; background:#fee2e2; padding:2px 8px; border-radius:6px;">QRIS NASIONAL</span>
-            <span style="font-size:11px; font-weight:700; color:#4f46e5; background:#e0e7ff; padding:2px 8px; border-radius:6px;">MIDTRANS GATEWAY</span>
+            <strong style="font-size:14px; color:#112D4E;">Scan QRIS Resmi:</strong>
+            <span style="font-size:11px; font-weight:800; color:#C53030; background:#fee2e2; padding:2px 8px; border-radius:6px;">QRIS NASIONAL</span>
+            <span style="font-size:11px; font-weight:700; color:#3F72AF; background:#DBE2EF; padding:2px 8px; border-radius:6px;">MIDTRANS GATEWAY</span>
           </div>
 
           <!-- Mock QRIS SVG Graphic -->
-          <div style="width:180px; height:180px; margin:0 auto 12px; background:#fff; padding:12px; border-radius:12px; border:2px solid #0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.06); display:flex; flex-direction:column; align-items:center; justify-content:center;">
-            <div id="qrisCodeBox" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#fafafa; border:1px dashed #cbd5e1; border-radius:8px;">
-              <span class="material-symbols-rounded" style="font-size:110px; color:#1e293b;">qr_code_2</span>
+          <div style="width:180px; height:180px; margin:0 auto 12px; background:#fff; padding:12px; border-radius:12px; border:2px solid #112D4E; box-shadow:0 4px 12px rgba(0,0,0,0.06); display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <div id="qrisCodeBox" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#F9F7F7; border:1px dashed #C5CFDF; border-radius:8px;">
+              <span class="material-symbols-rounded" style="font-size:110px; color:#1A3556;">qr_code_2</span>
             </div>
           </div>
 
-          <div style="font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">
-            Total Pembayaran: <span id="qrisAmountText" style="color:#4f46e5; font-size:16px; font-weight:800;">Rp 12.000</span>
+          <div style="font-size:13px; font-weight:700; color:#112D4E; margin-bottom:4px;">
+            Total Pembayaran: <span id="qrisAmountText" style="color:#3F72AF; font-size:16px; font-weight:800;">Rp 12.000</span>
           </div>
-          <span style="font-size:11px; color:#64748b; display:block; margin-bottom:12px;">Bisa discan menggunakan GoPay, ShopeePay, OVO, Dana, LinkAja, BCA Mobile, Mandiri, & BRImo</span>
+          <span style="font-size:11px; color:#5B6B80; display:block; margin-bottom:12px;">Bisa discan menggunakan GoPay, ShopeePay, OVO, Dana, LinkAja, BCA Mobile, Mandiri, & BRImo</span>
 
           <!-- Real-time Status Indicator -->
-          <div id="qrisStatusNotice" style="display:inline-flex; align-items:center; gap:6px; background:#fef3c7; border:1px solid #fde047; color:#854d0e; padding:6px 14px; border-radius:var(--r-full); font-size:11.5px; font-weight:700;">
+          <div id="qrisStatusNotice" style="display:inline-flex; align-items:center; gap:6px; background:#F7EDD6; border:1px solid #fde047; color:#854d0e; padding:6px 14px; border-radius:var(--r-full); font-size:11.5px; font-weight:700;">
             <span class="material-symbols-rounded" style="font-size:16px; animation: spin 2s linear infinite;">sync</span>
             <span>Menunggu Verifikasi Pembayaran via QRIS...</span>
           </div>
 
           <!-- Instant Simulation CTA for Demo -->
-          <div style="margin-top:14px; padding-top:12px; border-top:1px dashed #cbd5e1;">
-            <button type="button" class="btn-quick-chip" onclick="simulateQRISSuccess()" style="background:#e0e7ff; color:#4338ca; border-color:#c7d2fe; font-weight:700; padding:6px 16px;">
+          <div style="margin-top:14px; padding-top:12px; border-top:1px dashed #C5CFDF;">
+            <button type="button" class="btn-quick-chip" onclick="simulateQRISSuccess()" style="background:#DBE2EF; color:#2A517E; border-color:#B6C6E0; font-weight:700; padding:6px 16px;">
               ⚡ Simulasi Bayar QRIS Instan (Verifikasi Langsung)
             </button>
           </div>
         </div>
       </div>
 
-      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#f8fafc; border-top:1px solid var(--border);">
+      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#F9F7F7; border-top:1px solid var(--border);">
         <button class="btn-secondary" onclick="toggleQRISModal(false)">Batal</button>
-        <span style="font-size:11px; color:#64748b;">🛡️ Transaksi aman 100% terenkripsi via QRIS standar Bank Indonesia.</span>
+        <span style="font-size:11px; color:#5B6B80;">🛡️ Transaksi aman 100% terenkripsi via QRIS standar Bank Indonesia.</span>
       </div>
     </div>
   </div>
@@ -3027,12 +3028,12 @@
        =================================================================== -->
   <div id="exportMakalahModal" class="modal-backdrop" style="display:none;" onclick="if(event.target===this) toggleExportModal(false)">
     <div class="modal-container" style="width: 640px; max-height: 90vh;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #112D4E 0%, #112D4E 100%); color:#fff; border-radius: var(--r-2xl) var(--r-2xl) 0 0; padding: 20px 24px;">
         <div class="modal-title-wrap">
           <span class="material-symbols-rounded icon-modal" style="background: rgba(255,255,255,0.15); color:#fff;">download_for_offline</span>
           <div>
             <h3 style="color:#fff; margin:0; font-size:16px;">Ekspor Naskah Makalah Siap Kumpul</h3>
-            <p style="color:#c7d2fe; margin:2px 0 0 0; font-size:11.5px;">Otomatis tersusun dengan Halaman Judul/Cover, Margin 4-4-3-3 & Gaya Sitasi APA 7th</p>
+            <p style="color:#B6C6E0; margin:2px 0 0 0; font-size:11.5px;">Otomatis tersusun dengan Halaman Judul/Cover, Margin 4-4-3-3 & Gaya Sitasi APA 7th</p>
           </div>
         </div>
         <button class="btn-modal-close" style="color:#fff;" onclick="toggleExportModal(false)"><span class="material-symbols-rounded">close</span></button>
@@ -3040,9 +3041,9 @@
 
       <div style="padding: 20px 24px; max-height: calc(85vh - 160px); overflow-y:auto;">
         <!-- Preset Format Banner -->
-        <div style="display:flex; align-items:center; gap:10px; padding:10px 14px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:var(--r-md); margin-bottom:18px;">
-          <span class="material-symbols-rounded" style="color:#16a34a; font-size:22px;">verified</span>
-          <div style="font-size:12px; color:#166534;">
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 14px; background:#F0F8F3; border:1px solid #C6E6D3; border-radius:var(--r-md); margin-bottom:18px;">
+          <span class="material-symbols-rounded" style="color:#38A169; font-size:22px;">verified</span>
+          <div style="font-size:12px; color:#276749;">
             <strong>Standar Format Akademik Indonesia:</strong> Font Times New Roman 12pt, Spasi 1.5, Margin Kiri/Atas 4cm, Kanan/Bawah 3cm, & Rata Kanan-Kiri (Justified).
           </div>
         </div>
@@ -3090,22 +3091,22 @@
         </div>
       </div>
 
-      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#f8fafc; border-top:1px solid var(--border); flex-wrap:wrap; gap:10px;">
+      <div class="modal-footer" style="justify-content:space-between; padding:14px 24px; background:#F9F7F7; border-top:1px solid var(--border); flex-wrap:wrap; gap:10px;">
         <button class="btn-secondary" onclick="toggleExportModal(false)">Batal</button>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="btn-secondary" onclick="executeExportBibTeX()" style="border-color:#cbd5e1; color:#334155;" title="Ekspor Sitasi ke Mendeley / Zotero">
+          <button class="btn-secondary" onclick="executeExportBibTeX()" style="border-color:#C5CFDF; color:#2B3E56;" title="Ekspor Sitasi ke Mendeley / Zotero">
             <span class="material-symbols-rounded" style="font-size:18px;">format_quote</span>
             <span>BibTeX (.bib)</span>
           </button>
-          <button class="btn-secondary" onclick="executeExportMarkdown()" style="border-color:#cbd5e1; color:#334155;" title="Ekspor Naskah ke Markdown">
+          <button class="btn-secondary" onclick="executeExportMarkdown()" style="border-color:#C5CFDF; color:#2B3E56;" title="Ekspor Naskah ke Markdown">
             <span class="material-symbols-rounded" style="font-size:18px;">code</span>
             <span>Markdown (.md)</span>
           </button>
-          <button class="btn-secondary" onclick="executeExportPDF()" style="border-color:#cbd5e1; color:#334155;">
+          <button class="btn-secondary" onclick="executeExportPDF()" style="border-color:#C5CFDF; color:#2B3E56;">
             <span class="material-symbols-rounded" style="font-size:18px;">print</span>
             <span>Cetak / PDF</span>
           </button>
-          <button class="btn-primary" onclick="executeExportDOCX()" style="background:linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);">
+          <button class="btn-primary" onclick="executeExportDOCX()" style="background:linear-gradient(135deg, #2563eb 0%, #2A517E 100%);">
             <span class="material-symbols-rounded" style="font-size:18px;">description</span>
             <span>Unduh Word (.doc)</span>
           </button>
