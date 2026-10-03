@@ -1,0 +1,7527 @@
+[
+  {
+    "timestamp": "2026-04-17T08:35:06.261943",
+    "feature": "test_feature",
+    "input_tokens": 100,
+    "output_tokens": 200,
+    "total": 300
+  },
+  {
+    "timestamp": "2026-04-17T08:36:03.727398",
+    "feature": "test_feature",
+    "input_tokens": 100,
+    "output_tokens": 200,
+    "total": 300
+  },
+  {
+    "timestamp": "2026-04-17T08:39:46.437044",
+    "feature": "test_feature",
+    "input_tokens": 100,
+    "output_tokens": 200,
+    "total": 300
+  },
+  {
+    "timestamp": "2026-04-17T13:16:24.666248",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 102,
+    "output_tokens": 888,
+    "total": 990
+  },
+  {
+    "timestamp": "2026-04-17T13:17:26.802512",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 102,
+    "output_tokens": 882,
+    "total": 984
+  },
+  {
+    "timestamp": "2026-04-17T13:17:29.288777",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 85,
+    "output_tokens": 388,
+    "total": 473
+  },
+  {
+    "timestamp": "2026-04-17T13:17:33.535518",
+    "feature": "generate_tujuan",
+    "input_tokens": 81,
+    "output_tokens": 495,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-17T13:17:43.726041",
+    "feature": "generate_pembahasan",
+    "input_tokens": 114,
+    "output_tokens": 1876,
+    "total": 1990
+  },
+  {
+    "timestamp": "2026-04-17T13:17:50.250354",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 105,
+    "output_tokens": 586,
+    "total": 691
+  },
+  {
+    "timestamp": "2026-04-17T14:06:54.886969",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 318,
+    "output_tokens": 751,
+    "total": 1069
+  },
+  {
+    "timestamp": "2026-04-17T14:07:01.952567",
+    "feature": "generate_pembahasan",
+    "input_tokens": 354,
+    "output_tokens": 1206,
+    "total": 1560
+  },
+  {
+    "timestamp": "2026-04-17T20:16:42.631150",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 235,
+    "output_tokens": 366,
+    "total": 601
+  },
+  {
+    "timestamp": "2026-04-17T20:16:45.460729",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 267,
+    "output_tokens": 498,
+    "total": 765
+  },
+  {
+    "timestamp": "2026-04-17T20:16:48.688555",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 261,
+    "output_tokens": 291,
+    "total": 552
+  },
+  {
+    "timestamp": "2026-04-17T20:16:51.720914",
+    "feature": "generate_tujuan",
+    "input_tokens": 279,
+    "output_tokens": 247,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-17T20:16:59.291815",
+    "feature": "generate_pembahasan",
+    "input_tokens": 502,
+    "output_tokens": 1941,
+    "total": 2443
+  },
+  {
+    "timestamp": "2026-04-17T20:17:01.788575",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 238,
+    "output_tokens": 313,
+    "total": 551
+  },
+  {
+    "timestamp": "2026-04-17T20:17:03.693394",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 421,
+    "output_tokens": 162,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-17T20:17:35.309021",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 246,
+    "output_tokens": 337,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-17T20:17:38.948988",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 277,
+    "output_tokens": 454,
+    "total": 731
+  },
+  {
+    "timestamp": "2026-04-17T20:17:42.672768",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 271,
+    "output_tokens": 316,
+    "total": 587
+  },
+  {
+    "timestamp": "2026-04-17T20:17:44.941360",
+    "feature": "generate_tujuan",
+    "input_tokens": 289,
+    "output_tokens": 207,
+    "total": 496
+  },
+  {
+    "timestamp": "2026-04-17T20:17:54.829270",
+    "feature": "generate_pembahasan",
+    "input_tokens": 516,
+    "output_tokens": 1918,
+    "total": 2434
+  },
+  {
+    "timestamp": "2026-04-17T20:17:57.221678",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 249,
+    "output_tokens": 346,
+    "total": 595
+  },
+  {
+    "timestamp": "2026-04-17T20:18:00.512553",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 435,
+    "output_tokens": 174,
+    "total": 609
+  },
+  {
+    "timestamp": "2026-04-17T20:31:04.628602",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 207,
+    "total": 466
+  },
+  {
+    "timestamp": "2026-04-17T20:31:08.968039",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 441,
+    "total": 727
+  },
+  {
+    "timestamp": "2026-04-17T20:31:11.354868",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 295,
+    "output_tokens": 129,
+    "total": 424
+  },
+  {
+    "timestamp": "2026-04-17T20:31:13.844063",
+    "feature": "generate_tujuan",
+    "input_tokens": 298,
+    "output_tokens": 175,
+    "total": 473
+  },
+  {
+    "timestamp": "2026-04-17T20:31:21.509064",
+    "feature": "generate_pembahasan",
+    "input_tokens": 562,
+    "output_tokens": 1218,
+    "total": 1780
+  },
+  {
+    "timestamp": "2026-04-17T20:31:24.719751",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 258,
+    "output_tokens": 315,
+    "total": 573
+  },
+  {
+    "timestamp": "2026-04-17T20:31:27.215922",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 462,
+    "output_tokens": 180,
+    "total": 642
+  },
+  {
+    "timestamp": "2026-04-17T20:46:26.109045",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 168,
+    "total": 427
+  },
+  {
+    "timestamp": "2026-04-17T20:46:29.634120",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 421,
+    "total": 707
+  },
+  {
+    "timestamp": "2026-04-17T20:46:32.155211",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 295,
+    "output_tokens": 142,
+    "total": 437
+  },
+  {
+    "timestamp": "2026-04-17T20:46:36.048868",
+    "feature": "generate_tujuan",
+    "input_tokens": 298,
+    "output_tokens": 249,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-17T20:46:45.381472",
+    "feature": "generate_pembahasan",
+    "input_tokens": 529,
+    "output_tokens": 1771,
+    "total": 2300
+  },
+  {
+    "timestamp": "2026-04-17T20:46:48.912065",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 258,
+    "output_tokens": 334,
+    "total": 592
+  },
+  {
+    "timestamp": "2026-04-17T20:46:51.770732",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 429,
+    "output_tokens": 141,
+    "total": 570
+  },
+  {
+    "timestamp": "2026-04-17T20:56:39.278028",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 232,
+    "total": 493
+  },
+  {
+    "timestamp": "2026-04-17T20:56:44.469541",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 420,
+    "total": 706
+  },
+  {
+    "timestamp": "2026-04-17T20:56:47.240290",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 294,
+    "output_tokens": 124,
+    "total": 418
+  },
+  {
+    "timestamp": "2026-04-17T20:56:49.899336",
+    "feature": "generate_tujuan",
+    "input_tokens": 297,
+    "output_tokens": 225,
+    "total": 522
+  },
+  {
+    "timestamp": "2026-04-17T20:57:01.808838",
+    "feature": "generate_pembahasan",
+    "input_tokens": 565,
+    "output_tokens": 1914,
+    "total": 2479
+  },
+  {
+    "timestamp": "2026-04-17T20:57:05.524964",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 256,
+    "output_tokens": 334,
+    "total": 590
+  },
+  {
+    "timestamp": "2026-04-17T20:57:08.586570",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 463,
+    "output_tokens": 171,
+    "total": 634
+  },
+  {
+    "timestamp": "2026-04-17T21:17:48.738480",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 163,
+    "total": 421
+  },
+  {
+    "timestamp": "2026-04-17T21:17:51.493978",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 349,
+    "total": 632
+  },
+  {
+    "timestamp": "2026-04-17T21:17:54.163486",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 291,
+    "output_tokens": 118,
+    "total": 409
+  },
+  {
+    "timestamp": "2026-04-17T21:17:57.333583",
+    "feature": "generate_tujuan",
+    "input_tokens": 280,
+    "output_tokens": 271,
+    "total": 551
+  },
+  {
+    "timestamp": "2026-04-17T21:18:08.559935",
+    "feature": "generate_pembahasan",
+    "input_tokens": 522,
+    "output_tokens": 1969,
+    "total": 2491
+  },
+  {
+    "timestamp": "2026-04-17T21:18:11.122459",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 253,
+    "output_tokens": 297,
+    "total": 550
+  },
+  {
+    "timestamp": "2026-04-17T21:18:13.240815",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 420,
+    "output_tokens": 147,
+    "total": 567
+  },
+  {
+    "timestamp": "2026-04-17T21:32:26.500180",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 394,
+    "total": 683
+  },
+  {
+    "timestamp": "2026-04-17T21:32:29.274156",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 315,
+    "output_tokens": 114,
+    "total": 429
+  },
+  {
+    "timestamp": "2026-04-17T21:32:31.521729",
+    "feature": "generate_tujuan",
+    "input_tokens": 306,
+    "output_tokens": 252,
+    "total": 558
+  },
+  {
+    "timestamp": "2026-04-17T21:46:12.933446",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 453,
+    "total": 742
+  },
+  {
+    "timestamp": "2026-04-17T21:46:14.760393",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 315,
+    "output_tokens": 169,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-17T21:46:17.206642",
+    "feature": "generate_tujuan",
+    "input_tokens": 375,
+    "output_tokens": 258,
+    "total": 633
+  },
+  {
+    "timestamp": "2026-04-17T21:53:14.010961",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 463,
+    "total": 752
+  },
+  {
+    "timestamp": "2026-04-17T21:53:17.188813",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 315,
+    "output_tokens": 166,
+    "total": 481
+  },
+  {
+    "timestamp": "2026-04-17T21:53:19.770830",
+    "feature": "generate_tujuan",
+    "input_tokens": 367,
+    "output_tokens": 304,
+    "total": 671
+  },
+  {
+    "timestamp": "2026-04-17T22:01:43.093534",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 472,
+    "total": 761
+  },
+  {
+    "timestamp": "2026-04-17T22:01:45.024867",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 315,
+    "output_tokens": 165,
+    "total": 480
+  },
+  {
+    "timestamp": "2026-04-17T22:01:47.778016",
+    "feature": "generate_tujuan",
+    "input_tokens": 367,
+    "output_tokens": 273,
+    "total": 640
+  },
+  {
+    "timestamp": "2026-04-17T22:07:06.877913",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 394,
+    "total": 682
+  },
+  {
+    "timestamp": "2026-04-17T22:07:09.190111",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 187,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-17T22:07:11.988765",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 249,
+    "total": 636
+  },
+  {
+    "timestamp": "2026-04-17T22:10:32.172293",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 418,
+    "total": 706
+  },
+  {
+    "timestamp": "2026-04-17T22:10:34.191538",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 186,
+    "total": 546
+  },
+  {
+    "timestamp": "2026-04-17T22:10:36.422423",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 237,
+    "total": 624
+  },
+  {
+    "timestamp": "2026-04-17T22:17:37.876189",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 484,
+    "total": 764
+  },
+  {
+    "timestamp": "2026-04-17T22:17:39.995392",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 168,
+    "total": 520
+  },
+  {
+    "timestamp": "2026-04-17T22:17:42.183224",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 160,
+    "total": 539
+  },
+  {
+    "timestamp": "2026-04-18T09:35:27.223624",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 394,
+    "total": 677
+  },
+  {
+    "timestamp": "2026-04-18T09:35:29.560192",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 132,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-18T09:35:32.847128",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 222,
+    "total": 604
+  },
+  {
+    "timestamp": "2026-04-18T09:38:49.972915",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 421,
+    "total": 704
+  },
+  {
+    "timestamp": "2026-04-18T09:38:52.476666",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 156,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-18T09:38:56.775375",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 247,
+    "total": 629
+  },
+  {
+    "timestamp": "2026-04-18T09:42:01.412610",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 399,
+    "total": 682
+  },
+  {
+    "timestamp": "2026-04-18T09:42:04.521351",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 154,
+    "total": 509
+  },
+  {
+    "timestamp": "2026-04-18T09:42:07.091149",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 235,
+    "total": 617
+  },
+  {
+    "timestamp": "2026-04-18T09:44:53.836894",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 537,
+    "total": 828
+  },
+  {
+    "timestamp": "2026-04-18T09:44:56.208106",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 168,
+    "total": 531
+  },
+  {
+    "timestamp": "2026-04-18T09:44:59.354186",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 340,
+    "total": 730
+  },
+  {
+    "timestamp": "2026-04-18T09:48:34.123421",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 375,
+    "total": 663
+  },
+  {
+    "timestamp": "2026-04-18T09:48:36.679159",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 198,
+    "total": 558
+  },
+  {
+    "timestamp": "2026-04-18T09:48:41.132904",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 243,
+    "total": 630
+  },
+  {
+    "timestamp": "2026-04-18T10:00:41.619845",
+    "feature": "generate_pembahasan",
+    "input_tokens": 421,
+    "output_tokens": 1324,
+    "total": 1745
+  },
+  {
+    "timestamp": "2026-04-18T10:04:54.472577",
+    "feature": "generate_pembahasan",
+    "input_tokens": 474,
+    "output_tokens": 1498,
+    "total": 1972
+  },
+  {
+    "timestamp": "2026-04-18T10:11:34.416087",
+    "feature": "generate_pembahasan",
+    "input_tokens": 460,
+    "output_tokens": 1486,
+    "total": 1946
+  },
+  {
+    "timestamp": "2026-04-18T10:12:48.051298",
+    "feature": "generate_pembahasan",
+    "input_tokens": 460,
+    "output_tokens": 1482,
+    "total": 1942
+  },
+  {
+    "timestamp": "2026-04-18T10:14:59.419509",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1410,
+    "total": 1873
+  },
+  {
+    "timestamp": "2026-04-18T10:15:02.541310",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 261,
+    "output_tokens": 298,
+    "total": 559
+  },
+  {
+    "timestamp": "2026-04-18T10:23:13.087346",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1503,
+    "total": 1966
+  },
+  {
+    "timestamp": "2026-04-18T10:23:15.665436",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 261,
+    "output_tokens": 229,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-18T10:23:59.128794",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1525,
+    "total": 1988
+  },
+  {
+    "timestamp": "2026-04-18T10:24:02.138287",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 261,
+    "output_tokens": 256,
+    "total": 517
+  },
+  {
+    "timestamp": "2026-04-18T10:28:11.626841",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 183,
+    "total": 448
+  },
+  {
+    "timestamp": "2026-04-18T10:28:14.923622",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 441,
+    "total": 732
+  },
+  {
+    "timestamp": "2026-04-18T10:28:17.209757",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 148,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-18T10:28:19.742309",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 271,
+    "total": 661
+  },
+  {
+    "timestamp": "2026-04-18T10:28:27.196296",
+    "feature": "generate_pembahasan",
+    "input_tokens": 651,
+    "output_tokens": 1515,
+    "total": 2166
+  },
+  {
+    "timestamp": "2026-04-18T10:28:31.262948",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 342,
+    "total": 616
+  },
+  {
+    "timestamp": "2026-04-18T10:28:33.857826",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 472,
+    "output_tokens": 183,
+    "total": 655
+  },
+  {
+    "timestamp": "2026-04-18T10:38:31.470876",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 216,
+    "total": 481
+  },
+  {
+    "timestamp": "2026-04-18T10:38:36.656082",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 447,
+    "total": 738
+  },
+  {
+    "timestamp": "2026-04-18T10:38:39.504258",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 187,
+    "total": 550
+  },
+  {
+    "timestamp": "2026-04-18T10:38:42.178440",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 151,
+    "total": 541
+  },
+  {
+    "timestamp": "2026-04-18T10:38:49.387726",
+    "feature": "generate_pembahasan",
+    "input_tokens": 651,
+    "output_tokens": 1413,
+    "total": 2064
+  },
+  {
+    "timestamp": "2026-04-18T10:38:52.530815",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 229,
+    "total": 503
+  },
+  {
+    "timestamp": "2026-04-18T10:38:55.216994",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 502,
+    "output_tokens": 186,
+    "total": 688
+  },
+  {
+    "timestamp": "2026-04-18T10:40:14.726861",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 174,
+    "total": 439
+  },
+  {
+    "timestamp": "2026-04-18T10:40:18.697559",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 468,
+    "total": 759
+  },
+  {
+    "timestamp": "2026-04-18T10:40:21.395134",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 282,
+    "total": 645
+  },
+  {
+    "timestamp": "2026-04-18T10:40:24.765050",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 195,
+    "total": 585
+  },
+  {
+    "timestamp": "2026-04-18T10:40:32.184196",
+    "feature": "generate_pembahasan",
+    "input_tokens": 651,
+    "output_tokens": 1464,
+    "total": 2115
+  },
+  {
+    "timestamp": "2026-04-18T10:40:35.460628",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 360,
+    "total": 634
+  },
+  {
+    "timestamp": "2026-04-18T10:40:39.032189",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 502,
+    "output_tokens": 177,
+    "total": 679
+  },
+  {
+    "timestamp": "2026-04-18T10:47:27.118628",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1539,
+    "total": 2002
+  },
+  {
+    "timestamp": "2026-04-18T10:52:30.004580",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1453,
+    "total": 1916
+  },
+  {
+    "timestamp": "2026-04-18T10:56:12.940469",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1408,
+    "total": 1871
+  },
+  {
+    "timestamp": "2026-04-18T11:07:32.514619",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1369,
+    "total": 1832
+  },
+  {
+    "timestamp": "2026-04-18T11:40:28.191881",
+    "feature": "generate_pembahasan",
+    "input_tokens": 463,
+    "output_tokens": 1572,
+    "total": 2035
+  },
+  {
+    "timestamp": "2026-04-18T12:02:29.641889",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 195,
+    "total": 460
+  },
+  {
+    "timestamp": "2026-04-18T12:02:33.784042",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 436,
+    "total": 727
+  },
+  {
+    "timestamp": "2026-04-18T12:02:36.840020",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 292,
+    "total": 655
+  },
+  {
+    "timestamp": "2026-04-18T12:02:40.141345",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 225,
+    "total": 615
+  },
+  {
+    "timestamp": "2026-04-18T12:02:52.902466",
+    "feature": "generate_pembahasan",
+    "input_tokens": 651,
+    "output_tokens": 1618,
+    "total": 2269
+  },
+  {
+    "timestamp": "2026-04-18T12:02:56.590727",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 288,
+    "total": 562
+  },
+  {
+    "timestamp": "2026-04-18T12:03:00.312704",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 367,
+    "output_tokens": 217,
+    "total": 584
+  },
+  {
+    "timestamp": "2026-04-18T12:07:37.916978",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 235,
+    "total": 496
+  },
+  {
+    "timestamp": "2026-04-18T12:07:42.650800",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 448,
+    "total": 734
+  },
+  {
+    "timestamp": "2026-04-18T12:07:44.778128",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 148,
+    "total": 506
+  },
+  {
+    "timestamp": "2026-04-18T12:07:47.662872",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 196,
+    "total": 581
+  },
+  {
+    "timestamp": "2026-04-18T12:07:55.220960",
+    "feature": "generate_pembahasan",
+    "input_tokens": 609,
+    "output_tokens": 1522,
+    "total": 2131
+  },
+  {
+    "timestamp": "2026-04-18T12:07:57.799815",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 274,
+    "total": 544
+  },
+  {
+    "timestamp": "2026-04-18T12:08:00.941114",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 325,
+    "output_tokens": 217,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-18T12:11:21.156206",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 189,
+    "total": 450
+  },
+  {
+    "timestamp": "2026-04-18T12:11:24.902890",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 459,
+    "total": 745
+  },
+  {
+    "timestamp": "2026-04-18T12:11:27.519560",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 148,
+    "total": 506
+  },
+  {
+    "timestamp": "2026-04-18T12:11:30.459556",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 253,
+    "total": 638
+  },
+  {
+    "timestamp": "2026-04-18T12:11:39.843448",
+    "feature": "generate_pembahasan",
+    "input_tokens": 609,
+    "output_tokens": 1564,
+    "total": 2173
+  },
+  {
+    "timestamp": "2026-04-18T12:11:43.436561",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 322,
+    "total": 592
+  },
+  {
+    "timestamp": "2026-04-18T12:11:48.468777",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 325,
+    "output_tokens": 201,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-18T12:24:24.984966",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 208,
+    "total": 469
+  },
+  {
+    "timestamp": "2026-04-18T12:24:28.096239",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 427,
+    "total": 713
+  },
+  {
+    "timestamp": "2026-04-18T12:24:30.170674",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 150,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-04-18T12:24:32.406484",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 219,
+    "total": 604
+  },
+  {
+    "timestamp": "2026-04-18T12:24:40.331078",
+    "feature": "generate_pembahasan",
+    "input_tokens": 609,
+    "output_tokens": 1326,
+    "total": 1935
+  },
+  {
+    "timestamp": "2026-04-18T12:24:43.359487",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 321,
+    "total": 591
+  },
+  {
+    "timestamp": "2026-04-18T12:24:48.070624",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 325,
+    "output_tokens": 210,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-18T12:27:36.777003",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 223,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-18T12:27:41.870103",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 502,
+    "total": 788
+  },
+  {
+    "timestamp": "2026-04-18T12:27:45.036675",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 132,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-18T12:27:47.595063",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 255,
+    "total": 640
+  },
+  {
+    "timestamp": "2026-04-18T12:27:56.736788",
+    "feature": "generate_pembahasan",
+    "input_tokens": 637,
+    "output_tokens": 1651,
+    "total": 2288
+  },
+  {
+    "timestamp": "2026-04-18T12:27:59.686468",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 352,
+    "total": 622
+  },
+  {
+    "timestamp": "2026-04-18T12:28:02.686819",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 354,
+    "output_tokens": 189,
+    "total": 543
+  },
+  {
+    "timestamp": "2026-04-18T12:57:27.709923",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 201,
+    "total": 462
+  },
+  {
+    "timestamp": "2026-04-18T12:57:31.692082",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 396,
+    "total": 682
+  },
+  {
+    "timestamp": "2026-04-18T12:57:34.610810",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 121,
+    "total": 479
+  },
+  {
+    "timestamp": "2026-04-18T12:57:37.720044",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 247,
+    "total": 632
+  },
+  {
+    "timestamp": "2026-04-18T12:57:51.090393",
+    "feature": "generate_pembahasan",
+    "input_tokens": 628,
+    "output_tokens": 1735,
+    "total": 2363
+  },
+  {
+    "timestamp": "2026-04-18T12:57:54.756149",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 315,
+    "total": 585
+  },
+  {
+    "timestamp": "2026-04-18T12:57:57.276420",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 345,
+    "output_tokens": 151,
+    "total": 496
+  },
+  {
+    "timestamp": "2026-04-18T13:27:49.414994",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 141,
+    "total": 397
+  },
+  {
+    "timestamp": "2026-04-18T13:27:53.590615",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 396,
+    "total": 678
+  },
+  {
+    "timestamp": "2026-04-18T13:27:55.785743",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 169,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-18T13:27:58.072111",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 130,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-18T13:28:05.968898",
+    "feature": "generate_pembahasan",
+    "input_tokens": 636,
+    "output_tokens": 1543,
+    "total": 2179
+  },
+  {
+    "timestamp": "2026-04-18T13:28:09.402388",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 295,
+    "total": 560
+  },
+  {
+    "timestamp": "2026-04-18T13:28:12.553020",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 352,
+    "output_tokens": 192,
+    "total": 544
+  },
+  {
+    "timestamp": "2026-04-18T13:34:34.171314",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 159,
+    "total": 420
+  },
+  {
+    "timestamp": "2026-04-18T13:34:38.704444",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 490,
+    "total": 776
+  },
+  {
+    "timestamp": "2026-04-18T13:34:40.766291",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 169,
+    "total": 527
+  },
+  {
+    "timestamp": "2026-04-18T13:34:42.964333",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 201,
+    "total": 586
+  },
+  {
+    "timestamp": "2026-04-18T13:34:51.029904",
+    "feature": "generate_pembahasan",
+    "input_tokens": 621,
+    "output_tokens": 1375,
+    "total": 1996
+  },
+  {
+    "timestamp": "2026-04-18T13:34:53.903740",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 321,
+    "total": 591
+  },
+  {
+    "timestamp": "2026-04-18T13:34:56.936140",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 337,
+    "output_tokens": 181,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-18T13:49:36.088553",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 174,
+    "total": 435
+  },
+  {
+    "timestamp": "2026-04-18T13:49:39.143851",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 412,
+    "total": 698
+  },
+  {
+    "timestamp": "2026-04-18T13:49:41.934018",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 196,
+    "total": 554
+  },
+  {
+    "timestamp": "2026-04-18T13:49:44.171894",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 261,
+    "total": 646
+  },
+  {
+    "timestamp": "2026-04-18T13:49:51.257922",
+    "feature": "generate_pembahasan",
+    "input_tokens": 621,
+    "output_tokens": 1443,
+    "total": 2064
+  },
+  {
+    "timestamp": "2026-04-18T13:49:54.096139",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 273,
+    "total": 543
+  },
+  {
+    "timestamp": "2026-04-18T13:49:56.997122",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 337,
+    "output_tokens": 181,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-18T13:55:10.553401",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 261,
+    "output_tokens": 160,
+    "total": 421
+  },
+  {
+    "timestamp": "2026-04-18T13:55:15.558391",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 441,
+    "total": 727
+  },
+  {
+    "timestamp": "2026-04-18T13:55:18.821469",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 283,
+    "total": 641
+  },
+  {
+    "timestamp": "2026-04-18T13:55:21.615615",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 150,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-18T13:55:30.463440",
+    "feature": "generate_pembahasan",
+    "input_tokens": 654,
+    "output_tokens": 1450,
+    "total": 2104
+  },
+  {
+    "timestamp": "2026-04-18T13:55:34.870161",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 370,
+    "total": 640
+  },
+  {
+    "timestamp": "2026-04-18T13:55:38.538536",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 370,
+    "output_tokens": 210,
+    "total": 580
+  },
+  {
+    "timestamp": "2026-04-18T14:02:07.933214",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 202,
+    "total": 464
+  },
+  {
+    "timestamp": "2026-04-18T14:02:11.942893",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 562,
+    "total": 850
+  },
+  {
+    "timestamp": "2026-04-18T14:02:16.216543",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 366,
+    "total": 726
+  },
+  {
+    "timestamp": "2026-04-18T14:02:19.441583",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 228,
+    "total": 615
+  },
+  {
+    "timestamp": "2026-04-18T14:02:31.350586",
+    "feature": "generate_pembahasan",
+    "input_tokens": 660,
+    "output_tokens": 1497,
+    "total": 2157
+  },
+  {
+    "timestamp": "2026-04-18T14:02:34.640663",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 381,
+    "total": 652
+  },
+  {
+    "timestamp": "2026-04-18T14:02:37.466248",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 376,
+    "output_tokens": 211,
+    "total": 587
+  },
+  {
+    "timestamp": "2026-04-18T14:09:50.003003",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 147,
+    "total": 409
+  },
+  {
+    "timestamp": "2026-04-18T14:09:56.533423",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 466,
+    "total": 754
+  },
+  {
+    "timestamp": "2026-04-18T14:09:59.468978",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 210,
+    "total": 570
+  },
+  {
+    "timestamp": "2026-04-18T14:10:01.640090",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 213,
+    "total": 600
+  },
+  {
+    "timestamp": "2026-04-18T14:10:09.857734",
+    "feature": "generate_pembahasan",
+    "input_tokens": 660,
+    "output_tokens": 1668,
+    "total": 2328
+  },
+  {
+    "timestamp": "2026-04-18T14:10:13.245973",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 321,
+    "total": 592
+  },
+  {
+    "timestamp": "2026-04-18T14:10:16.459128",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 376,
+    "output_tokens": 207,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-18T14:13:50.115196",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 180,
+    "total": 442
+  },
+  {
+    "timestamp": "2026-04-18T14:13:53.933187",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 480,
+    "total": 768
+  },
+  {
+    "timestamp": "2026-04-18T14:13:56.173245",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 165,
+    "total": 525
+  },
+  {
+    "timestamp": "2026-04-18T14:13:58.438426",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 238,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-18T14:14:06.929923",
+    "feature": "generate_pembahasan",
+    "input_tokens": 670,
+    "output_tokens": 1690,
+    "total": 2360
+  },
+  {
+    "timestamp": "2026-04-18T14:14:10.702812",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 354,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-18T14:14:13.379820",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 387,
+    "output_tokens": 208,
+    "total": 595
+  },
+  {
+    "timestamp": "2026-04-18T14:25:08.328909",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 225,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-18T14:25:11.708559",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 436,
+    "total": 724
+  },
+  {
+    "timestamp": "2026-04-18T14:25:14.417173",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 306,
+    "total": 666
+  },
+  {
+    "timestamp": "2026-04-18T14:25:16.833054",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 228,
+    "total": 615
+  },
+  {
+    "timestamp": "2026-04-18T14:25:24.565655",
+    "feature": "generate_pembahasan",
+    "input_tokens": 652,
+    "output_tokens": 1570,
+    "total": 2222
+  },
+  {
+    "timestamp": "2026-04-18T14:25:28.451930",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 336,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-18T14:25:31.156599",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 369,
+    "output_tokens": 205,
+    "total": 574
+  },
+  {
+    "timestamp": "2026-04-18T14:34:50.366412",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 163,
+    "total": 419
+  },
+  {
+    "timestamp": "2026-04-18T14:34:53.643085",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 477,
+    "total": 759
+  },
+  {
+    "timestamp": "2026-04-18T14:34:55.981558",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 153,
+    "total": 507
+  },
+  {
+    "timestamp": "2026-04-18T14:34:58.145219",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 187,
+    "total": 568
+  },
+  {
+    "timestamp": "2026-04-18T14:35:07.368558",
+    "feature": "generate_pembahasan",
+    "input_tokens": 454,
+    "output_tokens": 1548,
+    "total": 2002
+  },
+  {
+    "timestamp": "2026-04-18T14:35:11.124366",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 346,
+    "total": 611
+  },
+  {
+    "timestamp": "2026-04-18T14:35:15.206958",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 162,
+    "output_tokens": 126,
+    "total": 288
+  },
+  {
+    "timestamp": "2026-04-18T14:45:33.922161",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 196,
+    "total": 452
+  },
+  {
+    "timestamp": "2026-04-18T14:45:38.952540",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 399,
+    "total": 681
+  },
+  {
+    "timestamp": "2026-04-18T14:45:40.813002",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 174,
+    "total": 528
+  },
+  {
+    "timestamp": "2026-04-18T14:45:43.403353",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 246,
+    "total": 627
+  },
+  {
+    "timestamp": "2026-04-18T14:45:51.700176",
+    "feature": "generate_pembahasan",
+    "input_tokens": 636,
+    "output_tokens": 1474,
+    "total": 2110
+  },
+  {
+    "timestamp": "2026-04-18T14:45:54.382167",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 307,
+    "total": 572
+  },
+  {
+    "timestamp": "2026-04-18T14:45:58.259694",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 352,
+    "output_tokens": 196,
+    "total": 548
+  },
+  {
+    "timestamp": "2026-04-18T14:50:36.102072",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 183,
+    "total": 442
+  },
+  {
+    "timestamp": "2026-04-18T14:50:40.234171",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 285,
+    "output_tokens": 381,
+    "total": 666
+  },
+  {
+    "timestamp": "2026-04-18T14:50:42.195530",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 357,
+    "output_tokens": 141,
+    "total": 498
+  },
+  {
+    "timestamp": "2026-04-18T14:50:45.031817",
+    "feature": "generate_tujuan",
+    "input_tokens": 384,
+    "output_tokens": 187,
+    "total": 571
+  },
+  {
+    "timestamp": "2026-04-18T14:50:54.618129",
+    "feature": "generate_pembahasan",
+    "input_tokens": 642,
+    "output_tokens": 1558,
+    "total": 2200
+  },
+  {
+    "timestamp": "2026-04-18T14:50:57.582206",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 268,
+    "output_tokens": 294,
+    "total": 562
+  },
+  {
+    "timestamp": "2026-04-18T14:51:01.051597",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 358,
+    "output_tokens": 187,
+    "total": 545
+  },
+  {
+    "timestamp": "2026-04-18T15:06:29.071089",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 181,
+    "total": 437
+  },
+  {
+    "timestamp": "2026-04-18T15:06:33.645326",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 445,
+    "total": 725
+  },
+  {
+    "timestamp": "2026-04-18T15:06:35.923421",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 126,
+    "total": 478
+  },
+  {
+    "timestamp": "2026-04-18T15:06:38.166937",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 171,
+    "total": 550
+  },
+  {
+    "timestamp": "2026-04-18T15:06:50.621496",
+    "feature": "generate_pembahasan",
+    "input_tokens": 622,
+    "output_tokens": 1422,
+    "total": 2044
+  },
+  {
+    "timestamp": "2026-04-18T15:06:54.821535",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 264,
+    "output_tokens": 348,
+    "total": 612
+  },
+  {
+    "timestamp": "2026-04-18T15:07:00.111389",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 339,
+    "output_tokens": 192,
+    "total": 531
+  },
+  {
+    "timestamp": "2026-04-18T15:15:02.694061",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 277,
+    "total": 533
+  },
+  {
+    "timestamp": "2026-04-18T15:15:06.094323",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 439,
+    "total": 719
+  },
+  {
+    "timestamp": "2026-04-18T15:15:08.262985",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 171,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-18T15:15:10.316911",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 142,
+    "total": 521
+  },
+  {
+    "timestamp": "2026-04-18T15:15:17.578469",
+    "feature": "generate_pembahasan",
+    "input_tokens": 622,
+    "output_tokens": 1387,
+    "total": 2009
+  },
+  {
+    "timestamp": "2026-04-18T15:15:20.359026",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 264,
+    "output_tokens": 330,
+    "total": 594
+  },
+  {
+    "timestamp": "2026-04-18T15:15:23.376892",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 339,
+    "output_tokens": 184,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-18T15:19:16.244862",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 180,
+    "total": 436
+  },
+  {
+    "timestamp": "2026-04-18T15:19:21.171303",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 456,
+    "total": 736
+  },
+  {
+    "timestamp": "2026-04-18T15:19:23.265103",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 144,
+    "total": 496
+  },
+  {
+    "timestamp": "2026-04-18T15:19:25.453974",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 157,
+    "total": 536
+  },
+  {
+    "timestamp": "2026-04-18T15:19:34.876720",
+    "feature": "generate_pembahasan",
+    "input_tokens": 622,
+    "output_tokens": 1344,
+    "total": 1966
+  },
+  {
+    "timestamp": "2026-04-18T15:19:38.306377",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 264,
+    "output_tokens": 253,
+    "total": 517
+  },
+  {
+    "timestamp": "2026-04-18T15:19:41.198030",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 339,
+    "output_tokens": 156,
+    "total": 495
+  },
+  {
+    "timestamp": "2026-04-20T20:59:26.064095",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 268,
+    "output_tokens": 273,
+    "total": 541
+  },
+  {
+    "timestamp": "2026-04-20T20:59:29.779315",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 454,
+    "total": 749
+  },
+  {
+    "timestamp": "2026-04-20T20:59:31.882699",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 367,
+    "output_tokens": 151,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-20T20:59:35.207079",
+    "feature": "generate_tujuan",
+    "input_tokens": 394,
+    "output_tokens": 307,
+    "total": 701
+  },
+  {
+    "timestamp": "2026-04-20T20:59:46.822029",
+    "feature": "generate_pembahasan",
+    "input_tokens": 639,
+    "output_tokens": 1462,
+    "total": 2101
+  },
+  {
+    "timestamp": "2026-04-20T20:59:52.229402",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 279,
+    "output_tokens": 325,
+    "total": 604
+  },
+  {
+    "timestamp": "2026-04-20T20:59:55.147117",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 355,
+    "output_tokens": 196,
+    "total": 551
+  },
+  {
+    "timestamp": "2026-04-20T22:35:53.596641",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 268,
+    "output_tokens": 261,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-20T22:35:57.234683",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 384,
+    "total": 679
+  },
+  {
+    "timestamp": "2026-04-20T22:35:59.339269",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 367,
+    "output_tokens": 147,
+    "total": 514
+  },
+  {
+    "timestamp": "2026-04-20T22:36:01.824437",
+    "feature": "generate_tujuan",
+    "input_tokens": 394,
+    "output_tokens": 231,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-20T22:36:10.480121",
+    "feature": "generate_pembahasan",
+    "input_tokens": 610,
+    "output_tokens": 1519,
+    "total": 2129
+  },
+  {
+    "timestamp": "2026-04-20T22:36:15.321167",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 279,
+    "output_tokens": 306,
+    "total": 585
+  },
+  {
+    "timestamp": "2026-04-20T22:36:18.557061",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 327,
+    "output_tokens": 145,
+    "total": 472
+  },
+  {
+    "timestamp": "2026-04-20T22:48:58.651709",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 474,
+    "total": 769
+  },
+  {
+    "timestamp": "2026-04-20T22:54:04.320542",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 294,
+    "output_tokens": 465,
+    "total": 759
+  },
+  {
+    "timestamp": "2026-04-20T22:54:06.670391",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 366,
+    "output_tokens": 168,
+    "total": 534
+  },
+  {
+    "timestamp": "2026-04-20T22:54:09.247956",
+    "feature": "generate_tujuan",
+    "input_tokens": 393,
+    "output_tokens": 243,
+    "total": 636
+  },
+  {
+    "timestamp": "2026-04-20T22:55:38.546323",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 268,
+    "output_tokens": 192,
+    "total": 460
+  },
+  {
+    "timestamp": "2026-04-20T22:55:42.566688",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 430,
+    "total": 725
+  },
+  {
+    "timestamp": "2026-04-20T22:55:45.110651",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 367,
+    "output_tokens": 157,
+    "total": 524
+  },
+  {
+    "timestamp": "2026-04-20T22:55:47.591780",
+    "feature": "generate_tujuan",
+    "input_tokens": 394,
+    "output_tokens": 148,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-20T22:55:58.377255",
+    "feature": "generate_pembahasan",
+    "input_tokens": 610,
+    "output_tokens": 1633,
+    "total": 2243
+  },
+  {
+    "timestamp": "2026-04-20T22:56:03.371565",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 279,
+    "output_tokens": 346,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-20T22:56:07.238804",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 327,
+    "output_tokens": 147,
+    "total": 474
+  },
+  {
+    "timestamp": "2026-04-20T22:57:20.660068",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 268,
+    "output_tokens": 225,
+    "total": 493
+  },
+  {
+    "timestamp": "2026-04-20T22:57:23.808216",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 294,
+    "output_tokens": 417,
+    "total": 711
+  },
+  {
+    "timestamp": "2026-04-20T22:57:27.195131",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 366,
+    "output_tokens": 259,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-20T22:57:29.541076",
+    "feature": "generate_tujuan",
+    "input_tokens": 393,
+    "output_tokens": 222,
+    "total": 615
+  },
+  {
+    "timestamp": "2026-04-20T22:57:42.523607",
+    "feature": "generate_pembahasan",
+    "input_tokens": 615,
+    "output_tokens": 1701,
+    "total": 2316
+  },
+  {
+    "timestamp": "2026-04-20T22:57:44.952982",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 277,
+    "output_tokens": 288,
+    "total": 565
+  },
+  {
+    "timestamp": "2026-04-20T22:57:48.059765",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 331,
+    "output_tokens": 147,
+    "total": 478
+  },
+  {
+    "timestamp": "2026-04-20T23:06:31.930528",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 241,
+    "total": 505
+  },
+  {
+    "timestamp": "2026-04-20T23:06:37.062219",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 444,
+    "total": 733
+  },
+  {
+    "timestamp": "2026-04-20T23:06:41.646420",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 361,
+    "output_tokens": 157,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-20T23:06:44.445993",
+    "feature": "generate_tujuan",
+    "input_tokens": 388,
+    "output_tokens": 145,
+    "total": 533
+  },
+  {
+    "timestamp": "2026-04-20T23:06:58.959875",
+    "feature": "generate_pembahasan",
+    "input_tokens": 526,
+    "output_tokens": 1590,
+    "total": 2116
+  },
+  {
+    "timestamp": "2026-04-20T23:07:03.037758",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 273,
+    "output_tokens": 339,
+    "total": 612
+  },
+  {
+    "timestamp": "2026-04-20T23:07:07.388031",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 243,
+    "output_tokens": 154,
+    "total": 397
+  },
+  {
+    "timestamp": "2026-04-20T23:17:39.546926",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 216,
+    "total": 480
+  },
+  {
+    "timestamp": "2026-04-20T23:17:53.281156",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 426,
+    "total": 715
+  },
+  {
+    "timestamp": "2026-04-20T23:17:59.630933",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 361,
+    "output_tokens": 165,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-20T23:18:06.686485",
+    "feature": "generate_tujuan",
+    "input_tokens": 388,
+    "output_tokens": 196,
+    "total": 584
+  },
+  {
+    "timestamp": "2026-04-20T23:18:39.775297",
+    "feature": "generate_pembahasan",
+    "input_tokens": 526,
+    "output_tokens": 1419,
+    "total": 1945
+  },
+  {
+    "timestamp": "2026-04-20T23:19:18.492634",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 273,
+    "output_tokens": 327,
+    "total": 600
+  },
+  {
+    "timestamp": "2026-04-20T23:19:23.324762",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 243,
+    "output_tokens": 183,
+    "total": 426
+  },
+  {
+    "timestamp": "2026-04-20T23:23:12.106003",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 177,
+    "total": 441
+  },
+  {
+    "timestamp": "2026-04-20T23:23:17.218345",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 445,
+    "total": 734
+  },
+  {
+    "timestamp": "2026-04-20T23:23:19.564260",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 361,
+    "output_tokens": 181,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-20T23:23:22.694869",
+    "feature": "generate_tujuan",
+    "input_tokens": 388,
+    "output_tokens": 184,
+    "total": 572
+  },
+  {
+    "timestamp": "2026-04-20T23:23:32.841156",
+    "feature": "generate_pembahasan",
+    "input_tokens": 526,
+    "output_tokens": 1650,
+    "total": 2176
+  },
+  {
+    "timestamp": "2026-04-20T23:23:36.470433",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 273,
+    "output_tokens": 298,
+    "total": 571
+  },
+  {
+    "timestamp": "2026-04-20T23:23:40.554605",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 243,
+    "output_tokens": 129,
+    "total": 372
+  },
+  {
+    "timestamp": "2026-04-20T23:37:29.162426",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 165,
+    "total": 421
+  },
+  {
+    "timestamp": "2026-04-20T23:37:36.831036",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 462,
+    "total": 744
+  },
+  {
+    "timestamp": "2026-04-20T23:37:40.061473",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 141,
+    "total": 495
+  },
+  {
+    "timestamp": "2026-04-20T23:37:56.521740",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 216,
+    "total": 597
+  },
+  {
+    "timestamp": "2026-04-20T23:38:07.872351",
+    "feature": "generate_pembahasan",
+    "input_tokens": 486,
+    "output_tokens": 1546,
+    "total": 2032
+  },
+  {
+    "timestamp": "2026-04-20T23:38:11.586200",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 259,
+    "total": 524
+  },
+  {
+    "timestamp": "2026-04-20T23:38:15.016566",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 202,
+    "output_tokens": 144,
+    "total": 346
+  },
+  {
+    "timestamp": "2026-04-20T23:43:49.373081",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 202,
+    "total": 458
+  },
+  {
+    "timestamp": "2026-04-20T23:43:54.052773",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 358,
+    "total": 640
+  },
+  {
+    "timestamp": "2026-04-20T23:43:56.456419",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 172,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-20T23:44:03.713807",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 126,
+    "total": 507
+  },
+  {
+    "timestamp": "2026-04-20T23:44:23.140839",
+    "feature": "generate_pembahasan",
+    "input_tokens": 454,
+    "output_tokens": 1516,
+    "total": 1970
+  },
+  {
+    "timestamp": "2026-04-20T23:44:27.321542",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 303,
+    "total": 568
+  },
+  {
+    "timestamp": "2026-04-20T23:44:32.946447",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 162,
+    "output_tokens": 166,
+    "total": 328
+  },
+  {
+    "timestamp": "2026-04-20T23:52:09.997312",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 193,
+    "total": 449
+  },
+  {
+    "timestamp": "2026-04-20T23:52:14.939249",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 456,
+    "total": 738
+  },
+  {
+    "timestamp": "2026-04-20T23:52:17.688946",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 126,
+    "total": 480
+  },
+  {
+    "timestamp": "2026-04-20T23:52:22.489014",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 265,
+    "total": 646
+  },
+  {
+    "timestamp": "2026-04-20T23:52:44.341332",
+    "feature": "generate_pembahasan",
+    "input_tokens": 465,
+    "output_tokens": 1546,
+    "total": 2011
+  },
+  {
+    "timestamp": "2026-04-20T23:52:51.689570",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 328,
+    "total": 593
+  },
+  {
+    "timestamp": "2026-04-20T23:52:54.947219",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 181,
+    "output_tokens": 115,
+    "total": 296
+  },
+  {
+    "timestamp": "2026-04-21T00:03:21.920879",
+    "feature": "generate_pembahasan",
+    "input_tokens": 454,
+    "output_tokens": 1476,
+    "total": 1930
+  },
+  {
+    "timestamp": "2026-04-21T12:18:46.427395",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 207,
+    "total": 463
+  },
+  {
+    "timestamp": "2026-04-21T12:18:49.128896",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 279,
+    "output_tokens": 438,
+    "total": 717
+  },
+  {
+    "timestamp": "2026-04-21T12:18:50.832780",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 148,
+    "total": 500
+  },
+  {
+    "timestamp": "2026-04-21T12:18:53.273622",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 208,
+    "total": 587
+  },
+  {
+    "timestamp": "2026-04-21T12:19:01.020248",
+    "feature": "generate_pembahasan",
+    "input_tokens": 628,
+    "output_tokens": 1633,
+    "total": 2261
+  },
+  {
+    "timestamp": "2026-04-21T12:19:03.649627",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 264,
+    "output_tokens": 339,
+    "total": 603
+  },
+  {
+    "timestamp": "2026-04-21T12:19:05.798706",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 196,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-21T12:23:13.457911",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 199,
+    "total": 458
+  },
+  {
+    "timestamp": "2026-04-21T12:23:17.682583",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 471,
+    "total": 754
+  },
+  {
+    "timestamp": "2026-04-21T12:23:20.534224",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 172,
+    "total": 527
+  },
+  {
+    "timestamp": "2026-04-21T12:23:22.764139",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 201,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-21T12:23:36.319515",
+    "feature": "generate_pembahasan",
+    "input_tokens": 601,
+    "output_tokens": 1584,
+    "total": 2185
+  },
+  {
+    "timestamp": "2026-04-21T12:23:38.929833",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 348,
+    "total": 615
+  },
+  {
+    "timestamp": "2026-04-21T12:23:42.102427",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 318,
+    "output_tokens": 153,
+    "total": 471
+  },
+  {
+    "timestamp": "2026-04-21T12:24:20.946486",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 211,
+    "total": 470
+  },
+  {
+    "timestamp": "2026-04-21T12:24:24.638685",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 420,
+    "total": 703
+  },
+  {
+    "timestamp": "2026-04-21T12:24:26.594002",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 153,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-04-21T12:24:29.061844",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 228,
+    "total": 610
+  },
+  {
+    "timestamp": "2026-04-21T12:24:37.830425",
+    "feature": "generate_pembahasan",
+    "input_tokens": 601,
+    "output_tokens": 1630,
+    "total": 2231
+  },
+  {
+    "timestamp": "2026-04-21T12:24:42.214205",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 367,
+    "total": 634
+  },
+  {
+    "timestamp": "2026-04-21T12:24:45.720637",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 318,
+    "output_tokens": 157,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-21T12:28:36.573398",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 198,
+    "total": 457
+  },
+  {
+    "timestamp": "2026-04-21T12:28:40.020365",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 453,
+    "total": 736
+  },
+  {
+    "timestamp": "2026-04-21T12:28:42.170473",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 174,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-21T12:28:44.425711",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 240,
+    "total": 622
+  },
+  {
+    "timestamp": "2026-04-21T12:28:53.061926",
+    "feature": "generate_pembahasan",
+    "input_tokens": 601,
+    "output_tokens": 1600,
+    "total": 2201
+  },
+  {
+    "timestamp": "2026-04-21T12:28:55.672525",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 301,
+    "total": 568
+  },
+  {
+    "timestamp": "2026-04-21T12:28:58.046473",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 318,
+    "output_tokens": 153,
+    "total": 471
+  },
+  {
+    "timestamp": "2026-04-21T12:34:25.083057",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 178,
+    "total": 437
+  },
+  {
+    "timestamp": "2026-04-21T12:34:28.682701",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 553,
+    "total": 836
+  },
+  {
+    "timestamp": "2026-04-21T12:34:31.757836",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 157,
+    "total": 512
+  },
+  {
+    "timestamp": "2026-04-21T12:34:34.995355",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 187,
+    "total": 569
+  },
+  {
+    "timestamp": "2026-04-21T12:34:43.762487",
+    "feature": "generate_pembahasan",
+    "input_tokens": 601,
+    "output_tokens": 1399,
+    "total": 2000
+  },
+  {
+    "timestamp": "2026-04-21T12:34:47.970373",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 402,
+    "total": 669
+  },
+  {
+    "timestamp": "2026-04-21T12:34:50.468469",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 318,
+    "output_tokens": 175,
+    "total": 493
+  },
+  {
+    "timestamp": "2026-04-21T12:36:04.157842",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 196,
+    "total": 455
+  },
+  {
+    "timestamp": "2026-04-21T12:36:08.864829",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 387,
+    "total": 670
+  },
+  {
+    "timestamp": "2026-04-21T12:36:10.822987",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 139,
+    "total": 494
+  },
+  {
+    "timestamp": "2026-04-21T12:36:12.636763",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 168,
+    "total": 550
+  },
+  {
+    "timestamp": "2026-04-21T12:36:22.164057",
+    "feature": "generate_pembahasan",
+    "input_tokens": 601,
+    "output_tokens": 1816,
+    "total": 2417
+  },
+  {
+    "timestamp": "2026-04-21T12:36:25.029977",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 354,
+    "total": 621
+  },
+  {
+    "timestamp": "2026-04-21T12:36:27.408042",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 318,
+    "output_tokens": 157,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-21T12:37:09.670522",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 214,
+    "total": 473
+  },
+  {
+    "timestamp": "2026-04-21T12:37:12.957934",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 475,
+    "total": 758
+  },
+  {
+    "timestamp": "2026-04-21T12:37:18.407885",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 147,
+    "total": 502
+  },
+  {
+    "timestamp": "2026-04-21T12:37:20.742514",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 265,
+    "total": 647
+  },
+  {
+    "timestamp": "2026-04-21T12:37:30.432629",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1608,
+    "total": 2199
+  },
+  {
+    "timestamp": "2026-04-21T12:37:33.429117",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 361,
+    "total": 628
+  },
+  {
+    "timestamp": "2026-04-21T12:37:35.751239",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 151,
+    "total": 458
+  },
+  {
+    "timestamp": "2026-04-21T12:40:10.490915",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 160,
+    "total": 419
+  },
+  {
+    "timestamp": "2026-04-21T12:40:13.502641",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 426,
+    "total": 709
+  },
+  {
+    "timestamp": "2026-04-21T12:40:15.427750",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 145,
+    "total": 500
+  },
+  {
+    "timestamp": "2026-04-21T12:40:18.512086",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 192,
+    "total": 574
+  },
+  {
+    "timestamp": "2026-04-21T12:40:25.470300",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1401,
+    "total": 1992
+  },
+  {
+    "timestamp": "2026-04-21T12:40:28.508122",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 339,
+    "total": 606
+  },
+  {
+    "timestamp": "2026-04-21T12:40:32.148343",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 156,
+    "total": 463
+  },
+  {
+    "timestamp": "2026-04-21T12:46:25.502306",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 156,
+    "total": 415
+  },
+  {
+    "timestamp": "2026-04-21T12:46:28.672080",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 409,
+    "total": 692
+  },
+  {
+    "timestamp": "2026-04-21T12:46:31.502077",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 250,
+    "total": 605
+  },
+  {
+    "timestamp": "2026-04-21T12:46:33.982989",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 240,
+    "total": 622
+  },
+  {
+    "timestamp": "2026-04-21T12:46:46.481325",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1549,
+    "total": 2140
+  },
+  {
+    "timestamp": "2026-04-21T12:46:49.407855",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 324,
+    "total": 591
+  },
+  {
+    "timestamp": "2026-04-21T12:46:52.237914",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 142,
+    "total": 449
+  },
+  {
+    "timestamp": "2026-04-21T12:59:30.672292",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 238,
+    "total": 497
+  },
+  {
+    "timestamp": "2026-04-21T12:59:33.999851",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 453,
+    "total": 736
+  },
+  {
+    "timestamp": "2026-04-21T12:59:36.178898",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 208,
+    "total": 563
+  },
+  {
+    "timestamp": "2026-04-21T12:59:39.480634",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 261,
+    "total": 643
+  },
+  {
+    "timestamp": "2026-04-21T12:59:46.911843",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1738,
+    "total": 2329
+  },
+  {
+    "timestamp": "2026-04-21T12:59:50.423017",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 376,
+    "total": 643
+  },
+  {
+    "timestamp": "2026-04-21T12:59:53.311273",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 144,
+    "total": 451
+  },
+  {
+    "timestamp": "2026-04-21T13:11:06.745352",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 214,
+    "total": 473
+  },
+  {
+    "timestamp": "2026-04-21T13:11:09.981180",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 490,
+    "total": 773
+  },
+  {
+    "timestamp": "2026-04-21T13:11:11.731582",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 151,
+    "total": 506
+  },
+  {
+    "timestamp": "2026-04-21T13:11:13.150905",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 136,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-21T13:11:23.657511",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1738,
+    "total": 2329
+  },
+  {
+    "timestamp": "2026-04-21T13:11:27.726200",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 360,
+    "total": 627
+  },
+  {
+    "timestamp": "2026-04-21T13:11:29.996696",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 142,
+    "total": 449
+  },
+  {
+    "timestamp": "2026-04-21T13:12:27.099179",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 220,
+    "total": 478
+  },
+  {
+    "timestamp": "2026-04-21T13:12:30.892532",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 436,
+    "total": 718
+  },
+  {
+    "timestamp": "2026-04-21T13:12:33.482666",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 165,
+    "total": 519
+  },
+  {
+    "timestamp": "2026-04-21T13:12:36.532964",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 202,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-21T13:12:44.714417",
+    "feature": "generate_pembahasan",
+    "input_tokens": 595,
+    "output_tokens": 1384,
+    "total": 1979
+  },
+  {
+    "timestamp": "2026-04-21T13:12:47.426150",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 286,
+    "total": 551
+  },
+  {
+    "timestamp": "2026-04-21T13:12:49.790824",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 312,
+    "output_tokens": 163,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-21T13:14:48.156033",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 225,
+    "total": 483
+  },
+  {
+    "timestamp": "2026-04-21T13:14:51.040619",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 423,
+    "total": 705
+  },
+  {
+    "timestamp": "2026-04-21T13:14:53.427579",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 186,
+    "total": 540
+  },
+  {
+    "timestamp": "2026-04-21T13:14:56.258143",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 241,
+    "total": 622
+  },
+  {
+    "timestamp": "2026-04-21T13:15:05.185500",
+    "feature": "generate_pembahasan",
+    "input_tokens": 595,
+    "output_tokens": 1575,
+    "total": 2170
+  },
+  {
+    "timestamp": "2026-04-21T13:15:07.561887",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 282,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-21T13:15:10.080048",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 312,
+    "output_tokens": 153,
+    "total": 465
+  },
+  {
+    "timestamp": "2026-04-21T16:33:15.229426",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 180,
+    "total": 439
+  },
+  {
+    "timestamp": "2026-04-21T16:33:18.798854",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 466,
+    "total": 749
+  },
+  {
+    "timestamp": "2026-04-21T16:33:20.868253",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 144,
+    "total": 499
+  },
+  {
+    "timestamp": "2026-04-21T16:33:22.572277",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 154,
+    "total": 536
+  },
+  {
+    "timestamp": "2026-04-21T16:33:31.151911",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1549,
+    "total": 2140
+  },
+  {
+    "timestamp": "2026-04-21T16:33:33.784673",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 327,
+    "total": 594
+  },
+  {
+    "timestamp": "2026-04-21T16:33:36.489323",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 144,
+    "total": 451
+  },
+  {
+    "timestamp": "2026-04-21T16:38:14.499112",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 162,
+    "total": 421
+  },
+  {
+    "timestamp": "2026-04-21T16:38:18.309010",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 540,
+    "total": 823
+  },
+  {
+    "timestamp": "2026-04-21T16:38:20.299022",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 139,
+    "total": 494
+  },
+  {
+    "timestamp": "2026-04-21T16:38:22.855341",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 216,
+    "total": 598
+  },
+  {
+    "timestamp": "2026-04-21T16:38:33.999119",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1713,
+    "total": 2304
+  },
+  {
+    "timestamp": "2026-04-21T16:38:36.759301",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 387,
+    "total": 654
+  },
+  {
+    "timestamp": "2026-04-21T16:38:39.661922",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 141,
+    "total": 448
+  },
+  {
+    "timestamp": "2026-04-21T17:43:25.726983",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 180,
+    "total": 439
+  },
+  {
+    "timestamp": "2026-04-21T17:43:29.673804",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 498,
+    "total": 781
+  },
+  {
+    "timestamp": "2026-04-21T17:43:31.787894",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 135,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-21T17:43:34.043377",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 180,
+    "total": 562
+  },
+  {
+    "timestamp": "2026-04-21T17:43:42.135479",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1477,
+    "total": 2068
+  },
+  {
+    "timestamp": "2026-04-21T17:43:45.817357",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 343,
+    "total": 610
+  },
+  {
+    "timestamp": "2026-04-21T17:43:48.255196",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 142,
+    "total": 449
+  },
+  {
+    "timestamp": "2026-04-21T17:45:10.093490",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 213,
+    "total": 472
+  },
+  {
+    "timestamp": "2026-04-21T17:45:12.995930",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 457,
+    "total": 740
+  },
+  {
+    "timestamp": "2026-04-21T17:45:14.725222",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 160,
+    "total": 515
+  },
+  {
+    "timestamp": "2026-04-21T17:45:16.994532",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 166,
+    "total": 548
+  },
+  {
+    "timestamp": "2026-04-21T17:45:24.429236",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1510,
+    "total": 2101
+  },
+  {
+    "timestamp": "2026-04-21T17:45:26.866566",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 328,
+    "total": 595
+  },
+  {
+    "timestamp": "2026-04-21T17:45:30.579359",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 151,
+    "total": 458
+  },
+  {
+    "timestamp": "2026-04-21T18:42:57.692275",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 190,
+    "total": 448
+  },
+  {
+    "timestamp": "2026-04-21T18:43:00.180678",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 414,
+    "total": 696
+  },
+  {
+    "timestamp": "2026-04-21T18:43:01.996694",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 136,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-21T18:43:04.154439",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 219,
+    "total": 600
+  },
+  {
+    "timestamp": "2026-04-21T18:43:10.733556",
+    "feature": "generate_pembahasan",
+    "input_tokens": 633,
+    "output_tokens": 1374,
+    "total": 2007
+  },
+  {
+    "timestamp": "2026-04-21T18:43:13.104535",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 304,
+    "total": 569
+  },
+  {
+    "timestamp": "2026-04-21T18:43:15.656470",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 349,
+    "output_tokens": 199,
+    "total": 548
+  },
+  {
+    "timestamp": "2026-04-21T19:34:14.249757",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 157,
+    "total": 416
+  },
+  {
+    "timestamp": "2026-04-21T19:34:16.992293",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 396,
+    "total": 679
+  },
+  {
+    "timestamp": "2026-04-21T19:34:18.816181",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 192,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-21T19:34:20.865861",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 172,
+    "total": 554
+  },
+  {
+    "timestamp": "2026-04-21T19:34:27.771853",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1330,
+    "total": 1961
+  },
+  {
+    "timestamp": "2026-04-21T19:34:30.441377",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 313,
+    "total": 580
+  },
+  {
+    "timestamp": "2026-04-21T19:34:33.190805",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 205,
+    "total": 553
+  },
+  {
+    "timestamp": "2026-04-21T19:37:19.342745",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 211,
+    "total": 470
+  },
+  {
+    "timestamp": "2026-04-21T19:37:22.359944",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 474,
+    "total": 757
+  },
+  {
+    "timestamp": "2026-04-21T19:37:24.042906",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 154,
+    "total": 509
+  },
+  {
+    "timestamp": "2026-04-21T19:37:25.784250",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 141,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-21T19:37:33.366556",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1494,
+    "total": 2125
+  },
+  {
+    "timestamp": "2026-04-21T19:37:36.410155",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 319,
+    "total": 586
+  },
+  {
+    "timestamp": "2026-04-21T19:37:39.445206",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 213,
+    "total": 561
+  },
+  {
+    "timestamp": "2026-04-21T19:43:11.820435",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 178,
+    "total": 437
+  },
+  {
+    "timestamp": "2026-04-21T19:43:15.266312",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 513,
+    "total": 796
+  },
+  {
+    "timestamp": "2026-04-21T19:43:17.129545",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 130,
+    "total": 485
+  },
+  {
+    "timestamp": "2026-04-21T19:43:19.359314",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 220,
+    "total": 602
+  },
+  {
+    "timestamp": "2026-04-21T19:43:27.209776",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1504,
+    "total": 2135
+  },
+  {
+    "timestamp": "2026-04-21T19:43:30.159978",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 318,
+    "total": 585
+  },
+  {
+    "timestamp": "2026-04-21T19:43:32.953748",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 189,
+    "total": 537
+  },
+  {
+    "timestamp": "2026-04-21T20:29:11.682380",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 177,
+    "total": 436
+  },
+  {
+    "timestamp": "2026-04-21T20:29:14.853979",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 435,
+    "total": 718
+  },
+  {
+    "timestamp": "2026-04-21T20:29:17.381270",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 150,
+    "total": 505
+  },
+  {
+    "timestamp": "2026-04-21T20:29:19.565808",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 222,
+    "total": 604
+  },
+  {
+    "timestamp": "2026-04-21T20:29:27.343076",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1332,
+    "total": 1963
+  },
+  {
+    "timestamp": "2026-04-21T20:29:30.200775",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 318,
+    "total": 585
+  },
+  {
+    "timestamp": "2026-04-21T20:29:32.965771",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 198,
+    "total": 546
+  },
+  {
+    "timestamp": "2026-04-21T20:34:47.367108",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 178,
+    "total": 437
+  },
+  {
+    "timestamp": "2026-04-21T20:34:50.806008",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 448,
+    "total": 731
+  },
+  {
+    "timestamp": "2026-04-21T20:34:53.062221",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 129,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-21T20:34:55.446252",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 261,
+    "total": 643
+  },
+  {
+    "timestamp": "2026-04-21T20:35:03.049508",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1411,
+    "total": 2042
+  },
+  {
+    "timestamp": "2026-04-21T20:35:05.705232",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 345,
+    "total": 612
+  },
+  {
+    "timestamp": "2026-04-21T20:35:08.510234",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 204,
+    "total": 552
+  },
+  {
+    "timestamp": "2026-04-21T20:39:44.595286",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 226,
+    "total": 485
+  },
+  {
+    "timestamp": "2026-04-21T20:39:47.216063",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 391,
+    "total": 674
+  },
+  {
+    "timestamp": "2026-04-21T20:39:49.967451",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 199,
+    "total": 554
+  },
+  {
+    "timestamp": "2026-04-21T20:39:51.919715",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 159,
+    "total": 541
+  },
+  {
+    "timestamp": "2026-04-21T20:40:00.411983",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1584,
+    "total": 2215
+  },
+  {
+    "timestamp": "2026-04-21T20:40:03.352341",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 351,
+    "total": 618
+  },
+  {
+    "timestamp": "2026-04-21T20:40:06.579309",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 348,
+    "output_tokens": 216,
+    "total": 564
+  },
+  {
+    "timestamp": "2026-04-21T22:35:26.205229",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 195,
+    "total": 454
+  },
+  {
+    "timestamp": "2026-04-21T22:35:29.194678",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 405,
+    "total": 688
+  },
+  {
+    "timestamp": "2026-04-21T22:35:31.211913",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 202,
+    "total": 557
+  },
+  {
+    "timestamp": "2026-04-21T22:35:34.284551",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 154,
+    "total": 536
+  },
+  {
+    "timestamp": "2026-04-21T22:35:43.350846",
+    "feature": "generate_pembahasan",
+    "input_tokens": 583,
+    "output_tokens": 1626,
+    "total": 2209
+  },
+  {
+    "timestamp": "2026-04-21T22:35:47.867756",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 403,
+    "total": 670
+  },
+  {
+    "timestamp": "2026-04-21T22:35:51.816206",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 300,
+    "output_tokens": 123,
+    "total": 423
+  },
+  {
+    "timestamp": "2026-04-21T22:39:54.066224",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 202,
+    "total": 464
+  },
+  {
+    "timestamp": "2026-04-21T22:39:56.896836",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 373,
+    "total": 659
+  },
+  {
+    "timestamp": "2026-04-21T22:39:59.020646",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 129,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-21T22:40:01.584304",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 231,
+    "total": 616
+  },
+  {
+    "timestamp": "2026-04-21T22:40:09.719718",
+    "feature": "generate_pembahasan",
+    "input_tokens": 619,
+    "output_tokens": 1438,
+    "total": 2057
+  },
+  {
+    "timestamp": "2026-04-21T22:40:12.929470",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 291,
+    "total": 561
+  },
+  {
+    "timestamp": "2026-04-21T22:40:15.626545",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 336,
+    "output_tokens": 130,
+    "total": 466
+  },
+  {
+    "timestamp": "2026-04-21T22:45:56.565943",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 157,
+    "total": 419
+  },
+  {
+    "timestamp": "2026-04-21T22:45:59.910394",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 468,
+    "total": 754
+  },
+  {
+    "timestamp": "2026-04-21T22:46:01.798982",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 139,
+    "total": 497
+  },
+  {
+    "timestamp": "2026-04-21T22:46:03.832411",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 163,
+    "total": 548
+  },
+  {
+    "timestamp": "2026-04-21T22:46:14.420485",
+    "feature": "generate_pembahasan",
+    "input_tokens": 619,
+    "output_tokens": 1581,
+    "total": 2200
+  },
+  {
+    "timestamp": "2026-04-21T22:46:17.023548",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 249,
+    "total": 519
+  },
+  {
+    "timestamp": "2026-04-21T22:46:19.750590",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 336,
+    "output_tokens": 148,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-21T22:50:46.655159",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 249,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-21T22:50:49.620060",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 519,
+    "total": 805
+  },
+  {
+    "timestamp": "2026-04-21T22:50:51.528153",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 145,
+    "total": 503
+  },
+  {
+    "timestamp": "2026-04-21T22:50:53.873836",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 231,
+    "total": 616
+  },
+  {
+    "timestamp": "2026-04-21T22:51:01.368839",
+    "feature": "generate_pembahasan",
+    "input_tokens": 619,
+    "output_tokens": 1296,
+    "total": 1915
+  },
+  {
+    "timestamp": "2026-04-21T22:51:04.055758",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 304,
+    "total": 574
+  },
+  {
+    "timestamp": "2026-04-21T22:51:06.931317",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 336,
+    "output_tokens": 136,
+    "total": 472
+  },
+  {
+    "timestamp": "2026-04-21T22:57:12.955105",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 189,
+    "total": 447
+  },
+  {
+    "timestamp": "2026-04-21T22:57:15.989330",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 387,
+    "total": 669
+  },
+  {
+    "timestamp": "2026-04-21T22:57:18.029877",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 169,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-21T22:57:19.803886",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 141,
+    "total": 522
+  },
+  {
+    "timestamp": "2026-04-21T22:57:28.121819",
+    "feature": "generate_pembahasan",
+    "input_tokens": 622,
+    "output_tokens": 1692,
+    "total": 2314
+  },
+  {
+    "timestamp": "2026-04-21T22:57:30.831349",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 316,
+    "total": 581
+  },
+  {
+    "timestamp": "2026-04-21T22:57:34.159887",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 339,
+    "output_tokens": 207,
+    "total": 546
+  },
+  {
+    "timestamp": "2026-04-23T15:23:12.286503",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 220,
+    "total": 479
+  },
+  {
+    "timestamp": "2026-04-23T15:23:15.994053",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 408,
+    "total": 691
+  },
+  {
+    "timestamp": "2026-04-23T15:23:18.641670",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 180,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-23T15:23:21.342592",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 271,
+    "total": 653
+  },
+  {
+    "timestamp": "2026-04-23T15:23:29.154745",
+    "feature": "generate_pembahasan",
+    "input_tokens": 627,
+    "output_tokens": 1423,
+    "total": 2050
+  },
+  {
+    "timestamp": "2026-04-23T15:23:32.264676",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 319,
+    "total": 586
+  },
+  {
+    "timestamp": "2026-04-23T15:23:35.350326",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 343,
+    "output_tokens": 187,
+    "total": 530
+  },
+  {
+    "timestamp": "2026-04-23T16:13:40.279315",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 184,
+    "total": 440
+  },
+  {
+    "timestamp": "2026-04-23T16:13:45.127156",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 423,
+    "total": 703
+  },
+  {
+    "timestamp": "2026-04-23T16:13:47.041068",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 352,
+    "output_tokens": 123,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-23T16:13:49.467398",
+    "feature": "generate_tujuan",
+    "input_tokens": 379,
+    "output_tokens": 153,
+    "total": 532
+  },
+  {
+    "timestamp": "2026-04-23T16:13:57.404649",
+    "feature": "generate_pembahasan",
+    "input_tokens": 609,
+    "output_tokens": 1378,
+    "total": 1987
+  },
+  {
+    "timestamp": "2026-04-23T16:14:01.310713",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 264,
+    "output_tokens": 291,
+    "total": 555
+  },
+  {
+    "timestamp": "2026-04-23T16:14:04.077249",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 325,
+    "output_tokens": 144,
+    "total": 469
+  },
+  {
+    "timestamp": "2026-04-24T10:59:43.555140",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 255,
+    "output_tokens": 154,
+    "total": 409
+  },
+  {
+    "timestamp": "2026-04-24T10:59:46.801904",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 279,
+    "output_tokens": 445,
+    "total": 724
+  },
+  {
+    "timestamp": "2026-04-24T10:59:48.535434",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 351,
+    "output_tokens": 111,
+    "total": 462
+  },
+  {
+    "timestamp": "2026-04-24T10:59:50.178780",
+    "feature": "generate_tujuan",
+    "input_tokens": 378,
+    "output_tokens": 133,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-24T10:59:58.484342",
+    "feature": "generate_pembahasan",
+    "input_tokens": 598,
+    "output_tokens": 1368,
+    "total": 1966
+  },
+  {
+    "timestamp": "2026-04-24T11:00:01.661434",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 262,
+    "output_tokens": 277,
+    "total": 539
+  },
+  {
+    "timestamp": "2026-04-24T11:00:04.230453",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 315,
+    "output_tokens": 162,
+    "total": 477
+  },
+  {
+    "timestamp": "2026-04-24T11:03:34.601099",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 184,
+    "total": 442
+  },
+  {
+    "timestamp": "2026-04-24T11:03:36.560026",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 349,
+    "output_tokens": 180,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-24T11:03:37.890029",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 279,
+    "output_tokens": 66,
+    "total": 345
+  },
+  {
+    "timestamp": "2026-04-24T11:03:39.183487",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 265,
+    "output_tokens": 52,
+    "total": 317
+  },
+  {
+    "timestamp": "2026-04-24T11:03:44.010648",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 532,
+    "output_tokens": 915,
+    "total": 1447
+  },
+  {
+    "timestamp": "2026-04-24T11:03:45.643662",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 294,
+    "output_tokens": 135,
+    "total": 429
+  },
+  {
+    "timestamp": "2026-04-24T11:03:48.475532",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 163,
+    "output_tokens": 135,
+    "total": 298
+  },
+  {
+    "timestamp": "2026-04-24T11:24:48.006440",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 195,
+    "total": 453
+  },
+  {
+    "timestamp": "2026-04-24T11:24:51.395142",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 418,
+    "total": 701
+  },
+  {
+    "timestamp": "2026-04-24T11:24:53.547775",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 190,
+    "total": 545
+  },
+  {
+    "timestamp": "2026-04-24T11:24:56.807727",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 235,
+    "total": 617
+  },
+  {
+    "timestamp": "2026-04-24T11:25:04.525688",
+    "feature": "generate_pembahasan",
+    "input_tokens": 582,
+    "output_tokens": 1401,
+    "total": 1983
+  },
+  {
+    "timestamp": "2026-04-24T11:25:07.330260",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 340,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-24T11:25:10.221592",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 298,
+    "output_tokens": 115,
+    "total": 413
+  },
+  {
+    "timestamp": "2026-04-24T11:27:25.055979",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 157,
+    "total": 415
+  },
+  {
+    "timestamp": "2026-04-24T11:27:27.950346",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 466,
+    "total": 749
+  },
+  {
+    "timestamp": "2026-04-24T11:27:29.625301",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 166,
+    "total": 521
+  },
+  {
+    "timestamp": "2026-04-24T11:27:31.533773",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 150,
+    "total": 532
+  },
+  {
+    "timestamp": "2026-04-24T11:27:39.755323",
+    "feature": "generate_pembahasan",
+    "input_tokens": 582,
+    "output_tokens": 1378,
+    "total": 1960
+  },
+  {
+    "timestamp": "2026-04-24T11:27:42.241444",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 342,
+    "total": 609
+  },
+  {
+    "timestamp": "2026-04-24T11:27:46.527767",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 298,
+    "output_tokens": 115,
+    "total": 413
+  },
+  {
+    "timestamp": "2026-04-24T11:31:04.151593",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 190,
+    "output_tokens": 19,
+    "total": 209
+  },
+  {
+    "timestamp": "2026-04-24T11:31:06.809538",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 408,
+    "total": 691
+  },
+  {
+    "timestamp": "2026-04-24T11:31:08.585705",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 171,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-24T11:31:10.546744",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 219,
+    "total": 601
+  },
+  {
+    "timestamp": "2026-04-24T11:31:18.975487",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 456,
+    "output_tokens": 1680,
+    "total": 2136
+  },
+  {
+    "timestamp": "2026-04-24T11:31:21.786775",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 357,
+    "total": 624
+  },
+  {
+    "timestamp": "2026-04-24T11:31:24.495711",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 163,
+    "output_tokens": 115,
+    "total": 278
+  },
+  {
+    "timestamp": "2026-04-24T11:43:47.404903",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 175,
+    "total": 433
+  },
+  {
+    "timestamp": "2026-04-24T11:43:52.017419",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 453,
+    "total": 736
+  },
+  {
+    "timestamp": "2026-04-24T11:43:54.527260",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 141,
+    "total": 496
+  },
+  {
+    "timestamp": "2026-04-24T11:43:57.680079",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 235,
+    "total": 617
+  },
+  {
+    "timestamp": "2026-04-24T11:44:07.947410",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1714,
+    "total": 2305
+  },
+  {
+    "timestamp": "2026-04-24T11:44:12.447350",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 396,
+    "total": 663
+  },
+  {
+    "timestamp": "2026-04-24T11:44:15.700657",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 136,
+    "total": 443
+  },
+  {
+    "timestamp": "2026-04-24T11:47:58.782508",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 153,
+    "total": 411
+  },
+  {
+    "timestamp": "2026-04-24T11:48:02.747369",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 352,
+    "total": 632
+  },
+  {
+    "timestamp": "2026-04-24T11:48:04.737476",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 282,
+    "total": 636
+  },
+  {
+    "timestamp": "2026-04-24T11:48:06.697680",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 213,
+    "total": 594
+  },
+  {
+    "timestamp": "2026-04-24T11:48:15.592005",
+    "feature": "generate_pembahasan",
+    "input_tokens": 580,
+    "output_tokens": 1641,
+    "total": 2221
+  },
+  {
+    "timestamp": "2026-04-24T11:48:18.177614",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 361,
+    "total": 626
+  },
+  {
+    "timestamp": "2026-04-24T11:48:20.938276",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 298,
+    "output_tokens": 124,
+    "total": 422
+  },
+  {
+    "timestamp": "2026-04-24T11:52:41.116296",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 180,
+    "total": 438
+  },
+  {
+    "timestamp": "2026-04-24T11:52:44.791141",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 447,
+    "total": 730
+  },
+  {
+    "timestamp": "2026-04-24T11:52:49.627373",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 171,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-24T11:52:51.774437",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 162,
+    "total": 544
+  },
+  {
+    "timestamp": "2026-04-24T11:53:00.749722",
+    "feature": "generate_pembahasan",
+    "input_tokens": 591,
+    "output_tokens": 1422,
+    "total": 2013
+  },
+  {
+    "timestamp": "2026-04-24T11:53:04.806387",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 475,
+    "total": 742
+  },
+  {
+    "timestamp": "2026-04-24T11:53:08.147801",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 307,
+    "output_tokens": 138,
+    "total": 445
+  },
+  {
+    "timestamp": "2026-04-24T11:57:08.342325",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 255,
+    "output_tokens": 190,
+    "total": 445
+  },
+  {
+    "timestamp": "2026-04-24T11:57:12.258940",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 279,
+    "output_tokens": 414,
+    "total": 693
+  },
+  {
+    "timestamp": "2026-04-24T11:57:12.427538",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 198,
+    "total": 454
+  },
+  {
+    "timestamp": "2026-04-24T11:57:15.422853",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 351,
+    "output_tokens": 121,
+    "total": 472
+  },
+  {
+    "timestamp": "2026-04-24T11:57:16.614602",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 456,
+    "total": 739
+  },
+  {
+    "timestamp": "2026-04-24T11:57:17.591381",
+    "feature": "generate_tujuan",
+    "input_tokens": 378,
+    "output_tokens": 187,
+    "total": 565
+  },
+  {
+    "timestamp": "2026-04-24T11:57:19.687478",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 130,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-24T11:57:23.435884",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 226,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-24T11:57:24.109491",
+    "feature": "generate_pembahasan",
+    "input_tokens": 621,
+    "output_tokens": 1191,
+    "total": 1812
+  },
+  {
+    "timestamp": "2026-04-24T11:57:26.592320",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 262,
+    "output_tokens": 298,
+    "total": 560
+  },
+  {
+    "timestamp": "2026-04-24T11:57:29.642625",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 337,
+    "output_tokens": 198,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-24T11:57:31.160049",
+    "feature": "generate_pembahasan",
+    "input_tokens": 625,
+    "output_tokens": 1494,
+    "total": 2119
+  },
+  {
+    "timestamp": "2026-04-24T11:57:35.209663",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 315,
+    "total": 580
+  },
+  {
+    "timestamp": "2026-04-24T11:57:38.141998",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 340,
+    "output_tokens": 172,
+    "total": 512
+  },
+  {
+    "timestamp": "2026-04-24T11:58:02.754820",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 201,
+    "total": 457
+  },
+  {
+    "timestamp": "2026-04-24T11:58:07.610189",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 478,
+    "total": 761
+  },
+  {
+    "timestamp": "2026-04-24T11:58:09.947270",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 196,
+    "total": 550
+  },
+  {
+    "timestamp": "2026-04-24T11:58:13.178558",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 168,
+    "total": 549
+  },
+  {
+    "timestamp": "2026-04-24T11:58:20.505227",
+    "feature": "generate_pembahasan",
+    "input_tokens": 625,
+    "output_tokens": 1341,
+    "total": 1966
+  },
+  {
+    "timestamp": "2026-04-24T11:58:23.501416",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 282,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-24T11:58:27.416573",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 340,
+    "output_tokens": 220,
+    "total": 560
+  },
+  {
+    "timestamp": "2026-04-24T12:06:43.469150",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 207,
+    "total": 469
+  },
+  {
+    "timestamp": "2026-04-24T12:06:47.472555",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 433,
+    "total": 722
+  },
+  {
+    "timestamp": "2026-04-24T12:06:49.199937",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 172,
+    "total": 532
+  },
+  {
+    "timestamp": "2026-04-24T12:06:50.874219",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 150,
+    "total": 537
+  },
+  {
+    "timestamp": "2026-04-24T12:06:59.004413",
+    "feature": "generate_pembahasan",
+    "input_tokens": 613,
+    "output_tokens": 1462,
+    "total": 2075
+  },
+  {
+    "timestamp": "2026-04-24T12:07:01.577343",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 354,
+    "total": 625
+  },
+  {
+    "timestamp": "2026-04-24T12:07:04.017276",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 328,
+    "output_tokens": 159,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-24T12:07:29.047982",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 166,
+    "total": 428
+  },
+  {
+    "timestamp": "2026-04-24T12:07:31.755484",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 363,
+    "total": 652
+  },
+  {
+    "timestamp": "2026-04-24T12:07:33.305095",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 157,
+    "total": 517
+  },
+  {
+    "timestamp": "2026-04-24T12:07:35.497663",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 237,
+    "total": 624
+  },
+  {
+    "timestamp": "2026-04-24T12:07:45.134275",
+    "feature": "generate_pembahasan",
+    "input_tokens": 613,
+    "output_tokens": 1612,
+    "total": 2225
+  },
+  {
+    "timestamp": "2026-04-24T12:07:48.660097",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 304,
+    "total": 575
+  },
+  {
+    "timestamp": "2026-04-24T12:07:51.618921",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 328,
+    "output_tokens": 165,
+    "total": 493
+  },
+  {
+    "timestamp": "2026-04-24T12:09:19.867060",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 180,
+    "total": 436
+  },
+  {
+    "timestamp": "2026-04-24T12:09:23.080136",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 426,
+    "total": 712
+  },
+  {
+    "timestamp": "2026-04-24T12:09:25.142076",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 165,
+    "total": 519
+  },
+  {
+    "timestamp": "2026-04-24T12:09:28.691477",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 256,
+    "total": 637
+  },
+  {
+    "timestamp": "2026-04-24T12:09:38.427622",
+    "feature": "generate_pembahasan",
+    "input_tokens": 634,
+    "output_tokens": 1672,
+    "total": 2306
+  },
+  {
+    "timestamp": "2026-04-24T12:09:42.497576",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 370,
+    "total": 635
+  },
+  {
+    "timestamp": "2026-04-24T12:09:46.207948",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 217,
+    "total": 563
+  },
+  {
+    "timestamp": "2026-04-24T12:10:13.255226",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 214,
+    "total": 470
+  },
+  {
+    "timestamp": "2026-04-24T12:10:17.092245",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 510,
+    "total": 796
+  },
+  {
+    "timestamp": "2026-04-24T12:10:21.851981",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 612,
+    "total": 966
+  },
+  {
+    "timestamp": "2026-04-24T12:10:24.300785",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 231,
+    "total": 612
+  },
+  {
+    "timestamp": "2026-04-24T12:10:32.082916",
+    "feature": "generate_pembahasan",
+    "input_tokens": 634,
+    "output_tokens": 1480,
+    "total": 2114
+  },
+  {
+    "timestamp": "2026-04-24T12:10:34.935886",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 306,
+    "total": 571
+  },
+  {
+    "timestamp": "2026-04-24T12:10:38.497559",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 216,
+    "total": 562
+  },
+  {
+    "timestamp": "2026-04-24T12:10:51.405165",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 169,
+    "total": 425
+  },
+  {
+    "timestamp": "2026-04-24T12:10:53.660539",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 375,
+    "total": 661
+  },
+  {
+    "timestamp": "2026-04-24T12:10:56.085410",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 150,
+    "total": 504
+  },
+  {
+    "timestamp": "2026-04-24T12:10:58.342320",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 195,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-24T12:11:06.597538",
+    "feature": "generate_pembahasan",
+    "input_tokens": 634,
+    "output_tokens": 1543,
+    "total": 2177
+  },
+  {
+    "timestamp": "2026-04-24T12:11:09.392166",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 322,
+    "total": 587
+  },
+  {
+    "timestamp": "2026-04-24T12:11:13.807481",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 196,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-24T12:11:33.752547",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 162,
+    "total": 424
+  },
+  {
+    "timestamp": "2026-04-24T12:11:37.222689",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 414,
+    "total": 703
+  },
+  {
+    "timestamp": "2026-04-24T12:11:39.430986",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 361,
+    "output_tokens": 144,
+    "total": 505
+  },
+  {
+    "timestamp": "2026-04-24T12:11:41.497844",
+    "feature": "generate_tujuan",
+    "input_tokens": 388,
+    "output_tokens": 114,
+    "total": 502
+  },
+  {
+    "timestamp": "2026-04-24T12:11:50.243893",
+    "feature": "generate_pembahasan",
+    "input_tokens": 613,
+    "output_tokens": 1594,
+    "total": 2207
+  },
+  {
+    "timestamp": "2026-04-24T12:11:53.080333",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 273,
+    "output_tokens": 327,
+    "total": 600
+  },
+  {
+    "timestamp": "2026-04-24T12:11:56.577091",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 330,
+    "output_tokens": 172,
+    "total": 502
+  },
+  {
+    "timestamp": "2026-04-24T12:14:30.092325",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 169,
+    "total": 433
+  },
+  {
+    "timestamp": "2026-04-24T12:14:33.562439",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 445,
+    "total": 731
+  },
+  {
+    "timestamp": "2026-04-24T12:14:35.707576",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 166,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-24T12:14:37.904744",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 184,
+    "total": 571
+  },
+  {
+    "timestamp": "2026-04-24T12:14:48.030447",
+    "feature": "generate_pembahasan",
+    "input_tokens": 522,
+    "output_tokens": 1725,
+    "total": 2247
+  },
+  {
+    "timestamp": "2026-04-24T12:14:52.651780",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 420,
+    "total": 691
+  },
+  {
+    "timestamp": "2026-04-24T12:14:55.599173",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 240,
+    "output_tokens": 135,
+    "total": 375
+  },
+  {
+    "timestamp": "2026-04-24T12:15:01.803055",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 208,
+    "total": 464
+  },
+  {
+    "timestamp": "2026-04-24T12:15:04.798444",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 375,
+    "total": 661
+  },
+  {
+    "timestamp": "2026-04-24T12:15:06.760878",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 181,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-24T12:15:09.052419",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 195,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-24T12:15:15.730965",
+    "feature": "generate_pembahasan",
+    "input_tokens": 634,
+    "output_tokens": 1545,
+    "total": 2179
+  },
+  {
+    "timestamp": "2026-04-24T12:15:18.339708",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 322,
+    "total": 587
+  },
+  {
+    "timestamp": "2026-04-24T12:15:22.557493",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 213,
+    "total": 559
+  },
+  {
+    "timestamp": "2026-04-24T12:20:09.538956",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 318,
+    "output_tokens": 190,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-04-24T12:20:11.478629",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 181,
+    "total": 439
+  },
+  {
+    "timestamp": "2026-04-24T12:20:13.429241",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 366,
+    "output_tokens": 162,
+    "total": 528
+  },
+  {
+    "timestamp": "2026-04-24T12:20:15.302714",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 313,
+    "output_tokens": 102,
+    "total": 415
+  },
+  {
+    "timestamp": "2026-04-24T12:20:15.423091",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 289,
+    "output_tokens": 427,
+    "total": 716
+  },
+  {
+    "timestamp": "2026-04-24T12:20:17.077155",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 309,
+    "output_tokens": 88,
+    "total": 397
+  },
+  {
+    "timestamp": "2026-04-24T12:20:17.969990",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 357,
+    "output_tokens": 219,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-24T12:20:21.432488",
+    "feature": "generate_tujuan",
+    "input_tokens": 384,
+    "output_tokens": 151,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-24T12:20:22.427475",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 672,
+    "output_tokens": 667,
+    "total": 1339
+  },
+  {
+    "timestamp": "2026-04-24T12:20:24.236293",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 354,
+    "output_tokens": 154,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-04-24T12:20:27.227597",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 168,
+    "output_tokens": 126,
+    "total": 294
+  },
+  {
+    "timestamp": "2026-04-24T12:20:29.074383",
+    "feature": "generate_pembahasan",
+    "input_tokens": 622,
+    "output_tokens": 1255,
+    "total": 1877
+  },
+  {
+    "timestamp": "2026-04-24T12:20:31.924413",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 268,
+    "output_tokens": 307,
+    "total": 575
+  },
+  {
+    "timestamp": "2026-04-24T12:20:34.660292",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 334,
+    "output_tokens": 184,
+    "total": 518
+  },
+  {
+    "timestamp": "2026-04-24T12:41:14.646003",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 232,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-24T12:41:18.024317",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 472,
+    "total": 755
+  },
+  {
+    "timestamp": "2026-04-24T12:41:20.247378",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 156,
+    "total": 511
+  },
+  {
+    "timestamp": "2026-04-24T12:41:22.472427",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 153,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-24T12:41:29.931405",
+    "feature": "generate_pembahasan",
+    "input_tokens": 537,
+    "output_tokens": 1323,
+    "total": 1860
+  },
+  {
+    "timestamp": "2026-04-24T12:41:33.042393",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 340,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-24T12:41:35.699703",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 253,
+    "output_tokens": 103,
+    "total": 356
+  },
+  {
+    "timestamp": "2026-04-24T12:52:53.005635",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 150,
+    "total": 408
+  },
+  {
+    "timestamp": "2026-04-24T12:52:56.910334",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 501,
+    "total": 784
+  },
+  {
+    "timestamp": "2026-04-24T12:52:58.855089",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 165,
+    "total": 520
+  },
+  {
+    "timestamp": "2026-04-24T12:53:02.013276",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 255,
+    "total": 637
+  },
+  {
+    "timestamp": "2026-04-24T12:53:09.727229",
+    "feature": "generate_pembahasan",
+    "input_tokens": 507,
+    "output_tokens": 1387,
+    "total": 1894
+  },
+  {
+    "timestamp": "2026-04-24T12:53:13.578160",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 292,
+    "total": 559
+  },
+  {
+    "timestamp": "2026-04-24T12:53:17.177227",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 223,
+    "output_tokens": 76,
+    "total": 299
+  },
+  {
+    "timestamp": "2026-04-24T13:01:32.597409",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 186,
+    "total": 444
+  },
+  {
+    "timestamp": "2026-04-24T13:01:36.078478",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 492,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-24T13:01:38.373282",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 174,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-24T13:01:41.816575",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 192,
+    "total": 574
+  },
+  {
+    "timestamp": "2026-04-24T13:01:51.427229",
+    "feature": "generate_pembahasan",
+    "input_tokens": 535,
+    "output_tokens": 1662,
+    "total": 2197
+  },
+  {
+    "timestamp": "2026-04-24T13:01:54.141332",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 387,
+    "total": 654
+  },
+  {
+    "timestamp": "2026-04-24T13:01:58.028317",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 252,
+    "output_tokens": 114,
+    "total": 366
+  },
+  {
+    "timestamp": "2026-04-24T13:04:35.047864",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 199,
+    "total": 463
+  },
+  {
+    "timestamp": "2026-04-24T13:04:38.355882",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 504,
+    "total": 795
+  },
+  {
+    "timestamp": "2026-04-24T13:04:40.698830",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 159,
+    "total": 522
+  },
+  {
+    "timestamp": "2026-04-24T13:04:42.696294",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 243,
+    "total": 633
+  },
+  {
+    "timestamp": "2026-04-24T13:04:49.948005",
+    "feature": "generate_pembahasan",
+    "input_tokens": 565,
+    "output_tokens": 1410,
+    "total": 1975
+  },
+  {
+    "timestamp": "2026-04-24T13:04:52.686194",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 297,
+    "total": 571
+  },
+  {
+    "timestamp": "2026-04-24T13:04:55.128494",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 282,
+    "output_tokens": 112,
+    "total": 394
+  },
+  {
+    "timestamp": "2026-04-24T13:05:10.079073",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 217,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-24T13:05:13.584048",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 439,
+    "total": 722
+  },
+  {
+    "timestamp": "2026-04-24T13:05:15.749896",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 192,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-24T13:05:18.047536",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 201,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-04-24T13:05:26.532582",
+    "feature": "generate_pembahasan",
+    "input_tokens": 490,
+    "output_tokens": 1503,
+    "total": 1993
+  },
+  {
+    "timestamp": "2026-04-24T13:05:29.777923",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 336,
+    "total": 603
+  },
+  {
+    "timestamp": "2026-04-24T13:05:32.780204",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 207,
+    "output_tokens": 120,
+    "total": 327
+  },
+  {
+    "timestamp": "2026-04-24T13:09:31.311247",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 267,
+    "output_tokens": 190,
+    "total": 457
+  },
+  {
+    "timestamp": "2026-04-24T13:09:34.689897",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 292,
+    "output_tokens": 469,
+    "total": 761
+  },
+  {
+    "timestamp": "2026-04-24T13:09:37.177456",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 262,
+    "total": 626
+  },
+  {
+    "timestamp": "2026-04-24T13:09:40.541301",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 219,
+    "total": 610
+  },
+  {
+    "timestamp": "2026-04-24T13:09:48.396013",
+    "feature": "generate_pembahasan",
+    "input_tokens": 580,
+    "output_tokens": 1698,
+    "total": 2278
+  },
+  {
+    "timestamp": "2026-04-24T13:09:51.101653",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 300,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-24T13:09:54.405192",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 297,
+    "output_tokens": 180,
+    "total": 477
+  },
+  {
+    "timestamp": "2026-04-24T13:16:35.274706",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 267,
+    "output_tokens": 220,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-24T13:16:38.855066",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 292,
+    "output_tokens": 414,
+    "total": 706
+  },
+  {
+    "timestamp": "2026-04-24T13:16:41.727692",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 399,
+    "total": 763
+  },
+  {
+    "timestamp": "2026-04-24T13:16:44.194441",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 178,
+    "total": 569
+  },
+  {
+    "timestamp": "2026-04-24T13:16:51.736834",
+    "feature": "generate_pembahasan",
+    "input_tokens": 580,
+    "output_tokens": 1560,
+    "total": 2140
+  },
+  {
+    "timestamp": "2026-04-24T13:16:55.834567",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 303,
+    "total": 579
+  },
+  {
+    "timestamp": "2026-04-24T13:16:58.565027",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 297,
+    "output_tokens": 121,
+    "total": 418
+  },
+  {
+    "timestamp": "2026-04-24T13:17:44.147771",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 153,
+    "total": 409
+  },
+  {
+    "timestamp": "2026-04-24T13:17:47.873899",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 283,
+    "output_tokens": 412,
+    "total": 695
+  },
+  {
+    "timestamp": "2026-04-24T13:17:49.492398",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 168,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-24T13:17:51.158831",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 199,
+    "total": 581
+  },
+  {
+    "timestamp": "2026-04-24T13:17:59.455034",
+    "feature": "generate_pembahasan",
+    "input_tokens": 606,
+    "output_tokens": 1575,
+    "total": 2181
+  },
+  {
+    "timestamp": "2026-04-24T13:18:01.570514",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 250,
+    "total": 517
+  },
+  {
+    "timestamp": "2026-04-24T13:18:05.283353",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 322,
+    "output_tokens": 168,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-24T13:21:22.019398",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 234,
+    "total": 492
+  },
+  {
+    "timestamp": "2026-04-24T13:21:25.535707",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 450,
+    "total": 732
+  },
+  {
+    "timestamp": "2026-04-24T13:21:28.306565",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 193,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-04-24T13:21:31.862327",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 192,
+    "total": 573
+  },
+  {
+    "timestamp": "2026-04-24T13:21:41.195989",
+    "feature": "generate_pembahasan",
+    "input_tokens": 562,
+    "output_tokens": 1656,
+    "total": 2218
+  },
+  {
+    "timestamp": "2026-04-24T13:21:45.567468",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 349,
+    "total": 614
+  },
+  {
+    "timestamp": "2026-04-24T13:21:48.355206",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 279,
+    "output_tokens": 123,
+    "total": 402
+  },
+  {
+    "timestamp": "2026-04-24T13:24:49.605047",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 207,
+    "total": 465
+  },
+  {
+    "timestamp": "2026-04-24T13:24:54.212949",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 441,
+    "total": 723
+  },
+  {
+    "timestamp": "2026-04-24T13:24:57.399895",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 202,
+    "total": 556
+  },
+  {
+    "timestamp": "2026-04-24T13:24:59.627643",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 183,
+    "total": 564
+  },
+  {
+    "timestamp": "2026-04-24T13:25:08.197486",
+    "feature": "generate_pembahasan",
+    "input_tokens": 555,
+    "output_tokens": 1491,
+    "total": 2046
+  },
+  {
+    "timestamp": "2026-04-24T13:25:11.212424",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 342,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-24T13:25:15.359755",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 271,
+    "output_tokens": 111,
+    "total": 382
+  },
+  {
+    "timestamp": "2026-04-24T13:30:42.910196",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 196,
+    "total": 454
+  },
+  {
+    "timestamp": "2026-04-24T13:30:46.406375",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 390,
+    "total": 672
+  },
+  {
+    "timestamp": "2026-04-24T13:30:49.422976",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 136,
+    "total": 490
+  },
+  {
+    "timestamp": "2026-04-24T13:30:52.058300",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 268,
+    "total": 649
+  },
+  {
+    "timestamp": "2026-04-24T13:31:01.850056",
+    "feature": "generate_pembahasan",
+    "input_tokens": 561,
+    "output_tokens": 1737,
+    "total": 2298
+  },
+  {
+    "timestamp": "2026-04-24T13:31:04.841326",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 307,
+    "total": 572
+  },
+  {
+    "timestamp": "2026-04-24T13:31:08.077481",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 277,
+    "output_tokens": 150,
+    "total": 427
+  },
+  {
+    "timestamp": "2026-04-24T13:34:03.005122",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 219,
+    "total": 477
+  },
+  {
+    "timestamp": "2026-04-24T13:34:06.717073",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 429,
+    "total": 715
+  },
+  {
+    "timestamp": "2026-04-24T13:34:08.697173",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 151,
+    "total": 506
+  },
+  {
+    "timestamp": "2026-04-24T13:34:11.429105",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 105,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-24T13:34:20.078076",
+    "feature": "generate_pembahasan",
+    "input_tokens": 633,
+    "output_tokens": 1494,
+    "total": 2127
+  },
+  {
+    "timestamp": "2026-04-24T13:34:23.009799",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 309,
+    "total": 576
+  },
+  {
+    "timestamp": "2026-04-24T13:34:28.197405",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 346,
+    "output_tokens": 196,
+    "total": 542
+  },
+  {
+    "timestamp": "2026-04-24T13:35:33.484844",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 183,
+    "total": 439
+  },
+  {
+    "timestamp": "2026-04-24T13:35:36.804985",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 405,
+    "total": 687
+  },
+  {
+    "timestamp": "2026-04-24T13:35:39.211520",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 141,
+    "total": 495
+  },
+  {
+    "timestamp": "2026-04-24T13:35:41.409833",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 154,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-04-24T13:35:49.264553",
+    "feature": "generate_pembahasan",
+    "input_tokens": 543,
+    "output_tokens": 1417,
+    "total": 1960
+  },
+  {
+    "timestamp": "2026-04-24T13:35:52.761311",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 228,
+    "total": 493
+  },
+  {
+    "timestamp": "2026-04-24T13:35:55.816570",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 259,
+    "output_tokens": 129,
+    "total": 388
+  },
+  {
+    "timestamp": "2026-04-24T13:44:34.737913",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 249,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-04-24T13:44:38.064793",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 415,
+    "total": 697
+  },
+  {
+    "timestamp": "2026-04-24T13:44:40.022840",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 129,
+    "total": 484
+  },
+  {
+    "timestamp": "2026-04-24T13:44:42.598458",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 198,
+    "total": 580
+  },
+  {
+    "timestamp": "2026-04-24T13:44:51.852439",
+    "feature": "generate_pembahasan",
+    "input_tokens": 567,
+    "output_tokens": 1768,
+    "total": 2335
+  },
+  {
+    "timestamp": "2026-04-24T13:44:52.697853",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 195,
+    "total": 460
+  },
+  {
+    "timestamp": "2026-04-24T13:44:55.010989",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 366,
+    "total": 633
+  },
+  {
+    "timestamp": "2026-04-24T13:44:55.726167",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 372,
+    "total": 663
+  },
+  {
+    "timestamp": "2026-04-24T13:44:58.762093",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 199,
+    "total": 563
+  },
+  {
+    "timestamp": "2026-04-24T13:44:59.210212",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 285,
+    "output_tokens": 138,
+    "total": 423
+  },
+  {
+    "timestamp": "2026-04-24T13:45:01.292013",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 238,
+    "total": 629
+  },
+  {
+    "timestamp": "2026-04-24T13:45:09.177716",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1480,
+    "total": 2111
+  },
+  {
+    "timestamp": "2026-04-24T13:45:22.879987",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 324,
+    "total": 600
+  },
+  {
+    "timestamp": "2026-04-24T13:45:26.754931",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 349,
+    "output_tokens": 180,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-24T13:45:44.556378",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 201,
+    "total": 466
+  },
+  {
+    "timestamp": "2026-04-24T13:45:48.461150",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 291,
+    "output_tokens": 477,
+    "total": 768
+  },
+  {
+    "timestamp": "2026-04-24T13:45:50.847644",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 208,
+    "total": 572
+  },
+  {
+    "timestamp": "2026-04-24T13:45:52.878039",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 148,
+    "total": 539
+  },
+  {
+    "timestamp": "2026-04-24T13:46:01.455268",
+    "feature": "generate_pembahasan",
+    "input_tokens": 631,
+    "output_tokens": 1339,
+    "total": 1970
+  },
+  {
+    "timestamp": "2026-04-24T13:46:04.100087",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 256,
+    "total": 532
+  },
+  {
+    "timestamp": "2026-04-24T13:46:07.545848",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 349,
+    "output_tokens": 178,
+    "total": 527
+  },
+  {
+    "timestamp": "2026-04-24T13:46:49.485254",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 190,
+    "total": 448
+  },
+  {
+    "timestamp": "2026-04-24T13:46:53.166880",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 502,
+    "total": 784
+  },
+  {
+    "timestamp": "2026-04-24T13:46:56.282515",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 150,
+    "total": 505
+  },
+  {
+    "timestamp": "2026-04-24T13:46:58.570297",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 208,
+    "total": 590
+  },
+  {
+    "timestamp": "2026-04-24T13:47:06.204865",
+    "feature": "generate_pembahasan",
+    "input_tokens": 610,
+    "output_tokens": 1707,
+    "total": 2317
+  },
+  {
+    "timestamp": "2026-04-24T13:47:08.599572",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 255,
+    "total": 522
+  },
+  {
+    "timestamp": "2026-04-24T13:47:12.647641",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 328,
+    "output_tokens": 201,
+    "total": 529
+  },
+  {
+    "timestamp": "2026-04-24T13:57:28.422591",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 277,
+    "output_tokens": 205,
+    "total": 482
+  },
+  {
+    "timestamp": "2026-04-24T13:57:33.678505",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 303,
+    "output_tokens": 451,
+    "total": 754
+  },
+  {
+    "timestamp": "2026-04-24T13:57:35.555862",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 376,
+    "output_tokens": 235,
+    "total": 611
+  },
+  {
+    "timestamp": "2026-04-24T13:57:37.229824",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 403,
+    "output_tokens": 202,
+    "total": 605
+  },
+  {
+    "timestamp": "2026-04-24T13:57:44.631691",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 579,
+    "output_tokens": 1398,
+    "total": 1977
+  },
+  {
+    "timestamp": "2026-04-24T13:57:47.330900",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 288,
+    "output_tokens": 286,
+    "total": 574
+  },
+  {
+    "timestamp": "2026-04-24T13:57:49.347510",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 297,
+    "output_tokens": 117,
+    "total": 414
+  },
+  {
+    "timestamp": "2026-04-24T13:58:12.871593",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 175,
+    "total": 433
+  },
+  {
+    "timestamp": "2026-04-24T13:58:15.959577",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 420,
+    "total": 702
+  },
+  {
+    "timestamp": "2026-04-24T13:58:18.067110",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 156,
+    "total": 510
+  },
+  {
+    "timestamp": "2026-04-24T13:58:20.301658",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 138,
+    "total": 519
+  },
+  {
+    "timestamp": "2026-04-24T13:58:30.014351",
+    "feature": "generate_pembahasan",
+    "input_tokens": 567,
+    "output_tokens": 1572,
+    "total": 2139
+  },
+  {
+    "timestamp": "2026-04-24T13:58:32.585271",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 334,
+    "total": 599
+  },
+  {
+    "timestamp": "2026-04-24T13:58:36.096115",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 283,
+    "output_tokens": 187,
+    "total": 470
+  },
+  {
+    "timestamp": "2026-04-24T13:58:37.322665",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 277,
+    "output_tokens": 159,
+    "total": 436
+  },
+  {
+    "timestamp": "2026-04-24T13:58:40.777956",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 303,
+    "output_tokens": 457,
+    "total": 760
+  },
+  {
+    "timestamp": "2026-04-24T13:58:42.521794",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 376,
+    "output_tokens": 127,
+    "total": 503
+  },
+  {
+    "timestamp": "2026-04-24T13:58:46.038334",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 403,
+    "output_tokens": 210,
+    "total": 613
+  },
+  {
+    "timestamp": "2026-04-24T13:58:55.066327",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 573,
+    "output_tokens": 1534,
+    "total": 2107
+  },
+  {
+    "timestamp": "2026-04-24T13:58:57.725200",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 288,
+    "output_tokens": 319,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-24T13:58:59.941971",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 291,
+    "output_tokens": 112,
+    "total": 403
+  },
+  {
+    "timestamp": "2026-04-24T13:59:27.511391",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 277,
+    "output_tokens": 171,
+    "total": 448
+  },
+  {
+    "timestamp": "2026-04-24T13:59:31.400172",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 303,
+    "output_tokens": 411,
+    "total": 714
+  },
+  {
+    "timestamp": "2026-04-24T13:59:33.221459",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 376,
+    "output_tokens": 148,
+    "total": 524
+  },
+  {
+    "timestamp": "2026-04-24T13:59:35.104890",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 403,
+    "output_tokens": 198,
+    "total": 601
+  },
+  {
+    "timestamp": "2026-04-24T13:59:42.610932",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 675,
+    "output_tokens": 1465,
+    "total": 2140
+  },
+  {
+    "timestamp": "2026-04-24T13:59:45.171600",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 288,
+    "output_tokens": 375,
+    "total": 663
+  },
+  {
+    "timestamp": "2026-04-24T13:59:47.420321",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 393,
+    "output_tokens": 219,
+    "total": 612
+  },
+  {
+    "timestamp": "2026-04-24T14:00:40.778598",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 277,
+    "output_tokens": 237,
+    "total": 514
+  },
+  {
+    "timestamp": "2026-04-24T14:00:43.742279",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 303,
+    "output_tokens": 489,
+    "total": 792
+  },
+  {
+    "timestamp": "2026-04-24T14:00:45.617560",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 376,
+    "output_tokens": 147,
+    "total": 523
+  },
+  {
+    "timestamp": "2026-04-24T14:00:48.908650",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 403,
+    "output_tokens": 270,
+    "total": 673
+  },
+  {
+    "timestamp": "2026-04-24T14:00:56.698833",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 664,
+    "output_tokens": 1486,
+    "total": 2150
+  },
+  {
+    "timestamp": "2026-04-24T14:00:59.256153",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 288,
+    "output_tokens": 364,
+    "total": 652
+  },
+  {
+    "timestamp": "2026-04-24T14:01:02.000595",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 382,
+    "output_tokens": 214,
+    "total": 596
+  },
+  {
+    "timestamp": "2026-04-24T14:06:33.622370",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 157,
+    "total": 415
+  },
+  {
+    "timestamp": "2026-04-24T14:06:37.845625",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 435,
+    "total": 717
+  },
+  {
+    "timestamp": "2026-04-24T14:06:40.101378",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 151,
+    "total": 505
+  },
+  {
+    "timestamp": "2026-04-24T14:06:42.124025",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 145,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-24T14:06:50.716556",
+    "feature": "generate_pembahasan",
+    "input_tokens": 558,
+    "output_tokens": 1504,
+    "total": 2062
+  },
+  {
+    "timestamp": "2026-04-24T14:06:53.395846",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 300,
+    "total": 565
+  },
+  {
+    "timestamp": "2026-04-24T14:06:55.639049",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 274,
+    "output_tokens": 120,
+    "total": 394
+  },
+  {
+    "timestamp": "2026-04-24T14:37:49.448297",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 171,
+    "total": 429
+  },
+  {
+    "timestamp": "2026-04-24T14:37:53.383475",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 502,
+    "total": 784
+  },
+  {
+    "timestamp": "2026-04-24T14:37:57.527180",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 274,
+    "total": 628
+  },
+  {
+    "timestamp": "2026-04-24T14:38:00.297798",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 211,
+    "total": 592
+  },
+  {
+    "timestamp": "2026-04-24T14:38:14.634207",
+    "feature": "generate_pembahasan",
+    "input_tokens": 565,
+    "output_tokens": 1638,
+    "total": 2203
+  },
+  {
+    "timestamp": "2026-04-24T14:38:18.577499",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 339,
+    "total": 604
+  },
+  {
+    "timestamp": "2026-04-24T14:38:23.032426",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 282,
+    "output_tokens": 193,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-04-24T14:38:26.787006",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 222,
+    "total": 480
+  },
+  {
+    "timestamp": "2026-04-24T14:38:31.892426",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 450,
+    "total": 732
+  },
+  {
+    "timestamp": "2026-04-24T14:38:34.164896",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 190,
+    "total": 544
+  },
+  {
+    "timestamp": "2026-04-24T14:38:37.264865",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 271,
+    "total": 652
+  },
+  {
+    "timestamp": "2026-04-24T14:38:48.201393",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 562,
+    "output_tokens": 1761,
+    "total": 2323
+  },
+  {
+    "timestamp": "2026-04-24T14:38:51.197231",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 319,
+    "total": 584
+  },
+  {
+    "timestamp": "2026-04-24T14:38:53.861267",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 279,
+    "output_tokens": 123,
+    "total": 402
+  },
+  {
+    "timestamp": "2026-04-24T20:58:43.276997",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 177,
+    "total": 435
+  },
+  {
+    "timestamp": "2026-04-24T20:58:47.122428",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 282,
+    "output_tokens": 462,
+    "total": 744
+  },
+  {
+    "timestamp": "2026-04-24T20:58:50.286770",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 195,
+    "total": 549
+  },
+  {
+    "timestamp": "2026-04-24T20:58:53.780215",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 162,
+    "total": 543
+  },
+  {
+    "timestamp": "2026-04-24T20:59:02.765917",
+    "feature": "generate_pembahasan",
+    "input_tokens": 861,
+    "output_tokens": 1564,
+    "total": 2425
+  },
+  {
+    "timestamp": "2026-04-24T20:59:06.213279",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 313,
+    "total": 578
+  },
+  {
+    "timestamp": "2026-04-24T20:59:09.585135",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 577,
+    "output_tokens": 180,
+    "total": 757
+  },
+  {
+    "timestamp": "2026-04-24T21:04:15.122952",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 180,
+    "output_tokens": 49,
+    "total": 229
+  },
+  {
+    "timestamp": "2026-04-24T21:04:18.156895",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 217,
+    "output_tokens": 135,
+    "total": 352
+  },
+  {
+    "timestamp": "2026-04-24T21:04:21.486753",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 243,
+    "output_tokens": 108,
+    "total": 351
+  },
+  {
+    "timestamp": "2026-04-24T21:04:24.468576",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 241,
+    "output_tokens": 48,
+    "total": 289
+  },
+  {
+    "timestamp": "2026-04-24T21:04:28.527045",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 211,
+    "output_tokens": 213,
+    "total": 424
+  },
+  {
+    "timestamp": "2026-04-24T21:04:31.945095",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 213,
+    "output_tokens": 108,
+    "total": 321
+  },
+  {
+    "timestamp": "2026-04-24T21:04:36.223692",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 435,
+    "output_tokens": 342,
+    "total": 777
+  },
+  {
+    "timestamp": "2026-04-24T21:08:53.536597",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 259,
+    "output_tokens": 186,
+    "total": 445
+  },
+  {
+    "timestamp": "2026-04-24T21:08:58.161014",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 285,
+    "output_tokens": 484,
+    "total": 769
+  },
+  {
+    "timestamp": "2026-04-24T21:09:00.907215",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 357,
+    "output_tokens": 168,
+    "total": 525
+  },
+  {
+    "timestamp": "2026-04-24T21:09:03.252629",
+    "feature": "generate_tujuan",
+    "input_tokens": 384,
+    "output_tokens": 115,
+    "total": 499
+  },
+  {
+    "timestamp": "2026-04-24T21:09:12.236944",
+    "feature": "generate_pembahasan",
+    "input_tokens": 780,
+    "output_tokens": 1642,
+    "total": 2422
+  },
+  {
+    "timestamp": "2026-04-24T21:09:15.834612",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 268,
+    "output_tokens": 264,
+    "total": 532
+  },
+  {
+    "timestamp": "2026-04-24T21:09:20.123599",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 496,
+    "output_tokens": 358,
+    "total": 854
+  },
+  {
+    "timestamp": "2026-04-24T21:15:52.161275",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 225,
+    "total": 487
+  },
+  {
+    "timestamp": "2026-04-24T21:15:56.772405",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 288,
+    "output_tokens": 453,
+    "total": 741
+  },
+  {
+    "timestamp": "2026-04-24T21:15:59.279079",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 360,
+    "output_tokens": 154,
+    "total": 514
+  },
+  {
+    "timestamp": "2026-04-24T21:16:02.206538",
+    "feature": "generate_tujuan",
+    "input_tokens": 387,
+    "output_tokens": 262,
+    "total": 649
+  },
+  {
+    "timestamp": "2026-04-24T21:16:11.582702",
+    "feature": "generate_pembahasan",
+    "input_tokens": 754,
+    "output_tokens": 1546,
+    "total": 2300
+  },
+  {
+    "timestamp": "2026-04-24T21:16:14.793148",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 271,
+    "output_tokens": 327,
+    "total": 598
+  },
+  {
+    "timestamp": "2026-04-24T21:16:21.682855",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 471,
+    "output_tokens": 328,
+    "total": 799
+  },
+  {
+    "timestamp": "2026-04-25T18:20:59.513728",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 256,
+    "output_tokens": 139,
+    "total": 395
+  },
+  {
+    "timestamp": "2026-04-25T18:21:02.937607",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 280,
+    "output_tokens": 451,
+    "total": 731
+  },
+  {
+    "timestamp": "2026-04-25T18:21:04.690555",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 354,
+    "output_tokens": 153,
+    "total": 507
+  },
+  {
+    "timestamp": "2026-04-25T18:21:07.061608",
+    "feature": "generate_tujuan",
+    "input_tokens": 381,
+    "output_tokens": 226,
+    "total": 607
+  },
+  {
+    "timestamp": "2026-04-25T18:21:15.439675",
+    "feature": "generate_pembahasan",
+    "input_tokens": 694,
+    "output_tokens": 1750,
+    "total": 2444
+  },
+  {
+    "timestamp": "2026-04-25T18:21:18.274840",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 265,
+    "output_tokens": 291,
+    "total": 556
+  },
+  {
+    "timestamp": "2026-04-25T18:21:22.310380",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 412,
+    "output_tokens": 313,
+    "total": 725
+  },
+  {
+    "timestamp": "2026-04-25T18:34:07.771517",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 262,
+    "output_tokens": 156,
+    "total": 418
+  },
+  {
+    "timestamp": "2026-04-25T18:34:10.572338",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 285,
+    "output_tokens": 352,
+    "total": 637
+  },
+  {
+    "timestamp": "2026-04-25T18:34:12.294481",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 358,
+    "output_tokens": 157,
+    "total": 515
+  },
+  {
+    "timestamp": "2026-04-25T18:34:14.815080",
+    "feature": "generate_tujuan",
+    "input_tokens": 385,
+    "output_tokens": 211,
+    "total": 596
+  },
+  {
+    "timestamp": "2026-04-25T18:34:22.727146",
+    "feature": "generate_pembahasan",
+    "input_tokens": 724,
+    "output_tokens": 1377,
+    "total": 2101
+  },
+  {
+    "timestamp": "2026-04-25T18:34:24.943098",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 270,
+    "output_tokens": 256,
+    "total": 526
+  },
+  {
+    "timestamp": "2026-04-25T18:34:28.400610",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 442,
+    "output_tokens": 319,
+    "total": 761
+  },
+  {
+    "timestamp": "2026-04-25T18:38:24.964135",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 484,
+    "output_tokens": 267,
+    "total": 751
+  },
+  {
+    "timestamp": "2026-04-25T18:38:28.309077",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 655,
+    "output_tokens": 481,
+    "total": 1136
+  },
+  {
+    "timestamp": "2026-04-25T18:38:29.911586",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 582,
+    "output_tokens": 150,
+    "total": 732
+  },
+  {
+    "timestamp": "2026-04-25T18:38:31.938532",
+    "feature": "generate_tujuan",
+    "input_tokens": 663,
+    "output_tokens": 246,
+    "total": 909
+  },
+  {
+    "timestamp": "2026-04-25T18:38:40.087124",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1155,
+    "output_tokens": 1755,
+    "total": 2910
+  },
+  {
+    "timestamp": "2026-04-25T18:38:42.575785",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 592,
+    "output_tokens": 318,
+    "total": 910
+  },
+  {
+    "timestamp": "2026-04-25T18:38:43.208400",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 457,
+    "output_tokens": 255,
+    "total": 712
+  },
+  {
+    "timestamp": "2026-04-25T18:38:45.621187",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 502,
+    "output_tokens": 297,
+    "total": 799
+  },
+  {
+    "timestamp": "2026-04-25T18:38:45.970228",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 646,
+    "output_tokens": 441,
+    "total": 1087
+  },
+  {
+    "timestamp": "2026-04-25T18:38:47.825683",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 568,
+    "output_tokens": 183,
+    "total": 751
+  },
+  {
+    "timestamp": "2026-04-25T18:38:49.993074",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 669,
+    "output_tokens": 226,
+    "total": 895
+  },
+  {
+    "timestamp": "2026-04-25T18:38:57.623553",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 1029,
+    "output_tokens": 1534,
+    "total": 2563
+  },
+  {
+    "timestamp": "2026-04-25T18:38:59.821335",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 618,
+    "output_tokens": 273,
+    "total": 891
+  },
+  {
+    "timestamp": "2026-04-25T18:39:03.244581",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 381,
+    "output_tokens": 237,
+    "total": 618
+  },
+  {
+    "timestamp": "2026-04-25T18:42:02.287295",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 574,
+    "output_tokens": 210,
+    "total": 784
+  },
+  {
+    "timestamp": "2026-04-25T18:42:05.710865",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 648,
+    "output_tokens": 409,
+    "total": 1057
+  },
+  {
+    "timestamp": "2026-04-25T18:42:08.140527",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 600,
+    "output_tokens": 184,
+    "total": 784
+  },
+  {
+    "timestamp": "2026-04-25T18:42:09.943424",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 670,
+    "output_tokens": 232,
+    "total": 902
+  },
+  {
+    "timestamp": "2026-04-25T18:42:18.967087",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 1144,
+    "output_tokens": 1566,
+    "total": 2710
+  },
+  {
+    "timestamp": "2026-04-25T18:42:21.264978",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 601,
+    "output_tokens": 306,
+    "total": 907
+  },
+  {
+    "timestamp": "2026-04-25T18:42:25.498658",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 496,
+    "output_tokens": 352,
+    "total": 848
+  },
+  {
+    "timestamp": "2026-04-25T18:47:31.433942",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 534,
+    "output_tokens": 208,
+    "total": 742
+  },
+  {
+    "timestamp": "2026-04-25T18:47:34.063513",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 652,
+    "output_tokens": 411,
+    "total": 1063
+  },
+  {
+    "timestamp": "2026-04-25T18:47:35.775378",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 606,
+    "output_tokens": 189,
+    "total": 795
+  },
+  {
+    "timestamp": "2026-04-25T18:47:38.098548",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 681,
+    "output_tokens": 264,
+    "total": 945
+  },
+  {
+    "timestamp": "2026-04-25T18:47:46.160609",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 1002,
+    "output_tokens": 1746,
+    "total": 2748
+  },
+  {
+    "timestamp": "2026-04-25T18:47:49.768162",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 637,
+    "output_tokens": 343,
+    "total": 980
+  },
+  {
+    "timestamp": "2026-04-25T18:47:52.682535",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 352,
+    "output_tokens": 234,
+    "total": 586
+  },
+  {
+    "timestamp": "2026-04-25T18:48:08.462052",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 532,
+    "output_tokens": 243,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-25T18:48:11.483511",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 651,
+    "output_tokens": 423,
+    "total": 1074
+  },
+  {
+    "timestamp": "2026-04-25T18:48:13.055967",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 604,
+    "output_tokens": 192,
+    "total": 796
+  },
+  {
+    "timestamp": "2026-04-25T18:48:14.866207",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 679,
+    "output_tokens": 237,
+    "total": 916
+  },
+  {
+    "timestamp": "2026-04-25T18:48:22.911508",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 1191,
+    "output_tokens": 1621,
+    "total": 2812
+  },
+  {
+    "timestamp": "2026-04-25T18:48:26.227229",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 636,
+    "output_tokens": 325,
+    "total": 961
+  },
+  {
+    "timestamp": "2026-04-25T18:48:31.181928",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 541,
+    "output_tokens": 391,
+    "total": 932
+  },
+  {
+    "timestamp": "2026-04-25T19:02:53.176114",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 577,
+    "output_tokens": 244,
+    "total": 821
+  },
+  {
+    "timestamp": "2026-04-25T19:02:57.769900",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 651,
+    "output_tokens": 469,
+    "total": 1120
+  },
+  {
+    "timestamp": "2026-04-25T19:02:59.776902",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 603,
+    "output_tokens": 153,
+    "total": 756
+  },
+  {
+    "timestamp": "2026-04-25T19:03:02.331879",
+    "feature": "generate_tujuan",
+    "input_tokens": 673,
+    "output_tokens": 213,
+    "total": 886
+  },
+  {
+    "timestamp": "2026-04-25T19:03:11.826986",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1158,
+    "output_tokens": 1665,
+    "total": 2823
+  },
+  {
+    "timestamp": "2026-04-25T19:03:14.500945",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 604,
+    "output_tokens": 250,
+    "total": 854
+  },
+  {
+    "timestamp": "2026-04-25T19:03:18.483640",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 510,
+    "output_tokens": 372,
+    "total": 882
+  },
+  {
+    "timestamp": "2026-04-25T19:04:42.581339",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 571,
+    "output_tokens": 244,
+    "total": 815
+  },
+  {
+    "timestamp": "2026-04-25T19:04:45.618749",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 655,
+    "output_tokens": 445,
+    "total": 1100
+  },
+  {
+    "timestamp": "2026-04-25T19:04:47.588272",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 577,
+    "output_tokens": 174,
+    "total": 751
+  },
+  {
+    "timestamp": "2026-04-25T19:04:50.887588",
+    "feature": "generate_tujuan",
+    "input_tokens": 664,
+    "output_tokens": 213,
+    "total": 877
+  },
+  {
+    "timestamp": "2026-04-25T19:04:59.761838",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1134,
+    "output_tokens": 1863,
+    "total": 2997
+  },
+  {
+    "timestamp": "2026-04-25T19:05:03.019593",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 586,
+    "output_tokens": 234,
+    "total": 820
+  },
+  {
+    "timestamp": "2026-04-25T19:05:04.496026",
+    "feature": "manual_refine_kata_pengantar",
+    "input_tokens": 571,
+    "output_tokens": 237,
+    "total": 808
+  },
+  {
+    "timestamp": "2026-04-25T19:05:07.829219",
+    "feature": "manual_refine_latar_belakang",
+    "input_tokens": 655,
+    "output_tokens": 466,
+    "total": 1121
+  },
+  {
+    "timestamp": "2026-04-25T19:05:08.548675",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 481,
+    "output_tokens": 355,
+    "total": 836
+  },
+  {
+    "timestamp": "2026-04-25T19:05:09.948470",
+    "feature": "manual_refine_rumusan_masalah",
+    "input_tokens": 577,
+    "output_tokens": 168,
+    "total": 745
+  },
+  {
+    "timestamp": "2026-04-25T19:05:11.957221",
+    "feature": "manual_refine_tujuan",
+    "input_tokens": 664,
+    "output_tokens": 213,
+    "total": 877
+  },
+  {
+    "timestamp": "2026-04-25T19:05:21.828432",
+    "feature": "manual_refine_pembahasan",
+    "input_tokens": 1144,
+    "output_tokens": 2001,
+    "total": 3145
+  },
+  {
+    "timestamp": "2026-04-25T19:05:24.495354",
+    "feature": "manual_refine_kesimpulan",
+    "input_tokens": 586,
+    "output_tokens": 363,
+    "total": 949
+  },
+  {
+    "timestamp": "2026-04-25T19:05:27.990486",
+    "feature": "manual_refine_daftar_pustaka",
+    "input_tokens": 492,
+    "output_tokens": 331,
+    "total": 823
+  },
+  {
+    "timestamp": "2026-04-25T19:10:11.337784",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 271,
+    "output_tokens": 198,
+    "total": 469
+  },
+  {
+    "timestamp": "2026-04-25T19:10:14.624579",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 399,
+    "total": 694
+  },
+  {
+    "timestamp": "2026-04-25T19:10:16.374669",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 367,
+    "output_tokens": 157,
+    "total": 524
+  },
+  {
+    "timestamp": "2026-04-25T19:10:18.107142",
+    "feature": "generate_tujuan",
+    "input_tokens": 394,
+    "output_tokens": 151,
+    "total": 545
+  },
+  {
+    "timestamp": "2026-04-25T19:10:26.501302",
+    "feature": "generate_pembahasan",
+    "input_tokens": 720,
+    "output_tokens": 1644,
+    "total": 2364
+  },
+  {
+    "timestamp": "2026-04-25T19:10:29.401086",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 279,
+    "output_tokens": 322,
+    "total": 601
+  },
+  {
+    "timestamp": "2026-04-25T19:10:34.087349",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 436,
+    "output_tokens": 301,
+    "total": 737
+  },
+  {
+    "timestamp": "2026-04-25T19:22:52.154641",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 544,
+    "output_tokens": 238,
+    "total": 782
+  },
+  {
+    "timestamp": "2026-04-25T19:22:55.777053",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 675,
+    "output_tokens": 544,
+    "total": 1219
+  },
+  {
+    "timestamp": "2026-04-25T19:22:57.870723",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 600,
+    "output_tokens": 165,
+    "total": 765
+  },
+  {
+    "timestamp": "2026-04-25T19:22:59.914957",
+    "feature": "generate_tujuan",
+    "input_tokens": 621,
+    "output_tokens": 153,
+    "total": 774
+  },
+  {
+    "timestamp": "2026-04-25T19:23:09.877030",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1087,
+    "output_tokens": 1722,
+    "total": 2809
+  },
+  {
+    "timestamp": "2026-04-25T19:23:12.984612",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 658,
+    "output_tokens": 352,
+    "total": 1010
+  },
+  {
+    "timestamp": "2026-04-25T19:23:16.769847",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 424,
+    "output_tokens": 249,
+    "total": 673
+  },
+  {
+    "timestamp": "2026-04-25T19:26:53.987586",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 585,
+    "output_tokens": 259,
+    "total": 844
+  },
+  {
+    "timestamp": "2026-04-25T19:26:57.152987",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 675,
+    "output_tokens": 498,
+    "total": 1173
+  },
+  {
+    "timestamp": "2026-04-25T19:26:59.190541",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 607,
+    "output_tokens": 169,
+    "total": 776
+  },
+  {
+    "timestamp": "2026-04-25T19:27:01.320458",
+    "feature": "generate_tujuan",
+    "input_tokens": 622,
+    "output_tokens": 153,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-25T19:27:07.871010",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1087,
+    "output_tokens": 1218,
+    "total": 2305
+  },
+  {
+    "timestamp": "2026-04-25T19:27:11.270571",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 658,
+    "output_tokens": 402,
+    "total": 1060
+  },
+  {
+    "timestamp": "2026-04-25T19:27:14.329615",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 424,
+    "output_tokens": 265,
+    "total": 689
+  },
+  {
+    "timestamp": "2026-04-25T19:29:38.427179",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 606,
+    "output_tokens": 225,
+    "total": 831
+  },
+  {
+    "timestamp": "2026-04-25T19:29:41.574391",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 675,
+    "output_tokens": 514,
+    "total": 1189
+  },
+  {
+    "timestamp": "2026-04-25T19:29:43.287534",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 612,
+    "output_tokens": 169,
+    "total": 781
+  },
+  {
+    "timestamp": "2026-04-25T19:29:44.819423",
+    "feature": "generate_tujuan",
+    "input_tokens": 622,
+    "output_tokens": 153,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-25T19:29:55.384222",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1087,
+    "output_tokens": 1908,
+    "total": 2995
+  },
+  {
+    "timestamp": "2026-04-25T19:29:58.702905",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 658,
+    "output_tokens": 376,
+    "total": 1034
+  },
+  {
+    "timestamp": "2026-04-25T19:30:02.307027",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 424,
+    "output_tokens": 262,
+    "total": 686
+  },
+  {
+    "timestamp": "2026-04-25T19:32:18.933346",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 571,
+    "output_tokens": 247,
+    "total": 818
+  },
+  {
+    "timestamp": "2026-04-25T19:32:22.933301",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 675,
+    "output_tokens": 501,
+    "total": 1176
+  },
+  {
+    "timestamp": "2026-04-25T19:32:25.260363",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 612,
+    "output_tokens": 189,
+    "total": 801
+  },
+  {
+    "timestamp": "2026-04-25T19:32:27.159190",
+    "feature": "generate_tujuan",
+    "input_tokens": 622,
+    "output_tokens": 153,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-25T19:32:37.063709",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1087,
+    "output_tokens": 1678,
+    "total": 2765
+  },
+  {
+    "timestamp": "2026-04-25T19:32:40.251083",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 658,
+    "output_tokens": 375,
+    "total": 1033
+  },
+  {
+    "timestamp": "2026-04-25T19:32:43.996806",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 424,
+    "output_tokens": 250,
+    "total": 674
+  },
+  {
+    "timestamp": "2026-04-25T19:37:35.871009",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 594,
+    "output_tokens": 240,
+    "total": 834
+  },
+  {
+    "timestamp": "2026-04-25T19:37:39.828412",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 675,
+    "output_tokens": 496,
+    "total": 1171
+  },
+  {
+    "timestamp": "2026-04-25T19:37:41.969560",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 631,
+    "output_tokens": 178,
+    "total": 809
+  },
+  {
+    "timestamp": "2026-04-25T19:37:43.984523",
+    "feature": "generate_tujuan",
+    "input_tokens": 622,
+    "output_tokens": 153,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-04-25T19:37:55.122579",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1087,
+    "output_tokens": 1869,
+    "total": 2956
+  },
+  {
+    "timestamp": "2026-04-25T19:37:57.858286",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 658,
+    "output_tokens": 361,
+    "total": 1019
+  },
+  {
+    "timestamp": "2026-04-25T19:38:01.378860",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 424,
+    "output_tokens": 253,
+    "total": 677
+  },
+  {
+    "timestamp": "2026-05-19T12:38:42.367646",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 264,
+    "output_tokens": 235,
+    "total": 499
+  },
+  {
+    "timestamp": "2026-05-19T12:38:45.823413",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 295,
+    "output_tokens": 439,
+    "total": 734
+  },
+  {
+    "timestamp": "2026-05-19T12:38:48.013218",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 118,
+    "total": 482
+  },
+  {
+    "timestamp": "2026-05-19T12:38:51.145570",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 174,
+    "total": 565
+  },
+  {
+    "timestamp": "2026-05-19T12:39:00.714557",
+    "feature": "generate_pembahasan",
+    "input_tokens": 468,
+    "output_tokens": 1776,
+    "total": 2244
+  },
+  {
+    "timestamp": "2026-05-19T12:39:04.958365",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 262,
+    "total": 538
+  },
+  {
+    "timestamp": "2026-05-19T12:39:08.631628",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 172,
+    "output_tokens": 138,
+    "total": 310
+  },
+  {
+    "timestamp": "2026-05-19T21:31:03.828100",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 265,
+    "output_tokens": 163,
+    "total": 428
+  },
+  {
+    "timestamp": "2026-05-19T21:31:08.684219",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 294,
+    "output_tokens": 516,
+    "total": 810
+  },
+  {
+    "timestamp": "2026-05-19T21:31:11.150789",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 363,
+    "output_tokens": 145,
+    "total": 508
+  },
+  {
+    "timestamp": "2026-05-19T21:31:13.939730",
+    "feature": "generate_tujuan",
+    "input_tokens": 390,
+    "output_tokens": 288,
+    "total": 678
+  },
+  {
+    "timestamp": "2026-05-19T21:31:23.160024",
+    "feature": "generate_pembahasan",
+    "input_tokens": 552,
+    "output_tokens": 1728,
+    "total": 2280
+  },
+  {
+    "timestamp": "2026-05-19T21:31:27.302652",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 274,
+    "output_tokens": 309,
+    "total": 583
+  },
+  {
+    "timestamp": "2026-05-19T21:31:30.189735",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 265,
+    "output_tokens": 108,
+    "total": 373
+  },
+  {
+    "timestamp": "2026-06-25T09:11:02.356846",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 267,
+    "output_tokens": 208,
+    "total": 475
+  },
+  {
+    "timestamp": "2026-06-25T09:11:06.365105",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 292,
+    "output_tokens": 427,
+    "total": 719
+  },
+  {
+    "timestamp": "2026-06-25T09:11:10.145728",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 364,
+    "output_tokens": 187,
+    "total": 551
+  },
+  {
+    "timestamp": "2026-06-25T09:11:12.556981",
+    "feature": "generate_tujuan",
+    "input_tokens": 391,
+    "output_tokens": 232,
+    "total": 623
+  },
+  {
+    "timestamp": "2026-06-25T09:11:23.154871",
+    "feature": "generate_pembahasan",
+    "input_tokens": 820,
+    "output_tokens": 2014,
+    "total": 2834
+  },
+  {
+    "timestamp": "2026-06-25T09:11:25.881234",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 276,
+    "output_tokens": 315,
+    "total": 591
+  },
+  {
+    "timestamp": "2026-06-25T09:11:30.620348",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 537,
+    "output_tokens": 379,
+    "total": 916
+  },
+  {
+    "timestamp": "2026-06-25T09:19:01.195897",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 556,
+    "output_tokens": 297,
+    "total": 853
+  },
+  {
+    "timestamp": "2026-06-25T09:19:04.348685",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 678,
+    "output_tokens": 427,
+    "total": 1105
+  },
+  {
+    "timestamp": "2026-06-25T09:19:06.601620",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 633,
+    "output_tokens": 171,
+    "total": 804
+  },
+  {
+    "timestamp": "2026-06-25T09:19:09.146238",
+    "feature": "generate_tujuan",
+    "input_tokens": 705,
+    "output_tokens": 237,
+    "total": 942
+  },
+  {
+    "timestamp": "2026-06-25T09:19:20.040636",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1009,
+    "output_tokens": 1782,
+    "total": 2791
+  },
+  {
+    "timestamp": "2026-06-25T09:19:22.656976",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 661,
+    "output_tokens": 325,
+    "total": 986
+  },
+  {
+    "timestamp": "2026-06-25T09:19:25.847467",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 349,
+    "output_tokens": 198,
+    "total": 547
+  },
+  {
+    "timestamp": "2026-06-25T09:23:38.584722",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 654,
+    "output_tokens": 264,
+    "total": 918
+  },
+  {
+    "timestamp": "2026-06-25T09:23:41.575007",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 687,
+    "output_tokens": 445,
+    "total": 1132
+  },
+  {
+    "timestamp": "2026-06-25T09:23:43.734655",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 625,
+    "output_tokens": 183,
+    "total": 808
+  },
+  {
+    "timestamp": "2026-06-25T09:23:47.299442",
+    "feature": "generate_tujuan",
+    "input_tokens": 718,
+    "output_tokens": 226,
+    "total": 944
+  },
+  {
+    "timestamp": "2026-06-25T09:23:56.440038",
+    "feature": "generate_pembahasan",
+    "input_tokens": 954,
+    "output_tokens": 1933,
+    "total": 2887
+  },
+  {
+    "timestamp": "2026-06-25T09:23:59.369426",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 670,
+    "output_tokens": 378,
+    "total": 1048
+  },
+  {
+    "timestamp": "2026-06-25T09:24:02.078933",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 285,
+    "output_tokens": 130,
+    "total": 415
+  },
+  {
+    "timestamp": "2026-06-25T09:29:06.611202",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 621,
+    "output_tokens": 289,
+    "total": 910
+  },
+  {
+    "timestamp": "2026-06-25T09:29:11.415511",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 687,
+    "output_tokens": 466,
+    "total": 1153
+  },
+  {
+    "timestamp": "2026-06-25T09:29:13.504264",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 637,
+    "output_tokens": 166,
+    "total": 803
+  },
+  {
+    "timestamp": "2026-06-25T09:29:16.791602",
+    "feature": "generate_tujuan",
+    "input_tokens": 708,
+    "output_tokens": 232,
+    "total": 940
+  },
+  {
+    "timestamp": "2026-06-25T09:29:26.478591",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1114,
+    "output_tokens": 1941,
+    "total": 3055
+  },
+  {
+    "timestamp": "2026-06-25T09:29:29.103892",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 670,
+    "output_tokens": 373,
+    "total": 1043
+  },
+  {
+    "timestamp": "2026-06-25T09:29:33.674370",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 445,
+    "output_tokens": 319,
+    "total": 764
+  },
+  {
+    "timestamp": "2026-07-06T18:01:36.519286",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 258,
+    "output_tokens": 139,
+    "total": 397
+  },
+  {
+    "timestamp": "2026-07-06T18:01:40.054252",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 286,
+    "output_tokens": 366,
+    "total": 652
+  },
+  {
+    "timestamp": "2026-07-06T18:01:42.406958",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 355,
+    "output_tokens": 142,
+    "total": 497
+  },
+  {
+    "timestamp": "2026-07-06T18:01:44.705848",
+    "feature": "generate_tujuan",
+    "input_tokens": 382,
+    "output_tokens": 153,
+    "total": 535
+  },
+  {
+    "timestamp": "2026-07-06T18:01:55.482522",
+    "feature": "generate_pembahasan",
+    "input_tokens": 570,
+    "output_tokens": 1528,
+    "total": 2098
+  },
+  {
+    "timestamp": "2026-07-06T18:01:58.726404",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 267,
+    "output_tokens": 300,
+    "total": 567
+  },
+  {
+    "timestamp": "2026-07-06T18:02:01.920341",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 283,
+    "output_tokens": 150,
+    "total": 433
+  },
+  {
+    "timestamp": "2026-07-16T14:02:43.685662",
+    "feature": "generate_kata_pengantar",
+    "input_tokens": 274,
+    "output_tokens": 144,
+    "total": 418
+  },
+  {
+    "timestamp": "2026-07-16T14:02:47.631867",
+    "feature": "generate_latar_belakang",
+    "input_tokens": 300,
+    "output_tokens": 475,
+    "total": 775
+  },
+  {
+    "timestamp": "2026-07-16T14:02:50.446977",
+    "feature": "generate_rumusan_masalah",
+    "input_tokens": 372,
+    "output_tokens": 153,
+    "total": 525
+  },
+  {
+    "timestamp": "2026-07-16T14:02:53.422229",
+    "feature": "generate_tujuan",
+    "input_tokens": 399,
+    "output_tokens": 244,
+    "total": 643
+  },
+  {
+    "timestamp": "2026-07-16T14:03:02.865455",
+    "feature": "generate_pembahasan",
+    "input_tokens": 1188,
+    "output_tokens": 1717,
+    "total": 2905
+  },
+  {
+    "timestamp": "2026-07-16T14:03:06.482663",
+    "feature": "generate_kesimpulan",
+    "input_tokens": 283,
+    "output_tokens": 370,
+    "total": 653
+  },
+  {
+    "timestamp": "2026-07-16T14:03:12.839050",
+    "feature": "generate_daftar_pustaka",
+    "input_tokens": 904,
+    "output_tokens": 724,
+    "total": 1628
+  }
+]

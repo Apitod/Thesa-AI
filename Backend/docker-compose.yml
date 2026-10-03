@@ -1,0 +1,106 @@
+version: '3.8'
+
+# ============================================================
+# Thesa NeoMakalah — Python API Stack
+# Menjalankan: Redis + FastAPI + Celery Worker
+#
+# Cara pakai:
+#   docker-compose up -d
+#   API docs: http://localhost:8000/api/docs
+# ============================================================
+
+services:
+
+  # ----------------------------------------------------------
+  # Redis: Broker untuk Celery + State store untuk progress jobs
+  # ----------------------------------------------------------
+  thesa-redis:
+    image: redis:7-alpine
+    container_name: thesa_redis
+    restart: always
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - thesa_redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - thesa-python-network
+
+  # ----------------------------------------------------------
+  # FastAPI: API server yang menerima request dari frontend
+  # ----------------------------------------------------------
+  thesa-api:
+    build:
+      context: .
+      dockerfile: python_api/Dockerfile
+    container_name: thesa_python_api
+    restart: always
+    ports:
+      - "${API_PORT:-8000}:8000"
+    env_file:
+      - python_api/.env
+    environment:
+      - REDIS_URL=redis://thesa-redis:6379/0
+      - CELERY_BROKER_URL=redis://thesa-redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://thesa-redis:6379/1
+    depends_on:
+      thesa-redis:
+        condition: service_healthy
+    volumes:
+      - ./output:/app/output          # Shared volume untuk file DOCX hasil generation
+      - ./templates:/app/templates    # Template dokumen
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - thesa-python-network
+
+  # ----------------------------------------------------------
+  # Celery Worker: menjalankan pipeline generation di background
+  # ----------------------------------------------------------
+  thesa-worker:
+    build:
+      context: .
+      dockerfile: python_api/Dockerfile
+    container_name: thesa_celery_worker
+    restart: always
+    # Jalankan sebagai Celery worker, bukan uvicorn
+    command: >
+      celery -A python_api.worker.celery_app worker
+      --loglevel=info
+      --concurrency=2
+      --queues=celery
+    env_file:
+      - python_api/.env
+    environment:
+      - REDIS_URL=redis://thesa-redis:6379/0
+      - CELERY_BROKER_URL=redis://thesa-redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://thesa-redis:6379/1
+    depends_on:
+      thesa-redis:
+        condition: service_healthy
+    volumes:
+      - ./output:/app/output          # Shared dengan API agar file bisa didownload
+      - ./templates:/app/templates
+      - ./data:/app/data
+      - ./src:/app/src                # Engine NeoMakalah
+      - ./sinta_finder:/app/sinta_finder
+    networks:
+      - thesa-python-network
+
+networks:
+  thesa-python-network:
+    driver: bridge
+
+volumes:
+  thesa_redis_data:
+    driver: local

@@ -1,0 +1,195 @@
+═══════════════════════════════════════════════════════════════
+                      START CEPAT (Tanpa API)
+═══════════════════════════════════════════════════════════════
+
+STATUS: SISTEM SIAP DIGUNAKAN ✓
+MODE: MANUAL (Gratis, tanpa perlu API key)
+
+═══════════════════════════════════════════════════════════════
+
+CARA MENJALANKAN (2 Menit)
+═══════════════════════════════════════════════════════════════
+
+1. BUKA TERMINAL
+   ----------------
+   Windows: CMD atau PowerShell
+   Mac/Linux: Terminal
+
+2. MASUK KE FOLDER PROJECT
+   ------------------------
+   cd d:\neomakalah
+
+3. JALANKAN APLIKASI
+   ------------------
+   python src/main.py
+
+4. PILIH MANUAL MODE
+   ------------------
+   - Ikuti prompt di layar
+   - Saat diminta pilih mode: PILIH 1 (Manual)
+   - Isi semua konten secara manual
+
+═══════════════════════════════════════════════════════════════
+
+CONTOH WORKFLOW
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Informasi Makalah
+--------------------------
+Mata Kuliah: "Pengantar Ilmu Komputer"
+Judul: "Penerapan Artificial Intelligence dalam Pendidikan"
+Dosen: "Dr. Ahmad, M.Kom"
+
+STEP 2: Penulis
+--------------
+Nama: "Budi Santoso"
+NIM: "123456789"
+Tambah penulis lain? "n"
+
+STEP 3: Kampus
+-------------
+Jurusan: "Teknik Informatika"
+Fakultas: "Fakultas Sains dan Teknologi"
+Kampus: "UIN Alauddin Makassar"
+Tahun: "2025"
+Tempat & Tanggal: "Makassar, 17 April 2025"
+
+STEP 4: Template
+---------------
+Pilih template: "1"
+
+STEP 5: Mode Generation
+----------------------
+Pilih mode: "1" (Manual)
+
+STEP 6: Isi Konten
+-------------------
+Sistem akan meminta isi untuk setiap bagian:
+
+a) Latar Belakang:
+   Ketik: "Artificial Intelligence (AI) telah menjadi salah satu..."
+   Ketik: "SELESAI" untuk mengakhiri
+
+b) Rumusan Masalah:
+   Ketik: "1. Bagaimana cara mengimplementasikan AI..."
+   Ketik: "2. Apa manfaat utama AI dalam pendidikan..."
+   Ketik: "SELESAI"
+
+c) Tujuan:
+   Ketik: "1. Menganalisis..."
+   Ketik: "2. Mendeskripsikan..."
+   Ketik: "SELESAI"
+
+d) Pembahasan:
+   Ketik: "Penerapan AI dalam pendidikan..."
+   Ketik: "SELESAI"
+
+e) Kesimpulan:
+   Ketik: "Berdasarkan pembahasan..."
+   Ketik: "SELESAI"
+
+STEP 7: Preview & Edit
+----------------------
+- Lihat preview konten yang sudah diisi
+- Edit jika ada yang perlu diperbaiki
+
+STEP 8: Generate Dokumen
+-------------------------
+- Sistem membuat file .docx
+- File tersimpan di: output/
+- Nama file: penerapan_artificial_intelligence_20250417_123456.docx
+
+═══════════════════════════════════════════════════════════════
+
+HASIL AKHIR
+═══════════════════════════════════════════════════════════════
+
+✅ Dokumen .docx dengan format UIN lengkap
+✅ Berisi semua informasi yang diinput
+✅ Terformat sesuai standar akademik
+✅ Siap untuk dikumpulkan atau diedit lebih lanjut
+
+═══════════════════════════════════════════════════════════════
+
+TIPS PENGISIAN
+═══════════════════════════════════════════════════════════════
+
+1. GUNAKAN SELESAI
+   - Ketik "SELESAI" (uppercase) untuk mengakhiri input bagian
+   - Tekan Enter setelah SELESAI
+
+2. STRUCTUR KONTEN
+   Latar Belakang: 500-800 kata
+   Rumusan Masalah: 3-5 pertanyaan
+   Tujuan: 3-5 tujuan spesifik
+   Pembahasan: 800-1200 kata dengan argumen
+   Kesimpulan: 300-500 kata
+
+3. TIPS PENULISAN
+   - Gunakan bahasa formal
+   - Hindari slang/gaul
+   - Gunakan struktur paragraf yang jelas
+   - Berikan contoh konkret jika diperlukan
+
+═══════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+1. ERROR "Module not found"
+   Jalankan: pip install -r requirements.txt
+
+2. ERROR "Template tidak ditemukan"
+   Pastikan file .docx ada di folder templates/
+
+3. ERROR saat input
+   - Pastikan mengetik "SELESAI" untuk mengakhiri
+   - Jangan tekan Ctrl+C kecuali mau keluar
+
+4. ERROR saat generate dokumen
+   - Pastikan folder output/ ada dan bisa ditulis
+   - Cek disk space yang tersedia
+
+═══════════════════════════════════════════════════════════════
+
+LANGKAH SELANJUTNYA
+═══════════════════════════════════════════════════════════════
+
+1. Jalankan sekarang:
+   python src/main.py
+
+2. Buat makalah pertama Anda
+   - Ikuti workflow di atas
+   - Hasil akan tersimpan di output/
+
+3. Edit dokumen jika perlu
+   - Buka file .docx di MS Word
+   - Perbaiki formatting jika diperlukan
+   - Tambahkan referensi jika diperlukan
+
+═══════════════════════════════════════════════════════════════
+
+MENGGUNAKAN FITUR AI (Opsional)
+═══════════════════════════════════════════════════════════════
+
+Jika ingin menggunakan AI untuk konten generation:
+
+1. Dapatkan API Key Gratis
+   - Anthropic: https://console.anthropic.com/
+   - Groq: https://console.groq.com/
+   - Together AI: https://together.ai/
+
+2. Update file .env
+   ZAI_API_KEY=sk-ant-xxxxxxxxxx
+   ZAI_API_URL=https://api.anthropic.com/v1/messages
+
+3. Test API Connection
+   python test_api.py
+
+4. Gunakan Mode AI
+   - Pilih mode 2 (AI Per BAB) atau 3 (AI Full)
+
+═══════════════════════════════════════════════════════════════
+
+SYSTEM READY - MULAI GUNAKAN SEKARANG!
+═══════════════════════════════════════════════════════════════

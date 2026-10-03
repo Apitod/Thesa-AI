@@ -1,0 +1,59 @@
+# ============================================================
+# Thesa AI — Koyeb Deployment Blueprint
+# Auto-deploys Docker Container to Singapore (SIN) Region
+#
+# Setup:
+#   1. Set secret env vars via Koyeb dashboard:
+#      DEEPSEEK_API_KEY, GEMINI_API_KEY, MIDTRANS_SERVER_KEY,
+#      MIDTRANS_CLIENT_KEY, REDIS_URL, ADMIN_SECRET_KEY
+#   2. Point docker context ke direktori Backend/
+#   3. koyeb deploy --config koyeb.yaml
+# ============================================================
+
+name: thesa-ai
+services:
+  - name: thesa-backend
+    type: web
+    regions:
+      - sin
+    plan: nano
+    docker:
+      dockerfile: python_api/Dockerfile
+    ports:
+      - port: 8000
+        path: /
+        protocol: http
+    health_checks:
+      - http:
+          path: /health
+          port: 8000
+        interval: 30
+        timeout: 5
+        unhealthy_threshold: 3
+        healthy_threshold: 1
+    routes:
+      - path: /
+        port: 8000
+    env:
+      - key: PORT
+        value: "8000"
+      - key: AI_PRIMARY_PROVIDER
+        value: "deepseek"
+      - key: DEEPSEEK_MODEL
+        value: "deepseek-chat"
+      - key: GEMINI_MODEL
+        value: "gemini-1.5-flash"
+      - key: CORS_ALLOWED_ORIGINS
+        value: "*"
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "60"
+      - key: MIDTRANS_IS_PRODUCTION
+        value: "false"
+      # ── Set via Koyeb dashboard (Secrets) ──
+      # key: DEEPSEEK_API_KEY        (required - AI provider)
+      # key: GEMINI_API_KEY          (required - AI fallback)
+      # key: MIDTRANS_SERVER_KEY     (required - payments)
+      # key: MIDTRANS_CLIENT_KEY     (required - payments)
+      # key: REDIS_URL               (required - Celery broker: redis://:password@host:6379/0)
+      # key: ADMIN_SECRET_KEY        (required - admin panel)
+      # key: CLOUDMERSIVE_API_KEY    (optional - DOCX conversion)

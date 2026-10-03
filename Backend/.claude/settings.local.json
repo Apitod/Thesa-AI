@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python test_zai_direct.py)",
+      "Bash(python test_models_simple.py)"
+    ]
+  }
+}

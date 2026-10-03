@@ -1,0 +1,131 @@
+═══════════════════════════════════════════════════════════════
+                   CARA MENJALANKAN APLIKASI
+═══════════════════════════════════════════════════════════════
+
+STATUS SISTEM: SIAP DIGUNAKAN ✓
+
+Semua komponen telah berhasil diimplementasikan dan dites:
+- InputHandler: [OK]
+- TemplateEngine: [OK]
+- DocumentBuilder: [OK]
+- AIEngine: [OK]
+- TokenLogger: [OK]
+- Main Application: [OK]
+
+═══════════════════════════════════════════════════════════════
+                       LANGKAH PENGGUNAAN
+═══════════════════════════════════════════════════════════════
+
+1. JALANKAN APLIKASI
+   -------------------
+   Buka terminal/command prompt dan jalankan:
+
+   python src/main.py
+
+2. IKUTI ALUR KERJA
+   ------------------
+   Aplikasi akan memandu Anda langkah demi langkah:
+
+   a) WELCOME SCREEN
+      - Sistem akan menampilkan pesan selamat datang
+      - Tekan Enter untuk melanjutkan
+
+   b) INPUT DATA MAKALAH
+      - Mata Kuliah (contoh: "Pengantar Ilmu Komputer")
+      - Judul Makalah (contoh: "Penerapan AI dalam Pendidikan")
+      - Nama Dosen (contoh: "Dr. Ahmad, M.Kom")
+
+   c) INFORMASI PENULIS
+      - Nama Penulis (contoh: "Budi Santoso")
+      - NIM (contoh: "123456789")
+      - Bisa tambah penulis lain (maksimal 3)
+
+   d) INFORMASI KAMPUS
+      - Jurusan (contoh: "Teknik Informatika")
+      - Fakultas (contoh: "Fakultas Sains dan Teknologi")
+      - Nama Kampus (contoh: "UIN Alauddin Makassar")
+      - Tahun (contoh: "2025")
+      - Tempat & Tanggal (contoh: "Makassar, 17 April 2025")
+
+   e) PILIH TEMPLATE
+      - Saat ini tersedia: "1 - UIN Alauddin"
+
+   f) PILIH MODE GENERASI
+      - 1 (Manual): Isi semua konten sendiri
+      - 2 (AI Per BAB): Generate per bagian dengan pilihan manual
+      - 3 (AI Full): Generate seluruh konten menggunakan AI
+
+   g) GENERASI KONTEN
+      - Jika mode Manual: Anda akan diminta mengisi setiap bagian
+      - Jika mode AI: Sistem akan generate konten secara otomatis
+        (membutuhkan koneksi internet dan API key yang valid)
+
+   h) PREVIEW & EDIT
+      - Lihat hasil konten yang di-generate
+      - Anda bisa edit bagian yang diperlukan
+
+   i) GENERASI DOKUMEN
+      - Sistem akan membuat file .docx di folder output/
+      - File akan diberi nama otomatis berdasarkan judul dan tanggal
+
+3. HASIL AKHIR
+   -------------
+   - File .docx akan tersimpan di: output/
+   - Penggunaan token AI dicatat di: logs/token_usage.json
+
+═══════════════════════════════════════════════════════════════
+                       TIPS PENGUNGGUNAAN
+═══════════════════════════════════════════════════════════════
+
+• UNTUK MODE AI:
+  - Pastikan API key sudah diatur di file .env
+  - Pastikan memiliki koneksi internet aktif
+  - Penggunaan AI akan dikenakan biaya token
+
+• UNTUK MODE MANUAL:
+  - Tidak membutuhkan koneksi internet
+  - Lebih hemat biaya
+  - Cocok untuk pengguna yang ingin kontrol penuh
+
+• UNTUK MODE HYBRID (AI Per BAB):
+  - Bisa memilih bagian mana yang ingin di-generate AI
+  - Fleksibel antara manual dan AI
+  - Efisien untuk bagian yang sulit ditulis manual
+
+═══════════════════════════════════════════════════════════════
+                      TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Jika mengalami masalah:
+
+1. ERROR "Module not found":
+   - Jalankan: pip install -r requirements.txt
+
+2. ERROR "Template tidak ditemukan":
+   - Pastikan file .docx ada di folder templates/
+   - Pastikan nama file sesuai dengan yang ada di sistem
+
+3. ERROR "API Key tidak valid":
+   - Periksa file .env
+   - Pastikan ZAI_API_KEY diisi dengan key yang valid
+
+4. ERROR "Permission denied":
+   - Pastikan folder output/ dapat ditulis
+   - Pastikan memiliki hak akses write
+
+═══════════════════════════════════════════════════════════════
+                         SUPPORT
+═══════════════════════════════════════════════════════════════
+
+Untuk bantuan lebih lanjut:
+- Lihat README.md untuk dokumentasi lengkap
+- Lihat STARTUP.md untuk panduan quick start
+- Lihat test_system.py untuk menjalankan test suite
+
+═══════════════════════════════════════════════════════════════
+
+SISTEM SUDAH SIAP DIGUNAKAN ✓
+
+Jalankan: python src/main.py
+
+═══════════════════════════════════════════════════════════════

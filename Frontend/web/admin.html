@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thesa AI — Admin & Telemetry Command Center</title>
+  
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols-Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-surface: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #283548;
+      --border: #334155;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-focus: #6366f1;
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --brand: #6366f1;
+      --brand-hover: #4f46e5;
+      --brand-glow: rgba(99, 102, 241, 0.25);
+      
+      --success: #10b981;
+      --success-bg: rgba(16, 185, 129, 0.12);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.12);
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.12);
+      --info: #38bdf8;
+      --info-bg: rgba(56, 189, 248, 0.12);
+      
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+      
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.35);
+      --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-base);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation */
+    .admin-navbar {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 12px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo-icon {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 4px 14px var(--brand-glow);
+    }
+
+    .brand-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-tag {
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 1px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+
+    .status-pill.online {
+      background: var(--success-bg);
+      border-color: rgba(16, 185, 129, 0.25);
+      color: var(--success);
+    }
+
+    .status-pill.llm {
+      background: rgba(99, 102, 241, 0.15);
+      border-color: rgba(99, 102, 241, 0.3);
+      color: #c7d2fe;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 8px currentColor;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* Buttons */
+    .btn-admin {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-admin-primary {
+      background: var(--brand);
+      color: #fff;
+      box-shadow: 0 4px 14px var(--brand-glow);
+    }
+    .btn-admin-primary:hover {
+      background: var(--brand-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-admin-secondary {
+      background: var(--bg-card);
+      border-color: var(--border);
+      color: var(--text-main);
+    }
+    .btn-admin-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--text-muted);
+    }
+
+    .btn-admin-outline-success {
+      background: transparent;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: var(--success);
+    }
+    .btn-admin-outline-success:hover {
+      background: var(--success-bg);
+    }
+
+    /* Main Container */
+    .admin-main {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      flex: 1;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.9));
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: 40px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-info h1 {
+      font-size: 21px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* KPI Cards Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 1100px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .kpi-grid { grid-template-columns: 1fr; }
+    }
+
+    .kpi-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .kpi-card:hover {
+      border-color: var(--border-focus);
+      transform: translateY(-2px);
+    }
+
+    .kpi-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .kpi-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .kpi-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .kpi-val-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .kpi-number {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    .kpi-desc {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.4;
+    }
+
+    .trend-badge {
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      font-weight: 700;
+    }
+    .trend-badge.green { background: var(--success-bg); color: var(--success); }
+    .trend-badge.purple { background: rgba(99, 102, 241, 0.15); color: #a5b4fc; }
+
+    /* Tabs Navigation */
+    .tabs-nav {
+      display: flex;
+      gap: 6px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      background: var(--bg-card);
+      border-color: var(--border);
+      color: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-btn:hover:not(.active) {
+      background: rgba(30, 41, 59, 0.4);
+      color: var(--text-main);
+    }
+
+    .tab-badge {
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      font-size: 10.5px;
+      padding: 1px 6px;
+      border-radius: 10px;
+    }
+
+    /* Tab Panes */
+    .tab-pane {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    .tab-pane.active {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards & Containers */
+    .panel-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .panel-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* System Status Grid */
+    .system-status-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 900px) {
+      .system-status-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .system-status-grid { grid-template-columns: 1fr; }
+    }
+
+    .status-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .status-box-tag {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .status-box-value {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .status-box-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.35;
+      margin-top: 2px;
+    }
+
+    /* Filter Toolbar */
+    .filter-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .search-box {
+      position: relative;
+      min-width: 280px;
+    }
+
+    .search-box span {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      font-size: 18px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 8px 14px 8px 36px;
+      border-radius: var(--radius-md);
+      font-size: 12.5px;
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--brand);
+    }
+
+    .filter-chips {
+      display: flex;
+      gap: 6px;
+    }
+
+    .chip-btn {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .chip-btn.active {
+      background: rgba(99, 102, 241, 0.2);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    /* Tables */
+    .table-responsive {
+      overflow-x: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 12.5px;
+    }
+
+    table.data-table th {
+      background: #090f1d;
+      padding: 12px 16px;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    table.data-table td {
+      padding: 13px 16px;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+      color: var(--text-main);
+      vertical-align: middle;
+    }
+
+    table.data-table tr:hover td {
+      background: rgba(30, 41, 59, 0.4);
+    }
+
+    .code-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid rgba(255,255,255,0.06);
+      color: #93c5fd;
+    }
+
+    .status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 9px;
+      border-radius: 16px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .status-tag.settled, .status-tag.success {
+      background: var(--success-bg);
+      color: var(--success);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .status-tag.pending {
+      background: var(--warning-bg);
+      color: var(--warning);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .status-tag.failed {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    /* Activity List */
+    .activity-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .activity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .activity-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .activity-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    /* Modals & Dialogs */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .modal-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Toast Notification */
+    #adminToast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--brand);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: var(--radius-lg);
+      font-size: 12.5px;
+      font-weight: 700;
+      box-shadow: var(--shadow-md);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      animation: slideUp 0.25s ease;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="admin-navbar">
+    <div class="brand-group">
+      <div class="brand-logo-icon">
+        <span class="material-symbols-rounded" style="font-size:24px;">analytics</span>
+      </div>
+      <div>
+        <div class="brand-title">
+          Thesa AI <span class="brand-tag">COMMAND CENTER</span>
+        </div>
+        <div class="brand-subtitle">Pemantauan Eksekutif, Keuangan & Telemetri Multi-LLM</div>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <div class="status-pill online">
+        <span class="pulse-dot"></span>
+        <span id="navServerStatus">Server Live • Uptime --</span>
+      </div>
+      <div class="status-pill llm">
+        <span class="material-symbols-rounded" style="font-size:15px;">neurology</span>
+        <span id="navLLMStatus">DeepSeek + Gemini Standby</span>
+      </div>
+      <button class="btn-admin btn-admin-secondary" onclick="refreshDashboardData()" title="Segarkan Data Real-time">
+        <span class="material-symbols-rounded" style="font-size:16px;">sync</span>
+        <span>Refresh</span>
+      </button>
+      <a href="/" class="btn-admin btn-admin-primary">
+        <span class="material-symbols-rounded" style="font-size:16px;">edit_document</span>
+        <span>Buka Workspace Thesa</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="admin-main">
+    
+    <!-- Hero Summary -->
+    <div class="hero-banner">
+      <div class="hero-info">
+        <h1>
+          <span class="material-symbols-rounded" style="color:var(--brand); font-size:26px;">space_dashboard</span>
+          Monitoring Operasional & Telemetri
+        </h1>
+        <p>Laporan komprehensif performa platform, transaksi Midtrans QRIS, efisiensi token AI, dan aktivitas mahasiswa.</p>
+      </div>
+      <div class="hero-buttons">
+        <button class="btn-admin btn-admin-secondary" onclick="exportAuditReportCSV()">
+          <span class="material-symbols-rounded" style="font-size:16px;">download</span>
+          <span>Ekspor CSV</span>
+        </button>
+        <button class="btn-admin btn-admin-primary" onclick="simulateNewOrderDemo()">
+          <span class="material-symbols-rounded" style="font-size:16px;">add_card</span>
+          <span>Simulasi Transaksi QRIS</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- KPI Metric Cards (Clean & Clear Explanations) -->
+    <div class="kpi-grid">
+      <!-- 1. Total Revenue -->
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Total Pendapatan</span>
+          <div class="kpi-icon" style="background:var(--success-bg); color:var(--success);">
+            <span class="material-symbols-rounded">payments</span>
+          </div>
+        </div>
+        <div class="kpi-val-row">
+          <div class="kpi-number" id="kpiRevenue" style="color:var(--success);">Rp 1.428.000</div>
+        </div>
+        <div class="kpi-desc">
+          <span class="trend-badge green">✓ Terverifikasi</span>
+          <span>Transaksi settled via QRIS & Midtrans</span>
+        </div>
+      </div>
+
+      <!-- 2. Registered Users -->
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Mahasiswa & Pengguna</span>
+          <div class="kpi-icon" style="background:rgba(99, 102, 241, 0.15); color:#a5b4fc;">
+            <span class="material-symbols-rounded">school</span>
+          </div>
+        </div>
+        <div class="kpi-val-row">
+          <div class="kpi-number" id="kpiTotalUsers">142</div>
+          <span style="font-size:12px; color:var(--text-muted);">Akun</span>
+        </div>
+        <div class="kpi-desc">
+          <span class="trend-badge purple">38 Aktif Hari Ini</span>
+          <span>UI, UGM, ITB, UNAIR, dsb</span>
+        </div>
+      </div>
+
+      <!-- 3. Papers Generated -->
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Naskah Makalah Selesai</span>
+          <div class="kpi-icon" style="background:var(--info-bg); color:var(--info);">
+            <span class="material-symbols-rounded">article</span>
+          </div>
+        </div>
+        <div class="kpi-val-row">
+          <div class="kpi-number" id="kpiTotalPapers" style="color:var(--info);">89</div>
+          <span style="font-size:12px; color:var(--text-muted);">Draft</span>
+        </div>
+        <div class="kpi-desc">
+          <span>64 naskah 3 Bab tuntas diekspor ke DOCX</span>
+        </div>
+      </div>
+
+      <!-- 4. LLM Efficiency & Cost -->
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Biaya API & Pemakaian Token</span>
+          <div class="kpi-icon" style="background:var(--warning-bg); color:var(--warning);">
+            <span class="material-symbols-rounded">electric_bolt</span>
+          </div>
+        </div>
+        <div class="kpi-val-row">
+          <div class="kpi-number" id="kpiTokens" style="font-size:22px;">1.85M</div>
+          <span style="font-size:12px; color:var(--text-muted);">Token AI</span>
+        </div>
+        <div class="kpi-desc">
+          <span>Est. Biaya: <strong id="kpiLLMCost" style="color:#fde047; font-weight:800;">Rp 4.612</strong> (~Rp 51/naskah)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchAdminTab('tabOverview')">
+        <span class="material-symbols-rounded" style="font-size:18px;">dashboard</span>
+        <span>Ringkasan Sistem</span>
+      </button>
+      <button class="tab-btn" onclick="switchAdminTab('tabOrders')">
+        <span class="material-symbols-rounded" style="font-size:18px;">receipt_long</span>
+        <span>Transaksi & Pembayaran</span>
+        <span class="tab-badge" id="tabOrdersBadge">4</span>
+      </button>
+      <button class="tab-btn" onclick="switchAdminTab('tabUsers')">
+        <span class="material-symbols-rounded" style="font-size:18px;">group</span>
+        <span>Data Mahasiswa</span>
+        <span class="tab-badge" id="tabUsersBadge">4</span>
+      </button>
+      <button class="tab-btn" onclick="switchAdminTab('tabLLM')">
+        <span class="material-symbols-rounded" style="font-size:18px;">psychology</span>
+        <span>Telemetri AI & Model</span>
+      </button>
+      <button class="tab-btn" onclick="switchAdminTab('tabAudit')">
+        <span class="material-symbols-rounded" style="font-size:18px;">verified_user</span>
+        <span>Log Audit Keamanan</span>
+      </button>
+    </div>
+
+    <!-- TAB 1: OVERVIEW -->
+    <div id="tabOverview" class="tab-pane active">
+      <!-- Status Box Grid -->
+      <div class="panel-card">
+        <div class="panel-head">
+          <div class="panel-title">
+            <span class="material-symbols-rounded" style="color:var(--brand);">dns</span>
+            <span>Status Infrastruktur & Gateway Terintegrasi</span>
+          </div>
+          <span style="font-size:11.5px; color:var(--text-muted);">Real-time Health Check</span>
+        </div>
+        <div class="system-status-grid">
+          <div class="status-box">
+            <div class="status-box-tag">DATABASE ENGINE</div>
+            <div class="status-box-value" style="color:var(--success);" id="statDBEngine">
+              <span class="material-symbols-rounded" style="font-size:18px;">database</span>
+              <span>MySQL 8.0 Connected</span>
+            </div>
+            <div class="status-box-sub">Auto-migrasi DDL aktif, pool max 25 koneksi aman.</div>
+          </div>
+
+          <div class="status-box">
+            <div class="status-box-tag">PAYMENT GATEWAY</div>
+            <div class="status-box-value" style="color:#38bdf8;">
+              <span class="material-symbols-rounded" style="font-size:18px;">qr_code_2</span>
+              <span>Midtrans QRIS / Snap</span>
+            </div>
+            <div class="status-box-sub">Signature SHA-512 cryptographic verification ready.</div>
+          </div>
+
+          <div class="status-box">
+            <div class="status-box-tag">PRIMARY AI ENGINE</div>
+            <div class="status-box-value" style="color:#a5b4fc;">
+              <span class="material-symbols-rounded" style="font-size:18px;">smart_toy</span>
+              <span>DeepSeek Reasoner</span>
+            </div>
+            <div class="status-box-sub">Latensi rerata ~460ms untuk penyusunan akademik.</div>
+          </div>
+
+          <div class="status-box">
+            <div class="status-box-tag">FAILOVER BACKUP AI</div>
+            <div class="status-box-value" style="color:#fde047;">
+              <span class="material-symbols-rounded" style="font-size:18px;">cloud_sync</span>
+              <span>Google Gemini Flash</span>
+            </div>
+            <div class="status-box-sub">Hot standby zero-downtime otomatis jika limit tercapai.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Activities & Performance Highlights -->
+      <div style="display:grid; grid-template-columns: 3fr 2fr; gap:20px;">
+        <!-- Left: Recent Transactions -->
+        <div class="panel-card">
+          <div class="panel-head">
+            <div class="panel-title">
+              <span class="material-symbols-rounded" style="color:var(--success);">shopping_bag</span>
+              <span>Transaksi Terkini Masuk</span>
+            </div>
+            <button class="btn-admin btn-admin-secondary" style="padding:4px 10px; font-size:11.5px;" onclick="switchAdminTab('tabOrders')">
+              Lihat Semua
+            </button>
+          </div>
+          <div class="activity-list" id="overviewOrdersFeed">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Right: System Key Facts -->
+        <div class="panel-card">
+          <div class="panel-head">
+            <div class="panel-title">
+              <span class="material-symbols-rounded" style="color:var(--info);">fact_check</span>
+              <span>Ringkasan Keunggulan Sistem</span>
+            </div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:12px; font-size:12.5px;">
+            <div style="background:var(--bg-card); padding:12px 14px; border-radius:var(--radius-md); border:1px solid var(--border);">
+              <strong style="color:#fff; display:block; margin-bottom:2px;">🔒 Pertahanan Berlapis (Defense-in-Depth)</strong>
+              <span style="color:var(--text-muted);">Dilengkapi CSP ketat, XSS block, HSTS, dan rate limiting per IP untuk mencegah abuse bot.</span>
+            </div>
+            <div style="background:var(--bg-card); padding:12px 14px; border-radius:var(--radius-md); border:1px solid var(--border);">
+              <strong style="color:#fff; display:block; margin-bottom:2px;">⚡ Efisiensi Biaya Operasional</strong>
+              <span style="color:var(--text-muted);">Biaya pembuatan 1 naskah lengkap hanya menghabiskan ~Rp 51 biaya API DeepSeek, margin profit > 99%.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: ORDERS & PAYMENTS -->
+    <div id="tabOrders" class="tab-pane">
+      <div class="panel-card">
+        <div class="filter-toolbar">
+          <div class="search-box">
+            <span class="material-symbols-rounded">search</span>
+            <input type="text" class="search-input" id="searchOrdersInput" placeholder="Cari Order ID, Email, atau Paket..." oninput="filterOrdersTable()">
+          </div>
+          <div class="filter-chips">
+            <button class="chip-btn active" onclick="setOrderFilter('all', this)">Semua</button>
+            <button class="chip-btn" onclick="setOrderFilter('settled', this)">✓ Settled (Lunas)</button>
+            <button class="chip-btn" onclick="setOrderFilter('pending', this)">⏳ Pending</button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Pengguna</th>
+                <th>Paket Pembelian</th>
+                <th>Nominal</th>
+                <th>Metode</th>
+                <th>Status</th>
+                <th>Waktu Transaksi</th>
+                <th>Aksi Verifikasi</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: USERS MANAGEMENT -->
+    <div id="tabUsers" class="tab-pane">
+      <div class="panel-card">
+        <div class="filter-toolbar">
+          <div class="search-box">
+            <span class="material-symbols-rounded">search</span>
+            <input type="text" class="search-input" id="searchUsersInput" placeholder="Cari Mahasiswa, Email, atau Kampus..." oninput="filterUsersTable()">
+          </div>
+          <div style="font-size:12px; color:var(--text-muted);">
+            Menampilkan data mahasiswa terdaftar & saldo kuota naskah
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nama Mahasiswa</th>
+                <th>Email</th>
+                <th>Institusi / Universitas</th>
+                <th>Jenjang / Prodi</th>
+                <th>Tier Akun</th>
+                <th>Sisa Kuota</th>
+                <th>Kelola Kuota</th>
+              </tr>
+            </thead>
+            <tbody id="usersTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: LLM TELEMETRY -->
+    <div id="tabLLM" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-head">
+          <div class="panel-title">
+            <span class="material-symbols-rounded" style="color:#a5b4fc;">psychology</span>
+            <span>Riwayat Eksekusi AI Multi-Provider (DeepSeek V3 & Google Gemini)</span>
+          </div>
+          <span style="font-size:11.5px; color:var(--text-muted);">Telemetri Latensi & Token Faktual</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Model</th>
+                <th>Jenis Tugas Akademik</th>
+                <th>Token In / Out</th>
+                <th>Total Token</th>
+                <th>Latensi</th>
+                <th>Est. Biaya</th>
+                <th>Status</th>
+                <th>Waktu</th>
+              </tr>
+            </thead>
+            <tbody id="llmTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: AUDIT LOGS -->
+    <div id="tabAudit" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-head">
+          <div class="panel-title">
+            <span class="material-symbols-rounded" style="color:var(--brand);">security</span>
+            <span>Audit Trail & Log Keamanan Sistem</span>
+          </div>
+          <span style="font-size:11.5px; color:var(--text-muted);">Immutable Event Tracking</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Waktu Peristiwa</th>
+                <th>Aksi / Modul</th>
+                <th>User / Akun</th>
+                <th>IP Address</th>
+                <th>Deskripsi Peristiwa</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="auditTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Toast Notification Box -->
+  <div id="adminToast">
+    <span class="material-symbols-rounded" style="color:var(--success); font-size:20px;">check_circle</span>
+    <span id="toastMessage">Operasi berhasil.</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/admin.js"></script>
+</body>
+</html>
